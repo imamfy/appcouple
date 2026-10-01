@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#d94f78" name="theme-color"/>
+<style id="auth-visibility-guard">[hidden],#app-shell.hidden,#app-shell:not(.is-authenticated),body:not(.is-authenticated) .bottom-nav{display:none!important}</style>
+<script>
+    (()=>{const version='31.6.48',key='appcouple_release';if(localStorage.getItem(key)!==version){localStorage.setItem(key,version);if('caches'in window)caches.keys().then(keys=>Promise.all(keys.map(key=>caches.delete(key)))).catch(()=>{});if('serviceWorker'in navigator)navigator.serviceWorker.getRegistrations().then(list=>list.forEach(reg=>reg.update())).catch(()=>{})}window.__APPCOUPLE_VERSION__=version})();
+  </script>
+<meta content="Ruang digital privat untuk pasangan: keuangan, chat, kenangan, dan AI." name="description"/>
+<title>AppCouple Next AI</title>
+<link href="/manifest.webmanifest" rel="manifest"/><link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link rel="stylesheet" href="/src/styles/components.css?v=31648">
+<link rel="stylesheet" href="/src/styles/tokens.css?v=30219">
+<link rel="stylesheet" href="/src/styles/product.css?v=30244">
+<link rel="stylesheet" href="/src/styles/matus-2026.css?v=31000">
+<link rel="stylesheet" href="/src/styles/maps-2026.css?v=31101">
+<link rel="stylesheet" href="/src/styles/trip-2026-upgrade.css?v=31627">
+<link rel="stylesheet" href="/src/styles/trip-tabs-2026.css?v=31600">
+<link rel="stylesheet" href="/src/styles/login-2026-upgrade.css?v=31616">
+<link rel="stylesheet" href="/src/styles/wedding-trip-polish-2026.css?v=31623">
+<link rel="stylesheet" href="/src/styles/map-mobile-v31628.css?v=31628">
+<link rel="stylesheet" href="/src/styles/finance-mobile-v31629.css?v=31630">
+<link rel="stylesheet" href="/src/styles/wedding-responsive-v31631.css?v=31631">
+<link rel="stylesheet" href="/src/styles/trip-logo-v31632.css?v=31632">
+<link rel="stylesheet" href="/src/styles/wedding-logo-v31633.css?v=31633">
+<link rel="stylesheet" href="/src/styles/backup-center.css?v=31637">
+<link rel="stylesheet" href="/src/styles/matus-polish-v31640.css?v=31640">
+<link rel="stylesheet" href="/src/styles/matus-global-voice-v31647.css?v=31647">
+<link rel="stylesheet" href="/src/styles/trip-itinerary-compact-v31644.css?v=31645">
+</head>
+<body>
+<a href="#app-main" class="skip-link">Lewati ke konten utama</a>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<div aria-hidden="true" class="love-sky"><span><i data-fa="heart"></i></span><span><i data-fa="heart-o"></i></span><span><i data-fa="heart"></i></span><span><i data-fa="heart"></i></span><span><i data-fa="heart-o"></i></span><span><i data-fa="heart"></i></span><span><i data-fa="heart"></i></span><span><i data-fa="heart-o"></i></span></div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<div aria-live="polite" aria-label="Menyiapkan AppCouple" class="love-loader" hidden id="love-loader" role="status"><div class="love-loader-scene"><div class="love-loader-brand"><img alt="" src="/assets/branding/appcouple-logo.jpg"/><span>AppCouple</span></div><div class="love-loader-rings"><i></i><i></i><span aria-hidden="true" class="love-loader-heart">♥</span></div><h2>Menyiapkan ruang kalian</h2><p>Satu tempat untuk rencana, cerita, dan hari-hari berdua.</p><div class="love-loader-track"><i id="love-loader-progress"></i></div><small id="love-loader-status">Memverifikasi sesi aman</small><div class="love-loader-steps" aria-hidden="true"><span class="active">Sesi</span><span>Data</span><span>Ruang</span></div></div></div>
+<section aria-labelledby="auth-title" class="auth-screen" id="auth-screen">
+<div class="auth-copy">
+<a class="brand brand-light" href="#"><span class="brand-mark"><img alt="" src="/assets/branding/appcouple-logo.jpg"/></span><span>AppCouple <b>Together</b></span></a>
+<div class="auth-copy-body"><div class="eyebrow">RUANG DIGITAL UNTUK BERDUA</div>
+<h1 id="auth-title">Hidup berdua,<br/><em>lebih tertata.</em></h1>
+<p>Kelola uang, perjalanan, rencana pernikahan, dan kenangan dalam satu ruang privat yang benar-benar milik kalian.</p>
+<div class="trust-row"><span><i data-fa="lock"></i><b>Privat</b><small>Data tetap milik kalian</small></span><span><i data-fa="rotate"></i><b>Sinkron</b><small>Selalu sama di dua akun</small></span><span><i data-fa="sparkles"></i><b>Cerdas</b><small>AI hanya dengan izin</small></span></div></div>
+<div class="auth-editorial-note"><span>01</span><p>Dirancang untuk dua orang yang ingin tumbuh, merencanakan, dan mengingat semuanya bersama.</p></div>
+<div aria-hidden="true" class="auth-visual"><div class="auth-orbit"></div><div class="auth-heart-core"><i data-fa="heart"></i></div></div>
+</div>
+<div class="auth-card-wrap"><div class="auth-card">
+<div class="auth-card-top"><div class="mini-logo"><img alt="Logo AppCouple" src="/assets/branding/appcouple-logo.jpg"/></div><span class="auth-safe-badge"><i data-fa="shield"></i> Koneksi aman</span></div>
+<span class="auth-card-kicker">SELAMAT DATANG KEMBALI</span><h2>Ruang kalian menunggu.</h2><p>Masuk dengan akun Google yang terdaftar untuk melanjutkan.</p>
+<button class="btn btn-primary btn-full" id="google-login"><span class="google-dot">G</span><span>Masuk dengan Google</span><i data-fa="arrow-right"></i></button>
+<div class="divider"><span>ingin melihat dulu?</span></div>
+<button class="btn btn-secondary btn-full" id="demo-login"><i data-fa="play"></i><span>Jelajahi mode demonstrasi</span></button>
+<div class="auth-privacy"><i data-fa="lock"></i><span><b>Privasi sebagai standar.</b> Data pribadi dan aktivitas pasangan tidak dibagikan untuk iklan.</span></div>
+<small class="auth-legal">Dengan masuk, Anda menyetujui kebijakan privasi dan penggunaan AI.</small>
+<small class="release-build-badge">AppCouple 31.6.48</small>
+</div><p class="auth-card-foot">Dibuat untuk satu ruang, dua orang, dan banyak cerita.</p></div>
+</section>
+<div aria-hidden="true" class="app-shell hidden" hidden="" id="app-shell">
+<aside class="sidebar">
+<a class="brand" href="#"><span class="brand-mark"><img alt="" src="/assets/branding/appcouple-logo.jpg"/></span><span>AppCouple <b>Together</b></span></a>
+<nav aria-label="Navigasi utama" class="side-nav">
+<button class="nav-item active" data-view="home"><span><i data-fa="house"></i></span> Beranda</button>
+<button class="nav-item" data-view="finance"><span><i data-fa="table-list"></i></span> Keuangan</button>
+<button class="nav-item" data-view="couple"><span><i data-fa="heart-o"></i></span> Couple Space</button>
+<button class="nav-item" data-view="memories"><span><i data-fa="image"></i></span> Kenangan</button>
+<button class="nav-item" data-view="ai"><span><i data-fa="sparkles"></i></span> Matus Assistant</button>
+</nav>
+<div class="sidebar-foot">
+<button class="nav-item" id="theme-toggle"><span><i data-fa="circle-half"></i></span> Ganti tema</button>
+<button class="profile-chip" id="profile-button"><span class="avatar">I</span><span><b>Imam</b><small>Terhubung</small></span><span>···</span></button>
+</div>
+</aside>
+<main class="main" id="app-main" tabindex="-1">
+<header class="topbar"><div><small id="today-label"></small><h2 id="view-title">Beranda</h2></div><div class="top-actions"><button type="button" class="icon-btn" id="quick-theme-toggle" aria-label="Ganti tema"><i data-fa="circle-half"></i></button><span aria-live="polite" class="network-status" id="network-status" role="status">Online</span><button aria-label="Buka profil dan privasi" class="icon-btn mobile-profile-button" id="mobile-profile-button" type="button"><i data-fa="user"></i></button><button aria-expanded="false" aria-label="Cari" class="icon-btn" id="topbar-search-btn" type="button"><i data-fa="magnifying-glass"></i></button><button aria-expanded="false" aria-label="Notifikasi" class="icon-btn notification has-unread" id="topbar-notif-btn" type="button"><i data-fa="bell"></i><span></span></button><div class="hidden" id="topbar-search-panel"><div class="ts-field"><i data-fa="magnifying-glass"></i><input autocomplete="off" id="topbar-search-input" placeholder="Cari halaman, fitur, transaksi…" type="search"/></div><div id="topbar-search-results"></div></div><div class="hidden" id="topbar-notif-panel"><div class="tn-head"><b>Notifikasi</b><button id="topbar-notif-clear" type="button">Hapus semua</button></div><div id="topbar-notif-list"></div></div></div></header>
+<section aria-labelledby="home-title" class="view active home-v2 home-purpose" id="view-home">
+<header class="hp-hero home-welcome">
+<div class="hp-hero-copy home-welcome-copy"><span class="home-kicker" id="home-greeting">Selamat datang</span><h1 id="home-title">Satu ruang untuk semua cerita kalian.</h1><p>Jaga komunikasi, simpan kenangan, susun rencana, dan tumbuh bersama dalam ruang digital yang privat.</p><div class="hp-hero-actions"><button class="hp-primary" data-home-view="couple" type="button"><i data-fa="heart"></i> Buka Couple Space</button><button class="hp-secondary" data-home-view="ai" type="button"><i data-fa="sparkles"></i> Tanya Matus</button></div><div class="hp-trust"><span><i data-fa="lock"></i> Privat</span><span><i data-fa="rotate"></i> Tersinkron</span><span><i data-fa="heart-o"></i> Dibuat untuk berdua</span></div></div>
+<div aria-label="Foto kenangan berganti" class="hp-hero-visual hp-memory-grid" id="home-memory-grid"><button aria-label="Buka Kenangan Kita" class="hp-memory-frame hp-memory-frame-a" data-home-memory-open type="button"><img alt="Kenangan bersama" src="/assets/drive-gallery/memory-sunset.webp"/></button><button aria-label="Buka Kenangan Kita" class="hp-memory-frame hp-memory-frame-b" data-home-memory-open type="button"><img alt="Kenangan bersama" src="/assets/drive-gallery/memory-coffee.webp"/></button><button aria-label="Buka Kenangan Kita" class="hp-memory-frame hp-memory-frame-c" data-home-memory-open type="button"><img alt="Kenangan bersama" src="/assets/drive-gallery/memory-mountain.webp"/></button><button aria-label="Buka Kenangan Kita" class="hp-memory-frame hp-memory-frame-d" data-home-memory-open type="button"><img alt="Kenangan bersama" src="/assets/drive-gallery/memory-picnic.webp"/></button></div>
+<button aria-label="Perbarui beranda" class="home-refresh hp-refresh" id="home-refresh" type="button"><i data-fa="rotate"></i></button>
+</header>
+<div class="home-secondary-grid hp-today-grid">
+<article class="hp-couple-today home-couple-card"><div class="home-couple-top"><div><span class="home-section-eyebrow">Couple Today</span><small class="home-today-date" id="home-today-date">Hari ini</small></div><span class="home-live-badge is-offline" id="home-couple-live">Privat</span></div><div class="hp-today-main"><div aria-hidden="true" class="home-couple-avatars"><span id="home-card-user-avatar">K</span><i class="home-couple-heart"><i data-fa="heart"></i></i><span id="home-card-partner-avatar">+</span></div><div class="home-couple-copy"><h2 id="home-couple-name">Hubungkan dengan pasangan</h2><p class="home-couple-status" id="home-couple-status">Menyiapkan status hubungan…</p><small class="home-today-sync" id="home-today-sync">Ruang privat kalian</small></div></div><div class="hp-journey"><div><strong id="home-couple-days">—</strong><span id="home-couple-caption">hari perjalanan kalian</span></div><p id="home-today-nudge">Satu hal kecil hari ini bisa membuat kalian terasa lebih dekat.</p></div><section aria-label="Pesan Matus untuk pengguna" class="home-matus-whisper"><div class="home-matus-whisper-head"><span class="home-matus-whisper-icon"><i data-fa="sparkles"></i></span><div><b>Matus buat lu</b><small id="home-matus-daily-kind">Semangat hari ini</small></div><button aria-label="Buat pesan Matus baru" data-home-matus-reroll type="button"><i data-fa="rotate"></i></button></div><p id="home-matus-daily-message">Lu gak harus menyelesaikan semuanya sekaligus. Satu langkah kecil hari ini tetap kemajuan.</p><small class="home-matus-whisper-context" id="home-matus-daily-context">Dibuat otomatis dari kondisi ruang kalian.</small></section><section aria-label="Progress hari ini" class="home-today-progress"><div class="home-today-progress-head"><div><b>Progress hari ini</b><small id="home-today-progress-copy">Belum ada misi yang tercatat</small></div><strong id="home-today-progress-count">0/5</strong></div><div class="home-today-progress-track"><i id="home-today-progress-fill"></i></div><div class="home-today-task-row"><span data-today-task="chat"><i data-fa="comments"></i> Kabar</span><span data-today-task="expense"><i data-fa="wallet"></i> Keuangan</span><span data-today-task="savings"><i data-fa="piggy-bank"></i> Tabungan</span><span data-today-task="location"><i data-fa="location-dot"></i> Hadir</span></div></section><div class="home-today-actions"><button class="home-couple-action" data-home-feature="chat" data-home-view="couple" type="button"><i data-fa="comments"></i><span>Kirim kabar</span></button><button class="home-today-ai" data-home-view="ai" type="button"><i data-fa="sparkles"></i><span>Tanya Matus</span></button><button class="home-today-open" data-home-view="couple" type="button"><span id="home-couple-cta">Buka Couple Space</span><i data-fa="arrow-right"></i></button></div></article>
+<aside class="hp-quick-card"><div class="home-panel-head"><div><h2>Mau melakukan apa?</h2><p>Pilih satu hal kecil hari ini.</p></div></div><div class="hp-quick-grid"><button data-home-feature="chat" data-home-view="couple" type="button"><span><i data-fa="comments"></i></span><b>Kirim pesan</b></button><button data-home-view="memories" type="button"><span><i data-fa="image"></i></span><b>Tambah kenangan</b></button><button data-home-feature="savings" data-home-view="couple" type="button"><span><i data-fa="piggy-bank"></i></span><b>Rencana bersama</b></button><button data-home-view="ai" type="button"><span><i data-fa="sparkles"></i></span><b>Tanya Matus</b></button></div></aside>
+</div>
+<div class="home-overview-grid hp-purpose-grid">
+<header class="hp-section-head"><span>TUJUAN APPCOUPLE</span><h2>Ruang untuk hal yang berarti.</h2><p>Semua fitur utama dirangkum sederhana agar mudah digunakan setiap hari.</p></header>
+<div class="hp-values"><article><span><i data-fa="comments"></i></span><div><b>Lebih terhubung</b><small>Chat, mood, lokasi, dan aktivitas bersama.</small></div></article><article><span><i data-fa="wallet"></i></span><div><b>Lebih teratur</b><small>Keuangan dan target bersama dalam satu tempat.</small></div></article><article><span><i data-fa="image"></i></span><div><b>Lebih berarti</b><small>Simpan foto, tempat, dan cerita perjalanan.</small></div></article><article><span><i data-fa="sparkles"></i></span><div><b>Lebih terbantu</b><small>Matus menemani, mengingatkan, dan memberi ide.</small></div></article></div>
+</div>
+<div class="home-bottom-grid hp-bottom-grid">
+<article class="home-insight-card hp-matus-spotlight"><div class="home-insight-head"><span class="home-insight-orb"><i data-fa="sparkles"></i></span><span class="home-insight-status" id="home-insight-status">Matus siap</span></div><h2 id="home-insight-title">Mulai dari satu hal kecil bersama.</h2><p id="home-insight-text">Kirim kabar, simpan momen, atau susun rencana sederhana untuk kalian berdua.</p><button id="open-ai" type="button">Bicara dengan Matus <i data-fa="arrow-right"></i></button></article>
+<article class="home-activity-card hp-activity"><div class="home-panel-head"><div><h2>Perjalanan terbaru</h2><p>Aktivitas penting dari ruang kalian.</p></div><button data-home-feature="activity" data-home-view="couple" type="button">Lihat semua</button></div><div class="home-activity-list" id="home-activity-list"><div class="home-empty">Menyiapkan aktivitas…</div></div></article>
+</div>
+</section>
+<section class="view fin3-view" data-finance-screen="transactions" id="view-finance">
+<div class="page-intro finance-intro"><div><span class="eyebrow dark">KEUANGAN PRIBADI</span><h1>Atur uang sampai gajian tiba.</h1><p>Saldo, transaksi, perencanaan pengeluaran, dan piutang dalam layar terpisah yang lebih fokus.</p></div></div>
+<section class="f20-status" aria-label="Status data keuangan"><div><b>Pembukuan & sinkronisasi</b><p id="f20-sync" role="status">Menyiapkan data akun…</p></div><div><button type="button" id="f20-retry"><i data-fa="rotate"></i><span>Sinkronkan</span></button><button type="button" id="f20-backup"><i data-fa="download"></i><span>Backup JSON</span></button><button type="button" id="f20-legacy"><i data-fa="clock-rotate-left"></i><span>Ekspor lokal lama</span></button></div></section><div class="metric-grid finance-metrics"><article class="metric"><span>Pemasukan bulan ini</span><strong id="finance-income">Rp0</strong><small class="green" id="income-count">0 transaksi</small></article><article class="metric"><span>Pengeluaran bulan ini</span><strong id="finance-expense">Rp0</strong><small class="red" id="expense-count">0 transaksi</small></article><article class="metric accent-metric"><span>Saldo</span><strong id="finance-balance">Rp0</strong><small id="finance-month-net">Bulan ini: Rp0</small><small id="saving-rate">Rasio tabungan 0%</small></article></div>
+<nav aria-label="Menu keuangan" class="finance-tabs fin3-launcher" role="tablist">
+<button aria-selected="true" class="finance-tab active" data-finance-tab="transactions" role="tab" type="button"><i data-fa="table-list"></i><span><b>Riwayat</b><small>Semua transaksi</small></span></button>
+<button aria-selected="false" class="finance-tab" data-finance-tab="newtx" role="tab" type="button"><i data-fa="plus"></i><span><b>Transaksi Baru</b><small>Masuk atau keluar</small></span></button>
+<button aria-selected="false" class="finance-tab" data-finance-tab="plan" role="tab" type="button"><i data-fa="bullseye"></i><span><b>Rencana</b><small>Sampai gajian</small></span></button>
+<button aria-selected="false" class="finance-tab" data-finance-tab="receivables" role="tab" type="button"><i data-fa="wallet"></i><span><b>Piutang</b><small>Uang yang dipinjam</small></span></button>
+<button class="finance-tab" data-finance-tab="budgets" role="tab" aria-selected="false" type="button"><i data-fa="chart-pie"></i><span><b>Anggaran</b><small>Per kategori</small></span></button><button class="finance-tab" data-finance-tab="bills" role="tab" aria-selected="false" type="button"><i data-fa="calendar-days"></i><span><b>Tagihan</b><small>Jatuh tempo</small></span></button>
+<button class="finance-tab finance-report-tab" id="home-financial-report" type="button"><i data-fa="chart-line"></i><span><b>Laporan</b><small>Arus kas lengkap</small></span></button>
+</nav>
+<div class="finance-tab-panels fin3-panels">
+<section class="finance-tab-panel p21-panel" data-finance-panel="budgets"><header class="p21-head"><div><small>RENCANA BULANAN</small><h2>Anggaran per kategori</h2><p>Batas kategori dibandingkan pengeluaran yang sudah dicatat. Tidak mengunci dana bank.</p></div><label>Bulan<input type="month" id="p21-month" /></label></header><div class="p21-summary p22-summary"><article><small>Total batas kategori</small><strong id="p21-total">Rp0</strong></article><article><small>Total belanja bulan</small><strong id="p21-spent">Rp0</strong></article><article><small>Sisa setelah semua belanja</small><strong id="p21-left">Rp0</strong></article><article><small>Belanja belum dianggarkan</small><strong id="p22-unbudgeted">Rp0</strong><small id="p22-coverage">Cakupan 100%</small></article></div><section class="p22-unbudgeted"><header><div><h3>Kategori tanpa anggaran</h3><p>Belanja kategori ini tetap mengurangi sisa keseluruhan.</p></div><button id="p22-copy-budget" type="button"><i data-fa="copy"></i> Salin bulan sebelumnya</button></header><div id="p22-unbudgeted-list"></div></section><div class="p21-budget-grid" id="p21-budget-list"></div><form id="p21-budget-form" class="p21-form"><h3 id="p22-budget-form-title">Tambah atau ubah batas kategori</h3><label>Bulan anggaran<input name="month" type="month" required /></label><label>Kategori<select id="p21-budget-category" name="category" required><option value="">Pilih kategori</option><option value="Kebutuhan">Kebutuhan</option><option value="Transportasi">Transportasi</option><option value="Tagihan">Tagihan</option><option value="Kencan">Kencan</option><option value="Lainnya">Lainnya</option></select></label><label>Batas (Rp)<input name="limit" type="number" min="1" max="1000000000" step="1" required /></label><button type="submit"><i data-fa="floppy-disk"></i> Simpan anggaran</button></form><footer class="p21-footer"><p id="p21-state" role="status">Menyiapkan perencanaan…</p><button id="p21-reload" type="button"><i data-fa="rotate"></i> Muat ulang perencanaan</button></footer></section>
+<section class="finance-tab-panel p21-panel" data-finance-panel="bills"><header class="p21-head"><div><small>PENGINGAT DALAM APLIKASI</small><h2>Tagihan &amp; pembayaran rutin</h2><p id="p21-due-state">Belum ada tagihan.</p></div><button type="button" id="p21-reload-bills"><i data-fa="rotate"></i> Muat ulang</button></header><p class="p21-notice">Tidak ada pembayaran atau pencatatan otomatis. Tekan <b>Catat dibayar</b> setelah membayar; pengeluaran dicatat hari ini dan jatuh tempo berikutnya diperbarui. Pengingat terlihat saat aplikasi dibuka.</p><div id="p21-bill-list"></div><form id="p21-bill-form" class="p21-form"><h3 id="p22-bill-form-title">Tambah tagihan</h3><input name="id" type="hidden" /><label>Nama tagihan<input name="title" required maxlength="120" placeholder="Misalnya Internet rumah" /></label><label>Nominal (Rp)<input name="amount" type="number" min="1" max="1000000000" step="1" required /></label><label>Kategori<input name="category" list="p21-categories" required maxlength="40" value="Tagihan" /></label><label>Jatuh tempo<input name="due" type="date" required /></label><label>Frekuensi<select name="repeat"><option value="once">Sekali saja</option><option value="weekly">Mingguan</option><option value="monthly">Bulanan</option><option value="yearly">Tahunan</option></select></label><button type="submit" id="p22-bill-submit"><i data-fa="floppy-disk"></i> Simpan tagihan</button><button type="button" id="p22-bill-cancel" hidden><i data-fa="xmark"></i> Batal edit</button></form><details class="p21-history"><summary><span>Tagihan nonaktif</span><i data-fa="chevron-down"></i></summary><div id="p22-inactive-list"></div></details><details class="p21-history"><summary><span>Riwayat pembayaran dicatat</span><i data-fa="chevron-down"></i></summary><p>Riwayat ini adalah catatan penjadwalan. Mengedit/menghapus transaksi tidak mengubah riwayat tagihan.</p><ul id="p21-paid-list"></ul></details></section><datalist id="p21-categories"></datalist>
+<section class="finance-tab-panel active" data-finance-panel="transactions">
+<header class="fin3-screen-head"><div><small>RIWAYAT KEUANGAN</small><h2>Daftar Transaksi</h2><p id="transaction-summary">Semua transaksi tersinkron otomatis</p></div></header>
+<article class="panel transactions-card"><div class="panel-head"><div><h3>Daftar transaksi</h3><p>Pilih periode dan jenis transaksi.</p></div><div class="transaction-tools"><button class="filter-chip active" id="filter-all"><i data-fa="layer-group"></i> Semua</button><button class="filter-chip" id="filter-income"><i data-fa="arrow-trend-down"></i> Masuk</button><button class="filter-chip" id="filter-expense"><i data-fa="arrow-trend-up"></i> Keluar</button></div></div><div class="tx-period"><select aria-label="Pilih bulan" id="tx-month"></select><select aria-label="Pilih tahun" id="tx-year"></select><button id="tx-period-reset" type="button"><i data-fa="calendar-day"></i> Bulan ini</button></div><label class="f20-search">Cari transaksi<input id="f20-search" type="search" placeholder="Deskripsi, kategori, atau catatan" /></label><div class="transaction-list" id="transaction-list"><div class="finance-empty">Belum ada transaksi.</div></div><button type="button" class="f20-more" id="f20-more" hidden><i data-fa="chevron-down"></i> Muat 30 berikutnya</button></article>
+</section>
+<section class="finance-tab-panel" data-finance-panel="newtx">
+<header class="fin3-screen-head"><div><small>INPUT CEPAT</small><h2>Transaksi Baru</h2><p>Pilih jenis transaksi. Form input akan muncul sebagai pop-up.</p></div></header>
+<div class="fin3-action-grid"><button class="fin3-action expense" data-action="expense" type="button"><span><i data-fa="arrow-trend-up"></i></span><small>PENGELUARAN</small><b>Catat uang keluar</b><p>Belanja, tagihan, transportasi, dan kebutuhan lainnya.</p></button><button class="fin3-action income" data-action="income" type="button"><span><i data-fa="arrow-trend-down"></i></span><small>PEMASUKAN</small><b>Catat uang masuk</b><p>Gaji, bonus, proyek, hadiah, dan pemasukan lainnya.</p></button></div>
+</section>
+<section class="finance-tab-panel" data-finance-panel="plan">
+<header class="fin3-screen-head fp35-head"><div><small>PERENCANAAN PENGELUARAN · SMART PAYDAY</small><h2>Saldo aman sampai gajian</h2><p>Alokasi belanja dibatasi saldo pembukuan setelah cadangan. Bukan penguncian dana bank. Perbarui rencana setelah koreksi besar atau pemasukan baru.</p></div><button class="btn btn-primary" id="open-budget-plan" type="button"><i data-fa="sliders"></i> Atur rencana</button></header>
+<div class="plan-layout fin3-plan-layout"><article class="panel plan-result-card"><div class="panel-head"><div><span class="finance-panel-kicker">SALDO YANG BISA DIGUNAKAN</span><h3 id="plan-date-range">Belum ada tanggal gajian</h3></div><span class="plan-status" id="plan-status">Belum diatur</span></div><div class="plan-main-value"><span>Terpakai sejak rencana dimulai</span><strong id="plan-used">Rp0</strong><small>dari saldo <b id="plan-limit">Rp0</b></small></div><div class="plan-progress"><i id="plan-progress-fill"></i></div><div class="plan-stats"><div><span>Sisa saldo rencana</span><strong id="plan-remaining">Rp0</strong></div><div><span>Menuju gajian</span><strong id="plan-days-left">0 hari</strong></div></div><div class="plan-allowances"><article><span><i data-fa="calendar-day"></i></span><div><small>Batas aman per hari</small><strong id="plan-daily">Rp0</strong></div></article><article><span><i data-fa="calendar-week"></i></span><div><small>Batas aman per minggu</small><strong id="plan-weekly">Rp0</strong></div></article></div><div class="fp35-insight-grid"><article><small>Belanja hari ini</small><strong id="plan-spent-today">Rp0</strong></article><article><small>Dana dilindungi</small><strong id="plan-reserve">Rp0</strong></article><article><small>Kecepatan belanja</small><strong id="plan-pace">—</strong></article><article><small>Kategori terbesar</small><strong id="plan-top-category">—</strong></article></div><div class="plan-baseline"><span>Saldo awal rencana</span><small><b id="plan-base-daily">Rp0</b>/hari · <b id="plan-base-weekly">Rp0</b>/minggu</small></div><p class="budget-guidance" id="plan-guidance">Atur tanggal gajian untuk menghitung batas aman.</p></article><article class="panel fin3-payday-card fp35-health-card"><span><i data-fa="shield-heart"></i></span><small>FINANCIAL RUNWAY</small><h3 id="plan-health-title">Rencana belum aktif</h3><p id="plan-health-copy">Pilih tanggal gajian dan dana cadangan yang tidak boleh digunakan.</p><div class="fp35-score-ring"><strong id="plan-health-score">0</strong><small>indikator rencana</small></div><div class="fp35-balance-now"><b id="plan-current-balance">Rp0</b><small>saldo tersedia sekarang</small></div><button class="fp35-reset hidden" id="reset-budget-plan" type="button"><i data-fa="rotate"></i> Akhiri rencana</button></article></div>
+</section>
+<section class="finance-tab-panel" data-finance-panel="receivables">
+<header class="fin3-screen-head"><div><small>CATATAN PIUTANG</small><h2>Uang yang harus kembali</h2><p>Catatan piutang terpisah. Status lunas tidak otomatis mengubah saldo pembukuan.</p></div><button class="btn btn-primary" id="open-receivable" type="button"><i data-fa="plus"></i> Catat piutang</button></header>
+<div class="fin3-receivable-stats"><article><span>Total belum dibayar</span><strong id="receivable-total">Rp0</strong></article><article><span>Piutang aktif</span><strong id="receivable-active-count">0</strong></article><article><span>Sudah lunas</span><strong id="receivable-paid-count">0</strong></article></div><div class="rv85-toolbar"><label><i data-fa="magnifying-glass"></i><input autocomplete="off" id="receivable-search" placeholder="Cari nama atau catatan…" type="search"/></label><div aria-label="Filter piutang" class="rv85-filters" role="group"><button class="active" data-receivable-filter="all" type="button"><i data-fa="layer-group"></i> Semua</button><button data-receivable-filter="active" type="button"><i data-fa="clock"></i> Aktif</button><button data-receivable-filter="overdue" type="button"><i data-fa="triangle-exclamation"></i> Terlambat</button><button data-receivable-filter="paid" type="button"><i data-fa="check"></i> Lunas</button></div></div><div class="rv85-list-summary"><span id="receivable-result-count">0 catatan</span><small>Data tersimpan otomatis</small></div><div class="fin3-receivable-list" id="receivable-list"><div class="finance-empty">Belum ada catatan piutang.</div></div>
+</section>
+</div>
+</section>
+<section class="view cv-view cs2-view" id="view-couple">
+<div class="page-intro cv-page-intro cv-page-intro-bare">
+<span class="secure-chip" id="couple-connection-badge">Belum terhubung</span>
+</div>
+<div class="pairing-layout cv-pairing" id="pairing-panel">
+<article class="pairing-hero panel">
+<div class="pairing-art"><div class="avatar large" id="pairing-user-avatar">I</div><span><i data-fa="heart-o"></i></span><div class="avatar large alt" id="pairing-partner-avatar">?</div></div>
+<span class="eyebrow dark">HUBUNGKAN PASANGAN</span><h2>Berdua dimulai dari satu kode.</h2>
+<p>Buat kode privat enam karakter, lalu kirim hanya kepada pasangan. Kode berlaku 15 menit dan hanya dapat dipakai sekali.</p>
+<div class="my-code"><span>Kode saya</span><strong id="my-pair-code">------</strong><button aria-label="Salin kode" class="icon-btn" id="copy-pair-code" title="Salin kode"><i data-fa="layer-group"></i></button></div>
+<div class="cv-pair-actions"><button class="btn btn-primary" id="generate-pair-code">Buat kode baru</button><button class="btn btn-secondary" id="cv-show-qr" type="button">Tampilkan QR</button></div>
+<div class="cv-qr-box hidden" id="cv-qr-box"><div aria-label="QR kode pasangan" id="cv-qr-canvas"></div><small>Pindai dari perangkat pasangan</small></div>
+</article>
+<article class="connect-card panel">
+<span class="eyebrow dark">PUNYA KODE PASANGAN?</span><h3>Masukkan kode enam karakter</h3><p>Dua akun akan membentuk Couple Space yang tervalidasi di server.</p>
+<form id="pair-form"><input aria-label="Kode pasangan" autocomplete="off" id="partner-code" inputmode="text" maxlength="6" placeholder="ABC123"/><button class="btn btn-primary">Hubungkan sekarang</button></form>
+<div class="security-row"><span><i data-fa="lock"></i> Hanya dua akun</span><span><i data-fa="arrow-right-arrow-left"></i> Dapat diputus kapan saja</span><span><i data-fa="check"></i> Validasi server</span></div>
+</article>
+</div>
+<div class="hidden" id="connected-panel">
+<section class="cv-home cs2-shell panel" id="couple-home-screen">
+<header class="cv-couple-bar">
+<div class="cv-couple-identity">
+<div aria-label="Profil pengguna dan pasangan" class="cv-love-profiles"><span class="cv-love-avatar me"><img alt="Foto profil pengguna" class="hidden" id="cv-me-photo"/><b id="cv-me-avatar">I</b><i class="cv-profile-online active" id="cv-me-online"></i></span><i aria-hidden="true" class="cv-header-love"><i data-fa="heart"></i></i><span class="cv-love-avatar partner"><img alt="Foto profil pasangan" class="hidden" id="cv-partner-photo"/><b id="cv-partner-avatar">P</b><i class="cv-profile-online" id="cv-partner-online"></i></span></div>
+<div><small id="cv-partner-presence"><i></i> Pengguna online</small><h2 id="cv-couple-name">Imam &amp; Pasangan</h2></div>
+</div>
+<div class="cv-couple-actions">
+<button aria-label="Putar musik" class="cv-icon-action" id="cv-music-toggle" title="Musik Couple" type="button"><i data-fa="music"></i></button><button aria-label="Salin ID Couple" class="cv-icon-action" id="cv-copy-account" title="Salin ID Couple" type="button"><i data-fa="copy"></i></button>
+<div aria-label="Poin kamu dan pasangan" class="cv-duo-points">
+<span class="cv-point-person me"><i data-fa="heart"></i><small id="cv-header-me-label">Kamu</small><b id="cv-header-me-points">0</b></span>
+<span class="cv-point-person partner"><i data-fa="star"></i><small id="cv-header-partner-label">Partner</small><b id="cv-header-partner-points">0</b></span>
+</div>
+<button aria-label="Putuskan Couple Space" class="cv-icon-action danger" id="disconnect-couple" title="Putuskan Couple Space" type="button"><i data-fa="ellipsis-vertical"></i></button>
+</div>
+</header>
+<section aria-live="assertive" class="cs2-daily-lock hidden" id="cs2-daily-lock" role="alert">
+<div class="cs2-lock-mascot"><span><i data-fa="lock"></i></span><i data-fa="lock"></i></div>
+<div><span class="cs2-lock-kicker">MISI HARIAN BELUM SELESAI</span><h2 id="cs2-lock-title">Couple Space masih terkunci</h2><p id="cs2-lock-copy">Catat minimal satu pengeluaran hari ini agar Ruang Kita terbuka.</p><p class="cs2-lock-away" id="cs2-lock-away">Status tidak aktif sedang diperiksa…</p><div class="cs2-lock-reward"><i data-fa="gem"></i> Selesaikan sekarang dan dapatkan <b>+15 Love Points</b>.</div></div>
+<button id="cs2-add-expense" type="button"><i data-fa="wallet"></i><span>Isi pengeluaran hari ini</span><small>Buka halaman Keuangan</small></button>
+</section>
+<section aria-labelledby="cs2-hero-name" class="cs2-hero">
+<div class="cs2-hero-copy">
+<span class="cs2-hero-kicker"><i data-fa="heart"></i> RUANG KITA</span>
+<h1 id="cs2-hero-name">Imam &amp; Pasangan</h1>
+<p>Satu ruang privat untuk saling hadir, menyimpan cerita, dan menjalankan rencana bersama secara realtime.</p>
+<div class="cs2-hero-meta"><span><i class="cs2-online-dot"></i><b id="cs2-hero-presence">Terhubung aman</b></span><span><i data-fa="rotate"></i><b id="cs2-sync-time">Tersinkron sekarang</b></span></div>
+</div>
+<div class="cs2-hero-summary">
+<div class="cs2-orbit"><span id="cs2-me-initial">I</span><i class="cs2-orbit-heart"><i data-fa="heart"></i></i><span id="cs2-partner-initial">P</span></div>
+<div class="cs2-hero-stats"><div class="cs2-hero-stat"><span>Hari bersama</span><strong id="cs2-hero-days">0</strong></div><div class="cs2-hero-stat"><span>Anniversary berikutnya</span><strong id="cs2-next-date">—</strong></div></div>
+</div>
+</section>
+<div aria-label="Tab halaman Couple" class="couple-home-tabs" role="tablist">
+<button aria-selected="true" class="couple-home-tab active" data-couple-tab="overview" role="tab"><i data-fa="heart-o"></i> Ruang Kita</button>
+<button aria-selected="false" class="couple-home-tab" data-couple-tab="anniversary" role="tab"><i data-fa="calendar-days"></i> Anniversary</button>
+<button aria-selected="false" class="couple-home-tab" data-couple-tab="apps" role="tab"><i data-fa="square-plus"></i> Semua Fitur</button>
+</div>
+<div class="couple-home-panel active" data-couple-panel="overview">
+<div class="cs2-overview-grid">
+<section aria-labelledby="cs2-pulse-title" class="cs2-pulse-card">
+<div class="cs2-panel-head"><div><h2 id="cs2-pulse-title">Pulse hari ini</h2><p>Mood dan pesan singkat langsung terlihat di perangkat pasangan.</p></div><span class="cs2-realtime">Realtime</span></div>
+<div class="cs2-pulse-people">
+<article class="cs2-person-pulse"><div class="cs2-person-top"><span class="cs2-person-avatar" id="cs2-pulse-me-avatar">I</span><div><b id="cs2-pulse-me-name">Saya</b><small id="cs2-me-time">Belum memperbarui</small></div><span class="cs2-mood-emoji" id="cs2-me-mood"><i data-fa="heart-o"></i></span></div><p class="cs2-person-note" id="cs2-me-note">Bagikan kabarmu hari ini.</p></article>
+<article class="cs2-person-pulse partner"><div class="cs2-person-top"><span class="cs2-person-avatar" id="cs2-pulse-partner-avatar">P</span><div><b id="cs2-pulse-partner-name">Pasangan</b><small id="cs2-partner-time">Menunggu pasangan</small></div><span class="cs2-mood-emoji" id="cs2-partner-mood"><i data-fa="heart-o"></i></span></div><p class="cs2-person-note" id="cs2-partner-note">Status pasangan akan muncul otomatis.</p></article>
+</div>
+<form class="cs2-pulse-form" id="cs2-pulse-form">
+<span class="cs2-form-label">Bagaimana perasaanmu?</span>
+<div aria-label="Pilih mood" class="cs2-mood-picker" role="radiogroup"><button aria-pressed="true" class="is-selected" data-couple-mood="happy" type="button"><span><i data-fa="face-smile"></i></span>Bahagia</button><button aria-pressed="false" data-couple-mood="loved" type="button"><span><i data-fa="heart"></i></span>Dicintai</button><button aria-pressed="false" data-couple-mood="calm" type="button"><span><i data-fa="spa"></i></span>Tenang</button><button aria-pressed="false" data-couple-mood="tired" type="button"><span><i data-fa="moon"></i></span>Lelah</button><button aria-pressed="false" data-couple-mood="miss" type="button"><span><i data-fa="heart-o"></i></span>Rindu</button></div>
+<div class="cs2-note-row"><input aria-label="Pesan untuk pasangan" id="cs2-pulse-note" maxlength="160" placeholder="Tulis pesan singkat untuk pasangan…"/><button type="submit">Kirim &amp; sinkronkan</button></div>
+<small class="cs2-pulse-status" id="cs2-pulse-status">Hanya kamu dan pasangan yang dapat melihatnya.</small>
+</form>
+</section>
+<aside class="cs2-overview-side">
+<section class="cs2-quick-card"><h2>Akses bersama</h2><p>Buka fitur yang paling sering kalian gunakan.</p><div class="cs2-quick-grid"><button data-couple-feature="chat" type="button"><span><i data-fa="comments"></i></span><b>Chat</b></button><button data-couple-feature="game" type="button"><span><i data-fa="gamepad"></i></span><b>Game</b></button><button data-couple-feature="savings" type="button"><span><i data-fa="piggy-bank"></i></span><b>Tabungan</b></button><button data-couple-feature="map" type="button"><span><i data-fa="map"></i></span><b>Peta</b></button><button data-couple-feature="trip" type="button"><span class="trip-feature-logo"><img alt="" src="/assets/branding/jalan-berdua-logo.webp"/></span><b>Jalan Berdua</b></button></div></section>
+<section class="cs2-sync-card"><h2>Sinkronisasi aktif</h2><p>Perubahan penting langsung dikirim ke ruang yang sama.</p><div class="cs2-sync-list"><div class="cs2-sync-row"><span><i data-fa="comments"></i></span><div><b>Chat &amp; status</b><small>Realtime Supabase</small></div><i></i></div><div class="cs2-sync-row"><span><i data-fa="calendar-days"></i></span><div><b>Anniversary</b><small>Satu tanggal bersama</small></div><i></i></div><div class="cs2-sync-row"><span><i data-fa="shield"></i></span><div><b>Ruang privat</b><small>Hanya dua anggota</small></div><i></i></div></div></section>
+</aside>
+</div>
+</div>
+<div class="couple-home-panel" data-couple-panel="wedding"><header class="cw-fullscreen-head"><button aria-label="Kembali ke Semua Fitur" data-cw-fullscreen-close type="button"><i data-fa="arrow-left"></i><span>Semua Fitur</span></button><strong><span class="cw-brand-logo" aria-hidden="true"><img alt="" src="/assets/branding/pernikahan-logo.webp"/></span> Wedding Command Center</strong><span class="cw-fullscreen-status">Ruang persiapan bersama</span></header><section class="cw-wedding-shell" aria-labelledby="cw-title"><header class="cw-wedding-hero"><div><span class="cw-kicker cw-hero-brand"><span aria-hidden="true"><img alt="" src="/assets/branding/pernikahan-logo.webp"/></span> RENCANA HARI BAHAGIA</span><h2 id="cw-title">Wedding Command Center</h2><p>Satu ringkasan digital untuk mengatur budget, tamu, vendor, seserahan, administrasi, dan tabungan menuju hari bahagia.</p></div><div class="cw-hero-actions"><button class="cw-export-button" data-cw-action="export" type="button"><i data-fa="download"></i><span>Simpan Excel</span></button><span class="cw-sync-pill" id="cw-sync-pill"><i></i><span id="cw-sync-label">Demo tersimpan</span></span></div></header><nav aria-label="Bagian Wedding Planner" class="cw-mobile-tabs" id="cw-mobile-tabs" role="tablist"><button aria-selected="true" class="active" data-cw-tab="overview" role="tab" type="button"><i data-fa="chart-pie"></i><span>Ringkasan</span></button><button aria-selected="false" data-cw-tab="budget" role="tab" type="button"><i data-fa="wallet"></i><span>Budget</span></button><button aria-selected="false" data-cw-tab="seserahan" role="tab" type="button"><i data-fa="gift"></i><span>Seserahan</span></button><button aria-selected="false" data-cw-tab="guests" role="tab" type="button"><i data-fa="users"></i><span>Tamu</span></button><button aria-selected="false" data-cw-tab="checklist" role="tab" type="button"><i data-fa="list-check"></i><span>Checklist</span></button><button aria-selected="false" data-cw-tab="vendors" role="tab" type="button"><i data-fa="store"></i><span>Vendor</span></button><button aria-selected="false" data-cw-tab="savings" role="tab" type="button"><i data-fa="piggy-bank"></i><span>Tabungan</span></button></nav><section class="cw-panel active" data-cw-panel="overview"><div class="cw-overview-grid"><article class="cw-total-card"><span class="cw-kicker"><i data-fa="wallet"></i> TOTAL RENCANA ANGGARAN</span><strong id="cw-total-budget">Rp0</strong><label class="cw-master-budget-field"><span>Masukkan total rencana anggaran</span><input aria-label="Total rencana anggaran" data-currency-input id="cw-master-budget" inputmode="numeric" min="0" placeholder="Contoh: 47500000" type="text"/></label><small class="cw-total-source">Angka ini menjadi batas utama. Setiap item bisa memiliki rencana, realisasi, dan tenggat.</small><div class="cw-budget-line"><span>Realisasi <b id="cw-total-actual">Rp0</b></span><span id="cw-total-remaining">Sisa Rp0</span></div><div class="cw-progress"><i id="cw-budget-progress"></i></div><small id="cw-budget-status">Belum ada item budget</small><div class="cw-budget-empty" id="cw-budget-empty"><span><i data-fa="wallet"></i></span><div><b>Belum ada realisasi</b><small>Catat pengeluaran pertama dari Budget Wedding.</small></div><button data-cw-tab-jump="budget" type="button"><i data-fa="plus"></i> Tambah item</button></div></article><article class="cw-date-card"><span class="cw-kicker"><i data-fa="calendar-days"></i> HARI BAHAGIA</span><strong id="cw-wedding-date">Atur tanggal</strong><small id="cw-wedding-countdown">Tanggal pernikahan belum diatur.</small><input aria-label="Tanggal pernikahan" id="cw-wedding-date-input" type="date"/><button data-cw-action="date" type="button"><i data-fa="calendar-days"></i> Atur tanggal</button></article></div><div class="cw-insights-grid"><article class="cw-budget-alert hidden" id="cw-budget-alert"><div class="cw-insight-icon"><i data-fa="triangle-exclamation"></i></div><div><span class="cw-kicker">PERHATIAN ANGGARAN</span><h3 id="cw-budget-alert-title">Anggaran masih aman</h3><p id="cw-budget-alert-copy">Belum ada realisasi yang tercatat.</p></div></article><article class="cw-category-card"><header><div><span class="cw-kicker"><i data-fa="chart-pie"></i> REALISASI PER KATEGORI</span><h3>Uang kalian lari ke mana?</h3></div><strong id="cw-category-total">Rp0</strong></header><div class="cw-category-breakdown" id="cw-category-breakdown"><p class="cw-empty">Isi realisasi untuk melihat pembagiannya.</p></div></article></div><div class="cw-stat-grid"><div><span class="cw-stat-icon"><i data-fa="users"></i></span><b id="cw-guest-count">0</b><span>Tamu</span></div><div><span class="cw-stat-icon"><i data-fa="store"></i></span><b id="cw-vendor-count">0</b><span>Vendor</span></div><div><span class="cw-stat-icon"><i data-fa="list-check"></i></span><b id="cw-checklist-count">0/0</b><span>Checklist</span></div><div><span class="cw-stat-icon"><i data-fa="piggy-bank"></i></span><b id="cw-saved-total">Rp0</b><span>Tabungan</span></div></div><article class="cw-action-center"><header><div><span class="cw-kicker"><i data-fa="triangle-exclamation"></i> PUSAT TINDAKAN</span><h3>Yang perlu dibereskan lebih dulu</h3></div><span class="cw-soft-label" id="cw-risk-summary">Belum ada risiko</span></header><div class="cw-risk-list" id="cw-risk-list"><p class="cw-empty">Isi data wedding agar prioritas muncul otomatis.</p></div></article><article class="cw-weekly-summary"><div class="cw-insight-icon"><i data-fa="calendar-days"></i></div><div><span class="cw-kicker">REKAP MINGGU INI</span><h3 id="cw-weekly-title">Belum ada aktivitas</h3><p id="cw-weekly-copy">Perubahan kalian akan dirangkum di sini.</p></div></article><article class="cw-activity-card"><header><div><span class="cw-kicker"><i data-fa="clock-rotate-left"></i> RIWAYAT PASANGAN</span><h3>Perubahan terbaru</h3></div><span class="cw-soft-label">Maks. 6 aktivitas</span></header><ol class="cw-activity-list" id="cw-activity-list"><li class="cw-empty">Aktivitas pasangan akan muncul setelah kalian mulai mengisi.</li></ol></article><article class="cw-progress-output"><header><div><span class="cw-kicker"><i data-fa="chart-line"></i> PROGRES PERSIAPAN</span><h3>Kelihatan sudah sejauh apa</h3></div><strong id="cw-overall-progress">0%</strong></header><div class="cw-progress-row"><div><span>Checklist hari H</span><b id="cw-check-progress-value">0%</b></div><div class="cw-progress-track"><i id="cw-check-progress-bar"></i></div></div><div class="cw-progress-row"><div><span>Budget teralokasi</span><b id="cw-budget-progress-value">0%</b></div><div class="cw-progress-track"><i id="cw-budget-progress-bar"></i></div></div><div class="cw-progress-row"><div><span>Konfirmasi tamu</span><b id="cw-guest-progress-value">0%</b></div><div class="cw-progress-track"><i id="cw-guest-progress-bar"></i></div></div><div class="cw-progress-row"><div><span>Vendor siap</span><b id="cw-vendor-progress-value">0%</b></div><div class="cw-progress-track"><i id="cw-vendor-progress-bar"></i></div></div><div class="cw-progress-row"><div><span>Seserahan</span><b id="cw-seserahan-progress-value-overview">0%</b></div><div class="cw-progress-track"><i id="cw-seserahan-progress-bar-overview"></i></div></div><div class="cw-progress-row"><div><span>Tabungan target</span><b id="cw-savings-progress-value-overview">0%</b></div><div class="cw-progress-track"><i id="cw-savings-progress-bar-overview"></i></div></div><small id="cw-progress-copy">Isi data sedikit demi sedikit. Perubahannya ikut terlihat di perangkat pasangan.</small></article><article class="cw-next-card"><div><span class="cw-kicker"><i data-fa="arrow-trend-up"></i> LANGKAH BERIKUTNYA</span><h3 id="cw-next-title">Mulai dari budget kalian</h3><p id="cw-next-copy">Masukkan angka pertama, nanti Matus bantu melihat bagian yang paling perlu dibereskan.</p></div><button data-cw-tab-jump="budget" type="button"><i data-fa="arrow-right"></i></button></article><div class="cw-command-grid"><article class="cw-timeline-card"><header><div><span class="cw-kicker"><i data-fa="route"></i> ALUR PERSIAPAN</span><h3>Perjalanan menuju hari H</h3></div><span class="cw-soft-label" id="cw-timeline-status">Mulai pelan-pelan</span></header><ol class="cw-timeline" id="cw-timeline"><li data-cw-timeline="date"><i></i><div><b>Tentukan tanggal</b><small>Hari bahagia kalian</small></div></li><li data-cw-timeline="budget"><i></i><div><b>Susun budget</b><small>Angka pertama sebelum belanja</small></div></li><li data-cw-timeline="vendor"><i></i><div><b>Pilih vendor</b><small>Kontak dan pembayaran</small></div></li><li data-cw-timeline="guests"><i></i><div><b>Daftar tamu</b><small>Jumlah kursi dan konfirmasi</small></div></li><li data-cw-timeline="seserahan"><i></i><div><b>Siapkan seserahan</b><small>Barang dan anggaran</small></div></li><li data-cw-timeline="checklist"><i></i><div><b>Checklist Wedding</b><small>Tugas umum menuju hari H</small></div></li><li data-cw-timeline="savings"><i></i><div><b>Tabungan bersama</b><small>Kejar target berdua</small></div></li></ol></article><article class="cw-matus-insight"><div class="cw-matus-avatar"><i data-fa="sparkles"></i></div><div><span class="cw-kicker">MATUS MELIHAT</span><h3 id="cw-matus-insight-title">Mulai dari satu angka</h3><p id="cw-matus-insight-copy">Isi data sedikit demi sedikit. Gua bantu baca bagian yang paling perlu dibereskan.</p></div><button data-couple-feature="ai" type="button"><i data-fa="sparkles"></i> Tanya Matus</button></article></div></section><section class="cw-panel" data-cw-panel="budget"><div class="cw-panel-head"><div><span class="cw-kicker"><i data-fa="wallet"></i> BUDGET WEDDING</span><h3>Rencanakan tanpa menebak-nebak</h3></div><button data-cw-action="add-budget" type="button"><i data-fa="plus"></i> Tambah</button></div><form class="cw-inline-form cw-budget-form" id="cw-budget-form"><label class="cw-field"><span>Kategori</span><input id="cw-budget-category" maxlength="40" placeholder="Contoh: Venue" required/></label><label class="cw-field"><span>Barang / jasa</span><input id="cw-budget-item" maxlength="80" placeholder="Contoh: Gedung resepsi" required/></label><label class="cw-field"><span>Rencana (Rp)</span><input aria-label="Rencana budget dalam Rupiah" data-currency-input id="cw-budget-planned" inputmode="numeric" min="0" placeholder="0" type="text"/></label><label class="cw-field"><span>Realisasi (Rp)</span><input aria-label="Realisasi budget dalam Rupiah" data-currency-input id="cw-budget-actual" inputmode="numeric" min="0" placeholder="0" type="text"/></label><label class="cw-field"><span>Tenggat</span><input aria-label="Tenggat pembayaran budget" id="cw-budget-due" type="date"/></label><label class="cw-field"><span>Status</span><select aria-label="Status budget" id="cw-budget-item-status"><option>Belum mulai</option><option selected>Proses</option><option>Selesai</option></select></label><button type="submit"><i data-fa="floppy-disk"></i> Simpan</button></form><div class="cw-budget-list" id="cw-budget-list"></div></section><section class="cw-panel" data-cw-panel="seserahan"><div class="cw-panel-head"><div><span class="cw-kicker"><i data-fa="gift"></i> LIST SESERAHAN</span><h3>Siapkan detail kecil hari bahagia</h3></div><span class="cw-soft-label" id="cw-seserahan-summary">0 item</span></div><form class="cw-inline-form cw-seserahan-form" id="cw-seserahan-form"><label class="cw-field"><span>Kategori</span><input aria-label="Kategori seserahan" id="cw-seserahan-category" maxlength="40" placeholder="Contoh: Hantaran" required/></label><label class="cw-field"><span>Nama barang</span><input aria-label="Nama barang seserahan" id="cw-seserahan-item" maxlength="80" placeholder="Contoh: Al-Quran" required/></label><label class="cw-field"><span>Brand / keterangan</span><input aria-label="Brand atau keterangan seserahan" id="cw-seserahan-brand" maxlength="60" placeholder="Opsional"/></label><label class="cw-field"><span>Realisasi (Rp)</span><input aria-label="Realisasi seserahan dalam Rupiah" data-currency-input id="cw-seserahan-actual" inputmode="numeric" min="0" placeholder="0" type="text"/></label><button type="submit"><i data-fa="plus"></i> Tambah</button></form><div class="cw-record-list" id="cw-seserahan-list"></div></section><section class="cw-panel" data-cw-panel="guests"><div class="cw-panel-head"><div><span class="cw-kicker"><i data-fa="users"></i> DAFTAR TAMU</span><h3>Siapa saja yang hadir?</h3></div><div class="cw-panel-tools"><select class="cw-filter" id="cw-guest-filter"><option value="all">Semua tamu</option><option value="Belum diundang">Belum diundang</option><option value="Terkirim">Terkirim</option><option value="Konfirmasi">Konfirmasi</option><option value="Hadir">Hadir</option><option value="Tidak hadir">Tidak hadir</option></select><span class="cw-soft-label" id="cw-guest-summary">0 kursi</span></div></div><form class="cw-inline-form cw-guest-form" id="cw-guest-form"><label class="cw-field"><span>Nama tamu</span><input id="cw-guest-name" maxlength="60" placeholder="Nama lengkap" required/></label><label class="cw-field"><span>WhatsApp</span><input id="cw-guest-contact" maxlength="40" placeholder="08xxxxxxxxxx"/></label><label class="cw-field"><span>Dari pihak</span><select id="cw-guest-side"><option value="Imam">Imam</option><option value="Imeh">Imeh</option><option value="Bersama">Bersama</option></select></label><label class="cw-field"><span>Hubungan</span><input id="cw-guest-relationship" maxlength="50" placeholder="Contoh: Keluarga"/></label><label class="cw-field"><span>Undangan</span><select id="cw-guest-invite-type"><option>Digital</option><option>Cetak</option><option>Keduanya</option></select></label><label class="cw-field"><span>Jumlah kursi</span><input id="cw-guest-seats" min="1" max="20" value="1" type="number"/></label><label class="cw-field"><span>Batas RSVP</span><input id="cw-guest-rsvp-due" type="date"/></label><label class="cw-field"><span>Status</span><select id="cw-guest-status"><option>Belum diundang</option><option>Terkirim</option><option>Konfirmasi</option><option>Hadir</option><option>Tidak hadir</option></select></label><button type="submit"><i data-fa="plus"></i> Tambah tamu</button></form><div class="cw-record-list" id="cw-guest-list"></div></section><section class="cw-panel" data-cw-panel="checklist"><div class="cw-panel-head"><div><span class="cw-kicker"><i data-fa="list-check"></i> CHECKLIST WEDDING</span><h3>Checklist menuju hari H</h3></div><div class="cw-panel-tools"><select class="cw-filter" id="cw-check-filter"><option value="all">Semua tugas</option><option value="Belum mulai">Belum mulai</option><option value="Berjalan">Berjalan</option><option value="Selesai">Selesai</option></select><span class="cw-soft-label" id="cw-checklist-summary">0 selesai</span></div></div><form class="cw-inline-form cw-check-form" id="cw-check-form"><label class="cw-field"><span>Nama tugas</span><input id="cw-check-title" maxlength="100" placeholder="Contoh: Fotokopi KTP dan KK" required/></label><label class="cw-field"><span>Pemilik</span><select id="cw-check-owner"><option value="Imam">Imam</option><option value="Imeh">Imeh</option><option value="Bersama">Bersama</option></select></label><label class="cw-field"><span>Tenggat</span><input aria-label="Tenggat checklist" id="cw-check-due" type="date"/></label><label class="cw-field"><span>Status</span><select id="cw-check-status"><option>Belum mulai</option><option>Berjalan</option><option>Selesai</option></select></label><button type="submit"><i data-fa="plus"></i> Tambah tugas</button></form><div class="cw-check-list" id="cw-check-list"></div></section><section class="cw-panel" data-cw-panel="vendors"><div class="cw-panel-head"><div><span class="cw-kicker"><i data-fa="store"></i> LIST VENDOR</span><h3>Kontak dan pembayaran</h3></div><div class="cw-panel-tools"><select class="cw-filter" id="cw-vendor-filter"><option value="all">Semua vendor</option><option value="unpaid">Belum lunas</option><option value="paid">Lunas</option></select><span class="cw-soft-label" id="cw-vendor-summary">0 vendor</span></div></div><form class="cw-inline-form cw-vendor-form" id="cw-vendor-form"><label class="cw-field"><span>Kategori</span><input id="cw-vendor-category" maxlength="40" placeholder="Contoh: Catering" required/></label><label class="cw-field"><span>Nama vendor</span><input id="cw-vendor-name" maxlength="80" placeholder="Nama vendor" required/></label><label class="cw-field"><span>Kontak</span><input id="cw-vendor-contact" maxlength="40" placeholder="WhatsApp / telepon"/></label><label class="cw-field"><span>Anggaran (Rp)</span><input id="cw-vendor-planned" min="0" placeholder="0" type="number"/></label><label class="cw-field"><span>Sudah dibayar (Rp)</span><input id="cw-vendor-paid" min="0" placeholder="0" type="number"/></label><label class="cw-field"><span>Jatuh tempo</span><input id="cw-vendor-due" type="date"/></label><label class="cw-field"><span>Status kontrak</span><select id="cw-vendor-status"><option>Riset</option><option>Negosiasi</option><option>Booked</option><option>Kontrak</option><option>Selesai</option></select></label><button type="submit"><i data-fa="plus"></i> Tambah vendor</button></form><div class="cw-record-list" id="cw-vendor-list"></div></section><section class="cw-panel" data-cw-panel="savings"><div class="cw-savings-card"><div><span class="cw-kicker"><i data-fa="piggy-bank"></i> TABUNGAN BERSAMA</span><h3>Celengan digital berdua</h3><p id="cw-savings-copy">Target dan setiap setoran akan terlihat oleh kalian berdua.</p></div><div class="cw-savings-amount" id="cw-savings-amount">Rp0</div><div class="cw-savings-progress"><div><span>Progress target</span><b id="cw-savings-progress-value">0%</b></div><div class="cw-progress-track"><i id="cw-savings-progress-bar"></i></div></div><form id="cw-savings-form"><label>Target total<input id="cw-savings-target" min="0" placeholder="Contoh: 30000000" type="number"/></label><label>Batas menabung<input id="cw-savings-deadline" type="date"/></label><button type="submit"><i data-fa="check"></i> Simpan target</button></form></div><div class="cw-savings-table-card"><header><div><span class="cw-kicker"><i data-fa="clock-rotate-left"></i> RIWAYAT SETORAN</span><h3>Siapa yang menabung?</h3></div><span class="cw-soft-label" id="cw-savings-table-summary">0 setoran</span></header><form class="cw-savings-deposit-form" id="cw-deposit-form"><label class="cw-field"><span>Penyetor</span><select aria-label="Nama penyetor" id="cw-deposit-by"></select></label><label class="cw-field"><span>Nominal (Rp)</span><input aria-label="Nominal setoran" id="cw-deposit-amount" min="1" placeholder="0" required type="number"/></label><label class="cw-field"><span>Tanggal</span><input aria-label="Tanggal setoran" id="cw-deposit-date" required type="date"/></label><label class="cw-field"><span>Catatan</span><input aria-label="Catatan setoran" id="cw-deposit-note" maxlength="80" placeholder="Opsional"/></label><button type="submit"><i data-fa="plus"></i> Tambah setoran</button></form><div class="cw-savings-table-wrap"><table><thead><tr><th>Penyetor</th><th>Tanggal</th><th>Nominal</th><th>Catatan</th><th></th></tr></thead><tbody id="cw-savings-list"></tbody></table></div></div></section></section></div>
+<div class="couple-home-panel" data-couple-panel="anniversary">
+<div class="cv-anniversary-card" id="anniversary-card">
+<div class="cv-anniversary-top">
+<div aria-label="Foto profil pengguna dan pasangan" class="anniversary-orbit anniversary-love-profiles"><span class="anniversary-profile me"><img alt="Foto profil pengguna" class="hidden" id="anniversary-me-photo"/><b id="anniversary-me">I</b><small id="anniversary-me-label">Kamu</small></span><i aria-hidden="true" class="anniversary-heartbeat"><i data-fa="heart"></i></i><span class="anniversary-profile partner"><img alt="Foto profil pasangan" class="hidden" id="anniversary-partner-photo"/><b id="anniversary-partner">P</b><small id="anniversary-partner-label">Pasangan</small></span></div>
+<div class="cv-anniversary-copy"><span class="eyebrow dark">MOMEN KITA</span><h2 id="anniversary-title">Imam &amp; Pasangan</h2><p id="anniversary-days">Menghitung perjalanan kalian…</p></div>
+<button aria-label="Ubah tanggal" class="cv-icon-action" id="cv-edit-anniversary" title="Ubah tanggal" type="button"><i data-fa="pen"></i></button>
+</div>
+<div aria-label="Durasi hubungan" class="cv-duration-grid">
+<div><strong id="cv-years">0</strong><span>Tahun</span></div><div><strong id="cv-months">0</strong><span>Bulan</span></div><div><strong id="cv-days">0</strong><span>Hari</span></div>
+</div>
+<div class="cv-countdown-card">
+<div><span>Anniversary berikutnya</span><b id="anniversary-next-date">—</b></div>
+<div class="cv-countdown"><span><b id="cv-countdown-days">0</b>hari</span><span><b id="cv-countdown-hours">00</b>jam</span><span><b id="cv-countdown-minutes">00</b>menit</span><span><b id="cv-countdown-seconds">00</b>detik</span></div>
+</div>
+<div class="cv-inline-editor hidden" id="cv-anniversary-editor"><label>Tanggal mulai hubungan<input id="anniversary-date" type="date"/></label><button class="btn btn-primary" id="save-anniversary">Simpan &amp; sinkronkan</button></div>
+<div class="cv-milestone-card"><div class="cv-section-head"><div><span>Milestone berikutnya</span><b id="cv-next-milestone">7 hari</b></div><small id="cv-milestone-label">0%</small></div><div class="cv-progress"><i id="cv-milestone-progress"></i></div><div class="cv-milestones" id="cv-milestones"></div></div>
+<blockquote id="cv-love-note">“Hal kecil yang dilakukan bersama akan menjadi cerita besar.”</blockquote>
+</div>
+</div>
+<div class="couple-home-panel" data-couple-panel="apps">
+<div class="couple-app-grid">
+<button class="couple-app-icon" data-couple-tab-jump="wedding" data-fs-label="Wedding Command Center" type="button"><span class="app-icon-bg wedding-bg"><img alt="Logo Pernikahan" src="/assets/branding/pernikahan-logo.webp"/></span><span class="app-icon-label">Pernikahan</span></button>
+<button class="couple-app-icon" data-couple-feature="activity" data-fs-label="Aktivitas Berdua"><span class="app-icon-bg mood-bg"><i data-fa="bolt"></i></span><span class="app-icon-label">Aktivitas</span></button>
+<button class="couple-app-icon" data-couple-feature="chat" data-fs-label="Obrolan Cinta"><span class="app-icon-bg chat-bg"><i data-fa="comments"></i></span><span class="app-icon-label">Chat</span><i class="notif-badge hidden" id="cv-chat-badge">0</i></button>
+<button class="couple-app-icon launch-game-btn" data-couple-feature="game" data-fs-label="Game Pasangan"><span class="app-icon-bg game-bg"><i data-fa="gamepad"></i></span><span class="app-icon-label">Game</span></button>
+<button class="couple-app-icon" data-couple-feature="map" data-fs-label="Peta Cinta"><span class="app-icon-bg map-bg"><i data-fa="map"></i></span><span class="app-icon-label">Peta</span></button>
+<button class="couple-app-icon" data-couple-feature="rewards" data-fs-label="Tukar Hadiah"><span class="app-icon-bg reward-bg"><i data-fa="gem"></i></span><span class="app-icon-label">Hadiah</span></button>
+<button class="couple-app-icon" data-couple-feature="savings" data-fs-label="Tabungan Bersama"><span class="app-icon-bg savings-bg"><i data-fa="piggy-bank"></i></span><span class="app-icon-label">Tabungan</span></button>
+<button class="couple-app-icon trip-planner-launch" data-couple-feature="trip" data-fs-label="Jalan Berdua"><span class="app-icon-bg trip-bg"><img alt="Logo Jalan Berdua" src="/assets/branding/jalan-berdua-logo.webp"/></span><span class="app-icon-label">Jalan Berdua</span></button>
+<button class="couple-app-icon" data-couple-feature="ai" data-fs-label="Otak AI"><span class="app-icon-bg ai-bg"><i data-fa="brain"></i></span><span class="app-icon-label">Otak AI</span></button>
+<button class="couple-app-icon" data-couple-feature="sydas" data-fs-label="Sydas Sector"><span class="app-icon-bg sydas-bg"><img src="/assets/sydas/channel-icon.webp" alt="Logo Sydas Sector"/></span><span class="app-icon-label">Sydas Sector</span></button>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section class="view v25-memory" id="view-memories">
+<header class="v25-memory-header">
+  <a class="v25-memory-brand" href="#dg-gallery"><span><i data-fa="heart"></i></span><div><b>Kenangan Kita</b><small>Ruang kecil milik berdua</small></div></a>
+  <div class="v25-header-actions"><button aria-label="Pilih beberapa foto" id="km87-select-toggle" title="Pilih foto" type="button"><i data-fa="check"></i></button><button aria-label="Segarkan galeri" id="dg-refresh" title="Segarkan" type="button"><i data-fa="rotate"></i></button><button aria-label="Tambah kenangan" class="v25-icon-primary" id="dg-upload" type="button"><i data-fa="plus"></i></button></div>
+</header>
+
+<section class="v25-memory-hero mj19-hero" aria-labelledby="mj19-title">
+  <div class="v25-hero-copy">
+    <span class="v25-eyebrow"><i data-fa="heart-o"></i> CERITA KITA</span>
+    <h1 id="mj19-title">Tempat cinta tumbuh menjadi <em>kenangan.</em></h1>
+    <p>Simpan foto dan cerita sederhana yang selalu ingin kalian pulangi.</p>
+    <div class="v25-hero-actions"><button class="v25-primary" id="dg-heading-upload" type="button"><i data-fa="plus"></i> Tambah kenangan</button><button class="v25-secondary" id="km87-random-memory" type="button"><i data-fa="shuffle"></i> Kejutkan aku</button></div>
+  </div>
+  <div class="v25-hero-memory"><div class="v306-couple-portraits" aria-label="Foto profil pasangan"><span class="v306-account-frame v306-account-user" id="km-memory-user-avatar" aria-label="Foto profil pengguna">I</span><span class="v306-account-frame v306-account-partner" id="km-memory-partner-avatar" aria-label="Foto profil pasangan">P</span><i data-fa="heart" aria-hidden="true"></i></div><div class="v25-heart-badge"><i data-fa="heart"></i></div><div aria-label="Sorotan kenangan" class="ig6-slider" id="ig-memory-slider"></div><span class="v25-photo-caption">Satu foto, seribu rasa.</span></div>
+</section>
+
+<section aria-label="Ringkasan kenangan" class="v25-summary">
+  <div><span><i data-fa="image"></i></span><p><b id="ig6-memory-total">0</b><small>Kenangan</small></p></div>
+  <div><span><i data-fa="location-dot"></i></span><p><b id="km87-location-total">0</b><small>Tempat</small></p></div>
+  <div><span><i data-fa="star"></i></span><p><b id="km87-favorite-total">0</b><small>Favorit</small></p></div>
+  <span class="v25-sr-only"><b id="ig6-photo-total">0</b><b id="ig6-video-total">0</b><b id="dg-photo-total">0</b><b id="dg-video-total">0</b></span>
+</section>
+
+<section aria-label="Status Google Drive" class="dg-syncbar v25-drive-status">
+  <div class="dg-connection"><span class="dg-status-dot" id="dg-status-dot"></span><div><b id="dg-status-title">Menyiapkan Google Drive</b><small id="dg-status-copy">Memeriksa galeri bersama</small></div></div>
+  <div class="v25-folder"><span><i data-fa="image"></i></span><div><small>Folder aktif</small><b id="dg-folder-name">Belum dipilih</b></div></div>
+  <span class="v25-sr-only" id="dg-account-label">Login aplikasi diperlukan</span><span class="v25-sr-only" id="dg-last-sync">—</span>
+  <div class="v25-drive-actions"><button class="v25-link-button" id="dg-connect" type="button"><i data-fa="link"></i><span id="dg-connect-label">Hubungkan Drive</span></button><button aria-label="Buka folder di Google Drive" id="dg-open-folder" title="Buka folder" type="button"><i data-fa="arrow-right"></i></button></div>
+  <button class="hidden" id="dg-link-partner-folder" type="button">Folder pasangan</button>
+</section>
+
+<section class="v25-feature-row" aria-label="Cerita singkat">
+  <div class="v25-feature-head"><div><span class="v25-eyebrow">BARU-BARU INI</span><h2>Potongan cerita kalian</h2></div><p id="dg-memory-whisper">Setiap foto punya cara sendiri untuk membawa kita pulang.</p></div>
+  <div aria-label="Kenangan terbaru" class="ig6-stories" id="ig6-stories"></div>
+</section>
+
+<section class="v25-latest-row">
+  <article class="v25-latest"><span><i data-fa="sparkles"></i></span><div><small>MOMEN TERBARU</small><b id="km87-latest-title">Belum ada cerita</b><p id="km87-latest-meta">Tambahkan momen pertama kalian</p></div></article>
+  <button class="v25-map-card" data-mj-map type="button"><span><i data-fa="map"></i></span><div><small>PETA CINTA</small><b>Jejak perjalanan</b><p id="mj19-map-count">0 lokasi</p></div><i data-fa="chevron-right"></i></button>
+</section>
+
+<section aria-label="Kontrol galeri" class="dg-toolbar v25-toolbar">
+  <div aria-label="Filter media" class="dg-filters" role="group"><button class="active" data-dg-filter="all" type="button">Semua</button><button data-dg-filter="photo" type="button">Foto</button><button data-dg-filter="favorite" type="button"><i data-fa="star"></i> Favorit</button><button data-dg-filter="location" type="button"><i data-fa="location-dot"></i> Lokasi</button><button class="v25-more-filter" data-dg-filter="video" type="button">Video</button><button class="v25-more-filter" data-dg-filter="year" type="button">Tahun ini</button></div>
+  <div class="v25-tools"><label class="dg-search"><i data-fa="magnifying-glass"></i><input aria-label="Cari kenangan" autocomplete="off" id="dg-search" placeholder="Cari kenangan…" type="search"/></label><label class="dg-sort"><span class="v25-sr-only">Urutkan</span><select aria-label="Urutkan galeri" id="dg-sort"><option value="newest">Terbaru</option><option value="oldest">Terlama</option><option value="name">Nama A–Z</option></select></label><div aria-label="Tampilan galeri" class="dg-view-switch" role="group"><button aria-label="Grid" class="active" data-dg-view="grid" type="button"><i data-fa="table-cells"></i></button><button aria-label="Ringkas" data-dg-view="compact" type="button"><i data-fa="table-list"></i></button></div></div>
+</section>
+
+<section aria-labelledby="dg-onboarding-title" class="dg-onboarding v25-onboarding hidden" id="dg-onboarding"><span><i data-fa="heart"></i></span><div><h2 id="dg-onboarding-title">Mulai album kalian</h2><p>Hubungkan folder Google Drive lama untuk menampilkan semua kenangan.</p></div><button class="v25-primary" id="dg-onboarding-connect" type="button"><i data-fa="link"></i> Hubungkan Drive</button></section>
+
+<section aria-label="Aksi pilihan" class="km87-bulkbar hidden" id="km87-bulkbar"><div><b><span id="km87-selected-count">0</span> dipilih</b><small>Kelola kenangan pilihan</small></div><button id="km87-select-all" type="button"><i data-fa="check"></i><span>Pilih semua</span></button><button id="km87-bulk-favorite" type="button"><i data-fa="star"></i><span>Favorit</span></button><button id="km87-bulk-download" type="button"><i data-fa="arrow-down"></i><span>Unduh</span></button><button class="danger" id="km87-bulk-delete" type="button"><i data-fa="trash"></i><span>Hapus</span></button><button aria-label="Batalkan pilihan" id="km87-select-cancel" type="button"><i data-fa="xmark"></i></button></section>
+
+<section aria-labelledby="dg-gallery-title" class="dg-gallery-shell v25-gallery-shell">
+  <div class="dg-gallery-heading v25-gallery-heading"><div><span class="v25-eyebrow">ALBUM KALIAN</span><h2 id="dg-gallery-title">Semua kenangan</h2><p><b id="dg-visible-count">0</b> cerita · <span id="dg-storage-total">0 B</span></p></div></div>
+  <div aria-label="Memuat galeri" class="dg-loading hidden" id="dg-loading"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div aria-live="polite" class="dg-gallery" id="dg-gallery"></div>
+  <div class="dg-empty hidden" id="dg-empty"><span><i data-fa="heart-o"></i></span><h3>Belum ada cerita di sini</h3><p>Ubah filter atau tambahkan kenangan baru.</p><div><button class="v25-secondary" id="dg-clear-filter" type="button">Tampilkan semua</button><button class="v25-primary" id="dg-empty-upload" type="button"><i data-fa="plus"></i> Tambah kenangan</button></div></div>
+</section>
+<button aria-label="Tambah momen baru" class="km87-fab" id="km87-fab-add" onclick="document.querySelector('#dg-upload')?.click()" type="button"><i data-fa="plus"></i></button>
+<div aria-labelledby="dg-connect-title" aria-modal="true" class="dg-modal-backdrop hidden" id="dg-connect-modal" role="dialog">
+<div class="dg-modal-card dg-connect-card"><button aria-label="Tutup" class="dg-modal-close" id="dg-connect-close" type="button"><i data-fa="xmark"></i></button><div class="dg-modal-icon dg-drive-mark">D</div><span class="dg-section-label">GOOGLE DRIVE</span><h2 id="dg-connect-title">Gunakan satu Drive bersama</h2><p>Tidak perlu masuk Google lagi. Sesi AppCouple digunakan untuk membuka galeri Drive bersama yang dikelola aman oleh server.</p><div class="dg-permission-list"><span><i data-fa="plus"></i><b>Auto connect</b><small>dari login AppCouple</small></span><span><i data-fa="image"></i><b>Satu galeri</b><small>hanya akun yang diizinkan</small></span><span><i data-fa="lock"></i><b>Aman</b><small>Login AppCouple</small></span></div><div class="dg-client-help hidden" id="dg-client-help"><i data-fa="shield"></i><span>Kredensial Drive pusat hanya disimpan di environment Netlify, tidak di browser.</span></div><div class="dg-modal-actions"><button class="dg-button dg-button-soft" id="dg-connect-cancel" type="button">Nanti</button><button class="dg-button dg-button-primary" id="dg-connect-confirm" type="button"><i data-fa="rotate"></i> Periksa galeri bersama</button></div><button class="dg-disconnect hidden" id="dg-disconnect" type="button">Putuskan sesi Google Drive</button></div>
+</div>
+<div aria-labelledby="dg-upload-title" aria-modal="true" class="dg-modal-backdrop hidden" id="dg-upload-modal" role="dialog">
+<div class="dg-modal-card dg-upload-card">
+<div class="dg-upload-scroll">
+<button aria-label="Tutup" class="dg-modal-close" id="dg-upload-close" type="button"><i data-fa="xmark"></i></button>
+<span class="dg-section-label">TAMBAH KENANGAN</span><h2 id="dg-upload-title">Tambah momen baru</h2>
+<p>Setiap foto wajib memiliki alamat dan titik koordinat agar langsung terhubung ke Album Jejak Cinta.</p>
+<label class="dg-upload-drop" id="dg-upload-drop"><input accept="image/*" id="dg-upload-input" multiple="" type="file"/><span><i data-fa="plus"></i></span><b>Pilih foto momen kalian</b><small>Maksimal 4 MB per foto · hingga 12 foto</small></label>
+<div class="dg-upload-list hidden" id="dg-upload-list"></div>
+<label class="dg-caption-field"><span>Cerita momen <small>opsional</small></span><textarea id="dg-upload-caption" maxlength="240" placeholder="Apa yang membuat momen ini spesial?"></textarea></label>
+<section aria-labelledby="dg-location-title" class="dg-location-card">
+<div class="dg-location-head"><span><i data-fa="location-dot"></i></span><div><b id="dg-location-title">Lokasi foto ini di mana?</b><small>Lokasi akan menghubungkan foto dengan Album Jejak Peta.</small></div></div>
+<div class="dg-location-grid"><label>Alamat lengkap <small>wajib</small><input id="dg-upload-place" maxlength="120" placeholder="Contoh: Jl. Asia Afrika No. 65, Bandung" required/></label><label>Tanggal momen<input id="dg-upload-date" type="date" required/></label></div>
+<div class="dg-location-actions"><button id="dg-upload-geocode" type="button"><i data-fa="magnifying-glass"></i> Temukan alamat</button><button id="dg-upload-use-location" type="button"><i data-fa="crosshairs"></i> Gunakan GPS</button><span id="dg-upload-location-state">Alamat dan koordinat wajib diisi</span></div>
+<label class="dg-map-sync-check"><input checked="" id="dg-upload-map-sync" type="checkbox" disabled/> Otomatis tampil dan dapat diklik di Album Jejak Cinta</label>
+</section>
+</div>
+<div class="dg-modal-actions"><button class="dg-button dg-button-soft" id="dg-upload-cancel" type="button">Batal</button><button class="dg-button dg-button-primary" disabled="" id="dg-upload-submit" type="button"><i data-fa="plus"></i> Simpan momen</button></div>
+</div>
+</div>
+<div aria-labelledby="dg-lightbox-title" aria-modal="true" class="dg-lightbox hidden" id="dg-lightbox" role="dialog">
+<button aria-label="Tutup foto" class="dg-lightbox-close" id="dg-lightbox-close" title="Tutup (Esc)" type="button"><span aria-hidden="true">×</span></button><button aria-label="Sebelumnya" class="dg-lightbox-nav dg-lightbox-prev" id="dg-lightbox-prev" type="button"><i data-fa="chevron-left"></i></button><button aria-label="Berikutnya" class="dg-lightbox-nav dg-lightbox-next" id="dg-lightbox-next" type="button"><i data-fa="chevron-right"></i></button>
+<div class="dg-lightbox-stage"><div class="dg-lightbox-media" id="dg-lightbox-media"></div></div>
+<aside class="dg-lightbox-info"><span class="dg-media-kind" id="dg-lightbox-type">FOTO</span><h2 id="dg-lightbox-title">Momen</h2><p id="dg-lightbox-meta">—</p><p class="dg-lightbox-description" id="dg-lightbox-description"></p><div class="mj19-people"><i data-fa="users"></i><span>Dibagikan bersama <b>Imam &amp; Pasangan</b></span></div><div class="dg-lightbox-actions"><button id="dg-lightbox-star" type="button"><i data-fa="star"></i><span>Favorit</span></button><button id="dg-lightbox-download" type="button"><i data-fa="arrow-down"></i><span>Unduh</span></button><button id="mj19-lightbox-share" type="button"><i data-fa="paper-plane"></i><span>Bagikan</span></button><button id="km87-lightbox-edit" type="button"><i data-fa="pen"></i><span>Edit cerita</span></button><button id="dg-lightbox-map" type="button"><i data-fa="map"></i><span>Lihat di Peta</span></button><button id="dg-lightbox-drive" type="button"><i data-fa="arrow-right"></i><span>Buka sumber</span></button></div><section class="mj19-related"><small>KENANGAN TERKAIT</small><div id="mj19-related"></div></section><button class="dg-trash-action" id="dg-lightbox-trash" type="button"><i data-fa="trash"></i> Pindahkan ke sampah</button></aside>
+</div>
+<div aria-labelledby="km87-edit-title" aria-modal="true" class="dg-modal-backdrop hidden" id="km87-edit-modal" role="dialog"><div class="dg-modal-card km87-edit-card"><button aria-label="Tutup" class="dg-modal-close" id="km87-edit-close" type="button"><i data-fa="xmark"></i></button><span class="dg-section-label">EDIT KENANGAN</span><h2 id="km87-edit-title">Rapikan cerita momen</h2><p>Perbarui judul, cerita, tanggal, dan lokasi tanpa mengganti fotonya.</p><form id="km87-edit-form"><label>Judul momen<input maxlength="80" name="title" required=""/></label><label>Cerita<textarea maxlength="500" name="story" placeholder="Tuliskan cerita di balik foto ini"></textarea></label><div class="km87-edit-grid"><label>Tanggal<input name="date" type="date"/></label><label>Tempat<input maxlength="100" name="place" placeholder="Contoh: Bandung"/></label></div><div class="dg-modal-actions"><button class="dg-button dg-button-soft" id="km87-edit-cancel" type="button">Batal</button><button class="dg-button dg-button-primary" type="submit"><i data-fa="check"></i> Simpan perubahan</button></div></form></div></div>
+<div aria-hidden="true" class="dg-celebration" id="dg-celebration"></div>
+</section>
+<section class="view matus7 m26" id="view-ai" data-m75-tab="live">
+<div class="m7-shell m26-shell">
+<main class="m7-chat-page m75-workspace m26-workspace">
+<header class="m76-topbar m26-topbar">
+<button aria-label="Kembali ke Beranda" id="m76-exit" type="button"><i data-fa="arrow-left"></i></button>
+<div class="m76-brand m26-brand"><span><i data-fa="sparkles"></i></span><div><b>Matus</b><small>Asisten AI privat</small></div></div>
+<div class="m26-status" id="m26-global-status"><i></i><span>Siap membantu</span></div>
+<button aria-label="Aktifkan mode gelap" id="m26-theme-toggle" title="Ganti tema" type="button"><i data-fa="circle-half"></i></button>
+<button aria-label="Buka pengaturan Matus" id="m76-settings" type="button"><i data-fa="sliders"></i></button>
+</header>
+<nav aria-label="Mode Matus" class="m75-tabs m26-tabs" role="tablist">
+<button aria-selected="true" class="active" data-m75-tab="live" role="tab" type="button"><i data-fa="wave-square"></i><span>Live</span><small>Suara &amp; kehadiran</small></button>
+<button aria-selected="false" data-m75-tab="chat" role="tab" type="button"><i data-fa="comments"></i><span>Chat</span><small>Percakapan privat</small></button>
+</nav>
+<div class="m75-stage m26-stage">
+<section aria-label="Matus Live" class="m75-panel m75-live m26-live active" data-m75-panel="live">
+<div class="m26-presence">
+<div class="m26-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+<div aria-label="Matus siap berbicara" class="m7-avatar m26-mini-avatar" id="matus-character"><img alt="Matus" src="/assets/matus-character.webp"/><span class="m7-online-dot"></span><span aria-hidden="true" class="m7-speaking-bars"><i></i><i></i><i></i><i></i><i></i></span></div>
+<div class="m75-character m26-character" id="m75-character"><img alt="Karakter Matus" src="/assets/matus-character.webp"/><span class="m75-face-light"></span><span class="m26-ai-badge"><i data-fa="sparkles"></i> AI</span></div>
+<div class="m26-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<div class="m26-live-content">
+<div class="m26-eyebrow"><span class="m26-state-dot"></span><span id="m26-live-state">SIAP</span><small id="matus-header-mode">PRIVAT</small></div>
+<h1>Mau mulai dari mana?</h1>
+<p class="m26-live-caption" id="m75-live-caption">Gua siap bantu baca situasi, merapikan rencana, atau sekadar dengerin cerita lu.</p>
+<p class="m26-live-subtitle" id="m75-live-subtitle">Data aplikasi hanya dipakai sesuai izin yang lu aktifkan.</p>
+<div class="m26-primary-actions">
+<button class="m26-voice-primary" id="m26-start-voice" type="button"><span><i data-fa="microphone"></i></span><b>Mulai bicara</b><small id="m26-live-state-copy">Tekan lalu ngomong seperti biasa</small></button>
+<button class="m26-open-chat" data-m26-open-chat type="button"><i data-fa="keyboard"></i><span>Ketik pesan</span></button>
+</div>
+<div class="m26-context-grid" aria-label="Saran kontekstual">
+<button class="m26-smart-action" data-m26-prompt="Ringkas kondisi keuangan aku bulan ini dan beri satu langkah paling penting."><span><i data-fa="wallet"></i></span><div><b>Cek keuangan</b><small>Lihat pola bulan ini</small></div><i data-fa="arrow-right"></i></button>
+<button class="m26-smart-action" data-m26-prompt="Apa pengingat dan rencana terpenting yang perlu aku selesaikan hari ini?"><span><i data-fa="calendar-check"></i></span><div><b>Fokus hari ini</b><small>Prioritas &amp; pengingat</small></div><i data-fa="arrow-right"></i></button>
+<button class="m26-smart-action" data-m26-prompt="Kasih satu ide sederhana supaya aku dan pasangan lebih dekat hari ini."><span><i data-fa="heart"></i></span><div><b>Ide berdua</b><small>Satu hal kecil hari ini</small></div><i data-fa="arrow-right"></i></button>
+</div>
+<div class="m26-trust"><span><i data-fa="lock"></i> Privat</span><span><i data-fa="shield"></i> Sesuai izin</span><span><i data-fa="circle-check"></i> Tindakan dikonfirmasi</span></div>
+</div>
+</section>
+<section aria-label="Percakapan privat dengan Matus" class="m75-panel m75-chat m26-chat" data-m75-panel="chat" hidden>
+<header class="m26-chat-head"><div><span class="m26-chat-mark"><i data-fa="sparkles"></i></span><div><b>Tanya Matus</b><small>Jawaban kontekstual dari ruang AppCouple lu</small></div></div><button type="button" id="m26-context-button"><i data-fa="shield"></i><span id="matus-context-count">6 izin aktif</span></button></header>
+<div class="m26-source-strip"><span>Data aktif</span><b data-context-indicator="finance"><i data-fa="wallet"></i> Keuangan</b><b data-context-indicator="activity"><i data-fa="heart"></i> Couple</b><b data-context-indicator="chat"><i data-fa="comments"></i> Percakapan</b></div>
+<div aria-label="Percakapan pribadi dengan Matus" aria-live="polite" class="messages m7-messages" id="ai-messages"><div class="message bot">Woy <span id="matus-user-name">Imam</span>, gua siap. Lu bisa tanya soal keuangan, pasangan, rencana, perjalanan, atau hal random.</div></div>
+<div class="m26-trace" id="m26-action-trace" hidden><span><i data-fa="circle-check"></i></span><div><b>Tindakan selesai</b><small id="m26-trace-copy">Matus sudah menyelesaikan permintaan lu.</small></div><button type="button" id="m26-trace-close" aria-label="Tutup"><i data-fa="xmark"></i></button></div>
+</section>
+</div>
+<div class="m26-attach-menu" id="m26-attach-menu" hidden>
+<button type="button" data-m26-attach="photo"><i data-fa="image"></i><span><b>Foto</b><small>Analisis gambar atau struk</small></span></button>
+<button type="button" data-m26-attach="location"><i data-fa="location-dot"></i><span><b>Lokasi</b><small>Pakai lokasi untuk pertanyaan ini</small></span></button>
+<button type="button" data-m26-attach="transaction"><i data-fa="receipt"></i><span><b>Transaksi</b><small>Tanyakan data keuangan</small></span></button>
+<button type="button" data-m26-attach="memory"><i data-fa="images"></i><span><b>Kenangan</b><small>Buka konteks galeri</small></span></button>
+</div>
+<form class="ai-input m7-input m26-input" id="ai-form">
+<button aria-label="Tambahkan konteks" id="m26-attach" type="button"><i data-fa="plus"></i></button>
+<button aria-label="Bicara dengan Matus" id="matus-mic" type="button"><i data-fa="microphone"></i></button>
+<input aria-label="Pesan untuk Matus" autocomplete="off" id="ai-input" placeholder="Tanya atau ceritakan sesuatu…"/>
+<button aria-label="Hentikan jawaban" id="matus-cancel-ai" type="button"><i data-fa="stop"></i></button>
+<button aria-label="Kirim pesan" id="matus-send" type="submit"><i data-fa="arrow-up"></i></button>
+</form>
+</main>
+<section aria-label="Pengaturan Matus" class="m7-settings-page m26-settings">
+<header class="m7-settings-head m26-settings-head"><button aria-label="Kembali ke Matus" id="m7-settings-back" type="button"><i data-fa="arrow-left"></i></button><div><h2>Pengaturan Matus</h2><p>Kontrol AI, suara, memori, dan data yang boleh digunakan.</p></div></header>
+<div class="m7-settings-body m26-settings-body">
+<section class="m26-settings-hero"><span><i data-fa="sparkles"></i></span><div><b>Matus · Asisten AI privat</b><small>Lu tetap memegang kendali atas setiap data dan tindakan.</small></div><em>2026</em></section>
+<details class="m7-setting-card m26-setting-group" open><summary><span><i data-fa="brain"></i></span><div><b>AI &amp; suara</b><small id="matus-engine-state">AI lokal privat</small></div><i data-fa="chevron-down"></i></summary><div class="m26-setting-content"><button class="m7-provider" id="matus-provider-badge" type="button"><span></span><b>AI belum aktif</b><i data-fa="chevron-right"></i></button><div class="m7-auto-row"><span class="m7-auto-icon"><i data-fa="volume-high"></i></span><div><b>Suara otomatis</b><small id="matus-autoplay-state">Aktif setelah lu menyentuh aplikasi</small></div><label class="m7-switch"><input id="matus-voice-auto" type="checkbox"/><span></span></label></div><div class="m7-voice-character"><div><b>Karakter suara</b><small id="matus-voice-character-state">Tegas seperti asisten</small></div><select aria-label="Karakter suara Matus" id="matus-voice-profile"><option value="assistant">Tegas seperti asisten</option><option value="warm">Hangat dan perhatian</option><option value="calm">Tenang dan dewasa</option></select><button id="matus-voice-preview" type="button"><i data-fa="play"></i> Pratinjau</button></div><div class="m7-setting-actions"><button id="matus-say-hello" type="button"><i data-fa="comments"></i>Sapa gua</button><button id="matus-briefing-btn" type="button"><i data-fa="volume-high"></i>Briefing</button><button onclick="document.querySelector('#matus-stop-btn')?.click()" type="button"><i data-fa="stop"></i>Hentikan</button></div><small id="matus-speech-time">Siap dibacakan</small></div></details>
+<details class="m7-setting-card m26-setting-group" open><summary><span><i data-fa="shield"></i></span><div><b>Privasi &amp; izin data</b><small id="matus-mem-count">Data ringkas dan percakapan aman</small></div><i data-fa="chevron-down"></i></summary><div class="m26-setting-content"><div class="m7-permissions"><label><span><b>Keuangan</b><small>Saldo, pemasukan, pengeluaran</small></span><input checked data-matus-perm="finance" type="checkbox"/></label><label><span><b>Couple Space</b><small>Status dan aktivitas berdua</small></span><input checked data-matus-perm="activity" type="checkbox"/></label><label><span><b>Celengan Cinta</b><small>Target dan progres tabungan</small></span><input checked data-matus-perm="savings" type="checkbox"/></label><label><span><b>Maps &amp; lokasi</b><small>Alamat sementara hanya saat diminta</small></span><input checked data-matus-perm="location" type="checkbox"/></label><label><span><b>Kenangan</b><small>Jumlah dan status galeri</small></span><input checked data-matus-perm="memories" type="checkbox"/></label><label><span><b>Percakapan Matus</b><small>Riwayat untuk konteks dan keputusan</small></span><input checked data-matus-perm="chat" type="checkbox"/></label></div></div></details>
+<details class="m7-setting-card m26-setting-group"><summary><span><i data-fa="location-dot"></i></span><div><b>Lokasi sementara</b><small>Privat · kedaluwarsa 15 menit</small></div><i data-fa="chevron-down"></i></summary><div class="m26-setting-content"><p class="matus-location-note">GPS hanya dibaca setelah lu menekan tombol. Alamat tidak dibagikan otomatis.</p><div class="matus-location-status" id="matus-location-status">Belum dibaca.</div><div class="m7-setting-actions matus-location-actions"><button id="matus-location-refresh" type="button"><i data-fa="location-dot"></i> Gunakan lokasi</button><button id="matus-location-clear" type="button"><i data-fa="trash"></i> Hapus lokasi</button></div></div></details>
+<details class="m7-setting-card m26-setting-group" open><summary><span><i data-fa="bell"></i></span><div><b>Pengingat</b><small><span id="matus-task-count">0</span> aktif</small></div><i data-fa="chevron-down"></i></summary><div class="m26-setting-content"><form class="m7-task-form" id="matus-task-form"><input id="matus-task-title" maxlength="100" placeholder="Hal yang perlu diingat" required/><input id="matus-task-due" required type="datetime-local"/><button aria-label="Tambah pengingat" type="submit"><i data-fa="plus"></i></button></form><div aria-live="polite" class="m5-task-list m7-task-list" id="matus-task-list"></div></div></details>
+<section class="m26-danger-zone"><div><b>Data &amp; kontrol</b><small>Kelola notifikasi dan histori Matus.</small></div><div class="m7-setting-footer"><button id="matus-notify-btn" type="button"><i data-fa="bell"></i><span>Aktifkan notifikasi</span></button><button id="matus-copy" type="button"><i data-fa="copy"></i><span>Salin jawaban terakhir</span></button><button class="danger" id="matus-clear" type="button"><i data-fa="trash"></i><span>Hapus percakapan</span></button><button class="m7-compat" id="matus-mem-clear" type="button"><i data-fa="brain"></i><span>Hapus memori</span></button><small id="matus-voice-support">Memeriksa dukungan suara…</small></div></section>
+</div>
+</section>
+<button hidden id="m5-exit" type="button"><i data-fa="arrow-left"></i></button><button hidden id="matus-stop-btn" type="button"><i data-fa="stop"></i></button><button hidden id="m7-settings-open" type="button"><i data-fa="sliders"></i></button>
+<div aria-hidden="true" class="m7-compat"><span id="matus-voice-state">Siap mendengarkan lu</span><span id="matus-character-caption">Gua di sini.</span><span id="matus-status">Online</span><div class="m7-progress"><span id="matus-speech-progress"></span></div><span id="matus-greeting">Woy, Imam.</span><span id="matus-title"></span><b id="matus-saldo">Rp0</b><b id="matus-expense">Rp0</b><b id="matus-income">Rp0</b><b id="matus-savings">Rp0</b><b id="matus-map-state">Privat</b><b id="matus-memory-count">0 foto</b><div id="matus-insight-strip"></div><b id="matus-briefing-count">0</b><b id="matus-next-task">Jadwal tenang</b><span id="matus-next-time">Belum ada tugas</span></div>
+</div>
+</section>
+</main>
+</div>
+<section aria-labelledby="cv-overlay-title" aria-modal="true" class="cv-overlay hidden" id="fs-overlay" role="dialog">
+<header class="cv-overlay-head">
+<button aria-label="Kembali ke Couple Space" class="cv-back" id="close-couple-feature" type="button"><i data-fa="arrow-left"></i></button>
+<div class="cv-overlay-title"><span id="cv-overlay-kicker">COUPLE SPACE</span><h2 id="cv-overlay-title">Aktivitas</h2></div>
+<div class="cv-overlay-actions"><span class="cv-live"><i></i> Live</span><button aria-label="Musik" class="cv-icon-action" id="cv-overlay-music" type="button"><i data-fa="music"></i></button></div>
+</header>
+<main class="cv-overlay-body" id="fs-body">
+<section class="cv-feature-screen" data-feature-panel="activity" id="couple-activity-feature">
+<div class="act-dashboard">
+<header class="act-hero-pro">
+<div class="act-hero-copy">
+<span class="act-live-pill" id="activity-sync-status" role="status">Menunggu data</span>
+<p class="act-kicker"><i data-fa="bolt"></i> COUPLE ACTIVITY</p>
+<h3>Cerita kecil,<br/><em>terhubung setiap hari.</em></h3>
+<p class="act-lead">Pantau momen, tabungan, hadiah, lokasi, dan keuangan bersama secara privat.</p>
+<div class="act-trust-row">
+<span><i data-fa="lock"></i> Privat berdua</span>
+<span><i data-fa="rotate"></i> Real-time</span>
+<span><i data-fa="heart"></i> Selalu dekat</span>
+</div>
+</div>
+<div aria-hidden="true" class="act-hero-art">
+<div class="act-orbit orbit-one"></div><div class="act-orbit orbit-two"></div>
+<div class="act-heart-core"><i data-fa="heart"></i></div>
+<span class="act-float-card act-float-a"><i data-fa="piggy-bank"></i><b>Tabungan</b><small>Bertumbuh</small></span>
+<span class="act-float-card act-float-b"><i data-fa="location-dot"></i><b>Jejak</b><small>Tersimpan</small></span>
+</div>
+</header>
+<div class="act-stats" aria-label="Aktivitas 24 jam"><article><strong id="activity-total">0</strong><span>Cerita tersedia</span></article><article><strong id="activity-mine">0</strong><span>Dari kamu</span></article><article><strong id="activity-partner">0</strong><span>Dari pasangan</span></article></div><div class="act-content-grid">
+<aside class="act-overview-panel">
+<div class="act-section-head">
+<div><span>SALDO PEMBUKUAN</span><h4>Keuangan berdua</h4></div>
+<span class="act-secure"><i data-fa="shield"></i> Aman</span>
+</div>
+<div class="act-finance-summary" id="activity-finance-summary">
+<article class="act-fin-card act-me-card">
+<div class="act-fin-top"><span class="act-ava" id="cv-finance-me-avatar">I</span><div><small>Kamu</small><b id="cv-finance-me-name">Imam</b></div><i class="act-trend-icon" data-fa="arrow-trend-up"></i></div>
+<p class="act-balance-label">Saldo terakhir</p>
+<strong id="cv-finance-me-balance">Rp0</strong>
+<div class="act-spend-row"><span>Pengeluaran bulan ini</span><b id="cv-finance-me-spend">Rp0</b></div>
+<div class="act-card-line"><i></i></div>
+</article>
+<article class="act-fin-card act-partner-card">
+<div class="act-fin-top"><span class="act-ava" id="cv-finance-partner-avatar">P</span><div><small>Pasangan</small><b id="cv-finance-partner-name">Pasangan</b></div><i class="act-trend-icon" data-fa="heart-pulse"></i></div>
+<p class="act-balance-label">Saldo terakhir</p>
+<strong id="cv-finance-partner-balance">Rp0</strong>
+<div class="act-spend-row"><span>Pengeluaran bulan ini</span><b id="cv-finance-partner-spend">Rp0</b></div>
+<div class="act-card-line"><i></i></div>
+</article>
+</div>
+<div class="act-insight-card">
+<span class="act-insight-icon"><i data-fa="sparkles"></i></span>
+<div><b>Insight pasangan</b><p>Saldo mengikuti pembukuan terakhir, bukan direset saat bulan berganti. Data pasangan bisa tertunda.</p></div>
+</div>
+</aside>
+<main class="act-timeline-panel" id="mood-section">
+<div class="act-timeline-head">
+<div><span class="act-kicker-dark">CERITA TERBARU</span><h4>Timeline kalian</h4><p class="act-expiry-note"><i data-fa="clock"></i> Otomatis terhapus setelah 24 jam</p></div>
+<small class="act-count-pill" id="activity-feed-count">Live</small>
+</div>
+<div class="act-controls"><label>Cari cerita<input id="activity-search" type="search" placeholder="Judul, cerita, atau nama…" maxlength="160"/></label><label>Dari<select id="activity-actor"><option value="all">Semua pelaku</option><option value="me">Kamu</option><option value="partner">Pasangan</option></select></label><label>Urutan<select id="activity-order"><option value="newest">Terbaru</option><option value="oldest">Terlama</option></select></label></div><div class="act-control-actions"><button id="activity-reset" type="button">Reset filter</button><button id="activity-retry" type="button">Muat ulang</button></div><div class="act-filter-wrap">
+<div class="act-filter-bar" id="cv-activity-filters">
+<button class="act-filter-btn active" data-activity-filter="all" type="button"><i data-fa="timeline"></i> Semua</button>
+<button class="act-filter-btn" data-activity-filter="chat" type="button">Chat</button><button class="act-filter-btn" data-activity-filter="mood" type="button">Mood</button><button class="act-filter-btn" data-activity-filter="savings" type="button"><i data-fa="piggy-bank"></i> Tabungan</button>
+<button class="act-filter-btn" data-activity-filter="reward" type="button"><i data-fa="gift"></i> Hadiah</button>
+<button class="act-filter-btn" data-activity-filter="location" type="button"><i data-fa="location-dot"></i> Lokasi</button>
+<button class="act-filter-btn" data-activity-filter="finance" type="button"><i data-fa="wallet"></i> Keuangan</button>
+<button class="act-filter-btn" data-activity-filter="ai" type="button"><i data-fa="brain"></i> Laporan AI</button>
+</div>
+</div>
+<div class="act-feed-rail"><span></span></div>
+<p id="activity-feedback" class="act-feedback" role="status"></p><div class="act-feed" id="cv-activity-feed" aria-label="Daftar aktivitas"></div><button type="button" id="activity-more" class="hidden">Tampilkan berikutnya</button><p class="act-source-note">Hingga 80 catatan terbaru dari sumber data. Cerita 24 jam bukan arsip permanen. Menghapus cerita tidak membatalkan transaksi atau menghapus foto dan pesan aslinya.</p>
+</main>
+</div>
+</div>
+</section>
+<section class="cv-feature-screen v26-love-map v28-map-fullscreen hidden" data-feature-panel="map" id="couple-map-feature">
+<div class="v26-map-shell">
+<header class="v26-map-header">
+  <button aria-label="Kembali ke Couple Space" id="v630-map-back" type="button"><i data-fa="arrow-left"></i></button>
+  <div class="v26-map-brand"><span><i data-fa="heart"></i></span><div><small>RUANG PERJALANAN</small><h2>Album Jejak Cinta</h2></div></div>
+  <div class="v26-map-header-actions"><span class="map-performance-pill" id="cv-map-performance">Peta ringan</span><button aria-label="Cari alamat" id="v41-map-search-toggle" type="button"><i data-fa="magnifying-glass"></i></button><button aria-label="Ganti mode performa peta" id="cv-map-lite-toggle" type="button"><i data-fa="gauge-high"></i></button><button aria-label="Segarkan peta" id="cv-map-refresh" type="button"><i data-fa="rotate"></i></button></div>
+</header>
+<div class="map-search-bar hidden" id="v41-map-search"><div class="map-search-inner"><span><i data-fa="magnifying-glass"></i></span><input aria-label="Cari alamat" autocomplete="off" id="cv-map-search-input" placeholder="Cari alamat atau tempat…" type="search"/><button aria-label="Cari" id="cv-map-search-button" type="button"><i data-fa="arrow-right"></i></button><button aria-label="Tutup" id="v41-map-search-close" type="button"><i data-fa="xmark"></i></button></div><div class="map-search-suggestions" id="cv-map-suggestions"></div></div>
+<section aria-label="Rencanakan rute perjalanan" class="map-route-planner hidden" id="cv-map-route-planner">
+  <header class="map-route-planner-head"><div><small><i data-fa="route"></i> RUTE BERSAMA</small><b>Mau ke mana?</b><span>Rencanakan perjalanan seperti Google Maps, lalu biar Matus ikut nemenin.</span></div><button aria-label="Tutup perencana rute" id="cv-map-route-close" type="button"><i data-fa="xmark"></i></button></header>
+  <div class="map-route-fields">
+    <label><span>Mulai dari</span><div><i data-fa="circle-dot"></i><input id="cv-map-route-from" placeholder="Lokasi saya" type="text"/></div></label>
+    <label><span>Ke mana?</span><div><i data-fa="location-dot"></i><input id="cv-map-route-to" placeholder="Contoh: Dago, Bandung" type="text"/></div></label>
+  </div>
+  <div aria-label="Pilih moda perjalanan" class="map-route-modes" role="group"><button class="active" data-map-route-mode="driving" type="button"><i data-fa="car"></i><span>Mobil</span></button><button data-map-route-mode="motorcycle" type="button"><i data-fa="motorcycle"></i><span>Motor</span></button><button data-map-route-mode="walking" type="button"><i data-fa="person-walking"></i><span>Jalan</span></button></div>
+  <div class="map-route-actions"><button class="map-route-secondary" id="cv-map-route-use-current" type="button"><i data-fa="crosshairs"></i> Gunakan lokasiku</button><button class="map-route-primary" id="cv-map-route-plan" type="button"><i data-fa="route"></i> Cari rute</button></div>
+  <div class="map-route-result hidden" id="cv-map-route-result"><div class="map-route-result-head"><div><small>RUTE SIAP</small><b id="cv-map-route-title">—</b></div><strong id="cv-map-route-summary">—</strong></div><p id="cv-map-matus-tip">Matus sedang menyiapkan teman perjalanan lu.</p><div class="map-route-result-actions"><button id="cv-map-ask-matus" type="button"><i data-fa="sparkles"></i> Tanya Matus</button><button id="cv-map-share-route" type="button"><i data-fa="share-nodes"></i> Bagikan</button><button id="cv-map-save-trip" type="button"><i data-fa="heart"></i> Simpan ke Jalan Berdua</button></div></div>
+</section>
+<main class="v26-map-layout">
+  <section class="v26-map-stage" aria-label="Peta Jejak Cinta">
+    <div aria-label="Peta lokasi dan kenangan pasangan" class="cv-map v41-map-canvas" id="cv-map"></div>
+    <div class="cv-map-fallback"><small>Peta aktif · sentuh pin foto untuk membuka kenangan.</small></div>
+    <div class="gps-hud"><i data-fa="crosshairs"></i><span id="v41-gps-accuracy">GPS menunggu izin</span></div>
+    <div class="map-distance-card hidden" id="cm2-map-distance"><i data-fa="heart"></i><div><b id="cm2-map-distance-value">—</b><small>jarak kalian</small></div></div>
+    <div aria-label="Gaya peta" class="map-layer-switcher" role="group"><button aria-label="Peta jalan" class="active" data-map-layer="street" type="button"><i data-fa="map"></i></button><button aria-label="Satelit" data-map-layer="satellite" type="button"><i data-fa="globe"></i></button><button aria-label="Medan" data-map-layer="terrain" type="button"><i data-fa="mountain"></i></button><button aria-label="Malam" data-map-layer="dark" type="button"><i data-fa="moon"></i></button></div>
+    <div class="map-route-toast hidden"><i data-fa="route"></i><div><b>Rute kalian</b><span id="cv-route-status">Pilih lokasi berdua untuk membuat rute</span></div><strong id="cm2-route-distance">—</strong><small id="cm2-route-eta">—</small><button aria-label="Hapus rute" id="cv-map-clear-route" type="button"><i data-fa="xmark"></i></button></div>
+    <div class="v26-map-controls"><button aria-label="Buka album" id="v41-map-album-toggle" type="button"><i data-fa="images"></i><span>Album</span></button><button class="v26-capture" id="cv-add-footprint" type="button"><i data-fa="camera"></i><span>Abadikan jejak</span></button><button aria-label="Lokasi saya" id="cv-map-location" type="button"><i data-fa="crosshairs"></i></button><button aria-label="Rencanakan rute" id="cv-map-route" type="button"><i data-fa="route"></i></button><button aria-label="Lihat semua pin" id="cv-map-fit" type="button"><i data-fa="expand"></i></button></div>
+    <button aria-label="Pusatkan lokasi" class="map-compass" id="v41-map-compass" type="button"><i data-fa="location-arrow"></i></button>
+    <button class="v26-couple-pill" id="v41-map-live-toggle" type="button"><span class="map-status-avatars"><i id="cm2-map-me-avatar">I</i><i id="cm2-map-partner-avatar">P</i></span><span><b id="cm2-map-me-name">Kamu</b><small id="cm2-live-summary">Lokasi terakhir tersimpan</small></span><i data-fa="chevron-right"></i></button>
+    <div aria-live="polite" class="cm2-memory-preview hidden" id="cm2-memory-preview"></div>
+  </section>
+
+  <aside aria-hidden="true" class="map-album-panel" id="v41-map-drawer">
+    <div class="map-album-head"><div><span class="v26-kicker">CERITA DI PETA</span><h3>Jejak kalian</h3><p><span id="cm2-memory-visible">0</span> foto terhubung ke lokasi.</p></div><button aria-label="Tutup album" id="v41-map-drawer-close" type="button"><i data-fa="xmark"></i></button></div>
+    <section class="v26-last-locations" aria-label="Lokasi terakhir pasangan">
+      <div id="cm2-map-me"><article class="v26-person" id="cm2-me-row"><span id="cm2-me-avatar">I</span><div><small>LOKASI TERAKHIR</small><b id="cm2-me-name">Kamu</b><p id="cm2-me-state">Belum tersimpan</p></div><i></i></article></div>
+      <div id="cm2-map-partner"><article class="v26-person partner" id="cm2-partner-row"><span id="cm2-partner-avatar">P</span><div><small>LOKASI TERAKHIR</small><b id="cm2-partner-name">Pasangan</b><p id="cm2-partner-state">Belum tersimpan</p></div><i></i></article></div>
+      <span class="v26-hidden" id="cm2-map-me-state">Belum tersimpan</span><span class="v26-hidden" id="cm2-map-partner-state">Belum tersimpan</span><span class="v26-hidden" id="cv-distance">—</span>
+    </section>
+    <section class="journey-stats-card" aria-label="Statistik perjalanan dari foto"><div class="journey-stats-head"><div><span class="v26-kicker">JEJAK DARI FOTO</span><h3 id="cm2-journey-distance">0 km</h3><p id="cm2-journey-caption">Belum ada rute foto yang terhubung.</p></div><span class="journey-stats-icon"><i data-fa="route"></i></span></div><div class="journey-stats-grid"><div><b id="cm2-journey-photos">0</b><small>foto ber-GPS</small></div><div><b id="cm2-journey-places">0</b><small>tempat</small></div><div><b id="cm2-journey-cities">0</b><small>kota</small></div></div><div class="journey-owner-tabs" role="group" aria-label="Filter pemilik jejak"><button class="active" data-journey-owner="all" type="button"><i data-fa="user-group"></i> Gabungan</button><button data-journey-owner="me" type="button"><i data-fa="circle-dot"></i> Saya</button><button data-journey-owner="partner" type="button"><i data-fa="heart"></i> Pasangan</button></div><div class="journey-owner-split"><span id="cm2-journey-me">Saya 0 km</span><span id="cm2-journey-partner">Pasangan 0 km</span></div></section>
+    <div class="map-album-tabs"><button class="active" data-v41-drawer="memories" type="button"><i data-fa="images"></i> Foto kenangan</button><button data-v41-drawer="history" type="button"><i data-fa="clock-rotate-left"></i> Riwayat 24 jam</button></div>
+    <section class="map-album-body active" data-v41-panel="memories">
+      <div class="v41-memory-toolbar"><label class="v41-memory-search"><i data-fa="magnifying-glass"></i><input aria-label="Cari jejak" id="cm2-map-filter-input" placeholder="Cari foto atau alamat…" type="search"/></label><div class="v41-view-buttons"><button class="active" data-map-view="grid" type="button"><i data-fa="table-cells"></i></button><button data-map-view="timeline" type="button"><i data-fa="table-list"></i></button></div></div>
+      <div class="v41-filter-row"><button class="active" data-map-filter="all" type="button"><i data-fa="layer-group"></i> Semua</button><button data-map-filter="nearby" type="button"><i data-fa="location-dot"></i> Terdekat</button><button class="v26-hidden" data-map-filter="memories" type="button"><i data-fa="images"></i> Kenangan</button><button class="v26-hidden" data-map-filter="live" type="button"><i data-fa="crosshairs"></i> Live</button></div>
+      <div id="cv-footprint-list"></div>
+    </section>
+    <section class="map-album-body" data-v41-panel="history"><div class="v41-history-head"><span><b id="cmz-history-count">0</b> lokasi aktif · maksimum 24 jam</span><button id="cmz-clear-history" type="button"><i data-fa="trash"></i> Bersihkan milik saya</button></div><div class="cmz-location-history" id="cmz-location-history"></div></section>
+  </aside>
+</main>
+
+<div class="v41-map-live-panel" id="v41-map-live-panel"><div class="v41-live-head"><div><small>LOKASI BERDUA</small><b>Simpan posisi terakhir</b></div><span><i data-fa="lock"></i> Privat</span></div><p class="v26-live-copy">Saat berbagi dihentikan, posisi terakhir tetap tersedia untuk user dan partner.</p><div class="v41-share-controls"><label>Durasi<select id="cv-map-share-duration"><option value="15">15 menit</option><option value="30">30 menit</option><option selected value="60">1 jam</option><option value="120">2 jam</option></select></label><button id="cv-share-location" type="button"><i data-fa="crosshairs"></i> Simpan lokasi saya</button></div><div class="v41-live-secondary"><button id="cm2-copy-position" type="button"><i data-fa="share-nodes"></i> Bagikan</button><button id="cm2-meet-now" type="button"><i data-fa="heart"></i> Titik tengah</button><button id="cm2-fit-all" type="button"><i data-fa="expand"></i> Lihat semua</button><button class="v26-hidden" id="cv-map-meet" type="button">Titik tengah</button></div></div>
+</div>
+<div aria-labelledby="cm2-form-title" aria-modal="true" class="cm2-modal hidden" id="cv-footprint-modal" role="dialog"><div class="cm2-modal-card"><div class="cm2-form-hero"><span><i data-fa="heart"></i></span><div><h3 id="cm2-form-title">Abadikan jejak baru</h3><p>Setiap jejak wajib memiliki alamat dan titik peta.</p></div><button aria-label="Tutup" id="cv-footprint-close" type="button"><i data-fa="xmark"></i></button></div><form id="cv-footprint-form"><label>Judul momen<input id="cv-footprint-title" maxlength="80" placeholder="Contoh: Ngopi sore pertama" required type="text"/></label><div class="mp-form-row"><label>Alamat tempat<input id="cv-footprint-place" maxlength="120" placeholder="Tulis alamat lengkap" required type="text"/></label><label>Tanggal<input id="cv-footprint-date" required type="date"/></label></div><label>Cerita singkat<textarea id="cv-footprint-story" maxlength="500" placeholder="Apa yang membuat momen ini spesial?"></textarea></label><div class="mp-form-meta"><button id="cv-footprint-use-location" type="button"><i data-fa="crosshairs"></i> Gunakan GPS</button><span id="cv-footprint-coordinates">Koordinat wajib dipilih</span></div><label class="mp-file"><span class="mp-file-btn">Pilih foto</span><input accept="image/*" id="cv-footprint-photo" type="file"/><span id="cv-footprint-photo-name">Opsional · JPG/PNG</span></label><div class="cm2-form-actions"><button class="cm2-form-cancel" id="cv-footprint-cancel" type="button"><i data-fa="xmark"></i> Batal</button><button class="mp-submit" type="submit"><i data-fa="floppy-disk"></i> Simpan ke peta</button></div></form></div></div>
+</section>
+<section class="cv-feature-screen hidden" data-feature-panel="chat" id="couple-chat-feature">
+<div class="wa-chat-wrapper">
+<header class="wa-header">
+<button aria-label="Kembali ke Couple Space" class="wa-chat-back" id="cv-chat-back" type="button"><i data-fa="arrow-left"></i></button>
+<div class="wa-header-left">
+<div class="wa-avatar-wrap"><span class="wa-avatar-initial" id="partner-avatar">P</span><span class="wa-online-dot" id="wa-online-dot"></span></div>
+<div class="wa-header-info"><span class="wa-partner-name" id="partner-name">Couple Room</span><span class="wa-status-text" id="cv-chat-presence">Imam + Pasangan · Matus siap</span></div>
+</div>
+<div class="wa-room-members" aria-label="Anggota Couple Room"><span class="wa-room-member member-a" id="chat-member-a">I</span><span class="wa-room-member member-b" id="chat-member-b">P</span><span class="wa-room-member member-matus"><i data-fa="sparkles"></i></span></div>
+<div class="wa-header-right">
+<button aria-label="Cari pesan" class="wa-icon-btn" id="cv-chat-search-toggle" title="Cari pesan" type="button"><i data-fa="magnifying-glass"></i></button>
+<button aria-label="Menu chat" class="wa-icon-btn" id="cv-chat-more" title="Menu" type="button"><i data-fa="ellipsis-vertical"></i></button>
+</div>
+<div class="wa-dropdown hidden" id="wa-dropdown">
+<button class="wa-dd-item" id="clear-chat-btn" type="button"><i data-fa="delete-left"></i> Bersihkan Chat</button>
+<button class="wa-dd-item" id="wa-mute-btn" type="button"><i data-fa="bell"></i> Bisukan Notif</button>
+<button class="wa-dd-item" id="wa-summary-btn" type="button"><i data-fa="sparkles"></i> Ringkas dengan AI</button>
+</div>
+</header>
+<div class="wa-search-bar hidden" id="cv-chat-search"><i data-fa="magnifying-glass"></i><input autocomplete="off" id="cv-chat-search-input" placeholder="Cari pesan…" type="text"/><button aria-label="Tutup pencarian" id="cv-chat-search-close" type="button"><i data-fa="xmark"></i></button></div>
+<button class="wa-pinned hidden" id="cv-pinned-message" type="button"><span><i data-fa="thumbtack"></i></span><div><small>Pesan disematkan</small><b id="cv-pinned-text"></b></div></button>
+<div aria-live="polite" class="wa-chatbox" id="chat-messages"><div class="wa-empty"><span><i data-fa="heart-o"></i></span><b>Ruang chat kalian siap</b><p>Kirim pesan pertama.</p></div></div>
+<div class="wa-typing-indicator hidden" id="cv-typing"><span class="wa-typing-avatar" id="wa-typing-avatar">P</span><div class="wa-typing-bubble"><span></span><span></span><span></span></div></div>
+<div class="wa-emoji-panel hidden" id="cv-emoji-panel">
+<div class="wa-ep-tabs">
+<button aria-label="Emoji" class="wa-ep-tab active" data-ep="emoji" type="button"><i data-fa="face-smile"></i></button>
+<button aria-label="Stiker" class="wa-ep-tab" data-ep="sticker" type="button"><i data-fa="heart"></i></button>
+<button aria-label="GIF" class="wa-ep-tab" data-ep="gif" type="button"><i data-fa="film"></i></button>
+</div>
+<div class="wa-ep-body" id="ep-emoji">
+<div class="wa-emoji-cats">
+<button class="wa-ecat active" data-cat="recent" type="button"> <i data-fa="timeline"></i></button>
+<button class="wa-ecat" data-cat="love" type="button"> <i data-fa="heart"></i></button>
+<button class="wa-ecat" data-cat="face" type="button"> <i data-fa="face-smile"></i></button>
+<button class="wa-ecat" data-cat="nature" type="button"> <i data-fa="spa"></i></button>
+<button class="wa-ecat" data-cat="food" type="button"> <i data-fa="bowl-food"></i></button>
+</div>
+<div class="wa-emoji-grid" id="wa-emoji-grid"></div>
+</div>
+<div class="wa-ep-body hidden" id="ep-sticker"><div class="wa-sticker-grid" id="wa-sticker-grid"></div></div>
+<div class="wa-ep-body hidden" id="ep-gif"><div class="wa-gif-placeholder"><i data-fa="film"></i><p>GIF Romantis</p></div></div>
+</div>
+<div class="wa-reply-bar-input hidden" id="cv-reply-bar"><div class="wa-reply-bar-inner"><span class="wa-reply-accent"></span><div class="wa-reply-bar-info"><span class="wa-reply-bar-name">Membalas</span><span class="wa-reply-bar-text" id="cv-reply-text"></span></div></div><button aria-label="Batal balas" id="cv-reply-cancel" type="button"><i data-fa="xmark"></i></button></div>
+<button class="chat-latest hidden" id="chat-latest" type="button">Pesan terbaru ↓</button>
+<div class="matus-room-actions" aria-label="Aksi cepat Matus"><button data-matus-room-action="mention" type="button"><i data-fa="sparkles"></i> @Matus</button><button data-matus-room-action="summary" type="button"><i data-fa="list"></i> Ringkas</button><button data-matus-room-action="reply" type="button"><i data-fa="reply"></i> Bantu jawab</button><button data-matus-room-action="mediate" type="button"><i data-fa="scale-balanced"></i> Jalan tengah</button><button data-matus-room-action="plan" type="button"><i data-fa="calendar-check"></i> Buat rencana</button><button data-matus-room-action="memory" type="button"><i data-fa="image"></i> Simpan momen</button><button data-matus-room-action="task" type="button"><i data-fa="bell"></i> Pengingat</button></div>
+<p class="chat-send-status" id="chat-send-status" role="status" aria-live="polite"></p>
+<form class="wa-input-area" id="chat-form">
+<button aria-label="Emoji" class="wa-input-btn" id="chat-emoji" title="Emoji &amp; Stiker" type="button"><i data-fa="face-smile"></i></button>
+<div class="wa-input-box"><textarea autocomplete="off" id="chat-input" aria-label="Pesan untuk pasangan" aria-describedby="chat-send-status" enterkeyhint="enter" maxlength="2000" placeholder="Pesan…" rows="1"></textarea></div>
+<button aria-label="Kirim pesan" class="wa-send-btn" id="sendMsg" type="submit"><i data-fa="paper-plane"></i></button>
+</form>
+</div>
+</section>
+<section class="cv-feature-screen hidden" data-feature-panel="game" id="couple-game-feature">
+<div class="game-experience">
+<header class="game-topbar" id="game-main-title">
+<div class="game-top-left">
+<button class="game-back-btn hidden" id="back-to-lobby-btn" type="button"><i data-fa="arrow-left"></i><span>Semua game</span></button>
+<span class="game-brand-icon"><i data-fa="gamepad"></i></span>
+<div><small>COUPLE PLAYGROUND</small><h3>Game Pasangan <i data-fa="heart"></i></h3></div>
+</div>
+<div class="game-sync-badge live"><i></i><span id="game-sync-text">Live berdua</span></div>
+</header>
+<div class="game-lobby-pro" id="game-hub-lobby">
+<section class="game-lobby-hero">
+<div class="game-hero-copy">
+<span class="game-kicker"><i data-fa="sparkles"></i> PILIH, PUTAR, SERU-SERUAN</span>
+<h4>Biar roulette yang<br/><em>menentukan hari kalian.</em></h4>
+<p>Dua permainan sederhana untuk mengakhiri debat kecil: mau makan apa dan mau pergi ke mana.</p>
+<div class="game-live-note" id="game-live-result"><span><i data-fa="rotate"></i></span><div><b>Sinkron otomatis</b><small>Putaran dan hasil tampil di perangkat pasangan.</small></div></div>
+</div>
+<div aria-hidden="true" class="game-hero-orbit"><span class="go-ring go-one"></span><span class="go-ring go-two"></span><div class="go-core"><i data-fa="gamepad"></i></div><span aria-hidden="true" class="go-float go-food">🍜</span><span aria-hidden="true" class="go-float go-place">📍</span></div>
+</section>
+<div class="game-pick-head"><div><small>3 GAME TERSEDIA</small><h4>Pilih permainan</h4></div><span><i data-fa="lock"></i> Privat berdua</span></div>
+<div class="game-mode-grid">
+<button class="game-mode-card food-card" data-game-target="game-food" type="button">
+<span class="game-card-glow"></span><span class="game-number">01</span><span aria-hidden="true" class="game-mode-icon">🍜</span>
+<div class="game-card-copy"><small>FOOD ROULETTE</small><b>Makan apa?</b><p>Acak menu favorit dan biar satu pilihan mengakhiri perdebatan.</p></div>
+<span class="game-enter"><i data-fa="arrow-right"></i></span>
+</button>
+<button class="game-mode-card place-card" data-game-target="game-place" type="button">
+<span class="game-card-glow"></span><span class="game-number">02</span><span aria-hidden="true" class="game-mode-icon">🗺️</span>
+<div class="game-card-copy"><small>DATE DESTINATION</small><b>Kemana?</b><p>Temukan tujuan kencan berikutnya dalam satu putaran seru.</p></div>
+<span class="game-enter"><i data-fa="arrow-right"></i></span>
+</button>
+<button class="game-mode-card world-card" data-game-target="game-our-world" type="button"><span class="game-card-glow"></span><span class="game-number">03</span><span aria-hidden="true" class="game-mode-icon"><i data-fa="globe"></i></span><div class="game-card-copy"><small>LIVING COUPLE UNIVERSE</small><b>Our Little World</b><p>Masuk ke dunia 3D, jalani perjalanan cinta, peluk pasangan, dan tumbuhkan rumah kalian bersama.</p></div><span class="game-enter"><i data-fa="arrow-right"></i></span></button></div>
+</div>
+<div class="game-arena-container hidden" id="game-panels-container">
+<div class="game-panel hidden" data-kind="food" id="game-food">
+<div class="game-arena-grid">
+<section class="game-wheel-stage food-stage">
+<div class="game-stage-label"><span>FOOD ROULETTE</span><small>12+ pilihan</small></div>
+<div class="roulette-wrapper">
+<div class="roulette-machine">
+<div class="roulette-shine"></div><div class="roulette-arrow"><i data-fa="chevron-down"></i></div>
+<div class="roulette-wheel"><div class="roulette-inner" id="food-roulette-inner"></div></div>
+<span class="roulette-focus-line top"></span><span class="roulette-focus-line bottom"></span>
+</div>
+<button class="spin-btn" id="spin-food-btn" type="button"><span class="spin-icon"><i data-fa="rotate"></i></span><span><b>Putar roulette</b><small>Tap untuk menentukan menu</small></span></button>
+</div>
+<div class="roulette-result hidden" id="food-result"><span class="result-label">PILIHAN KALIAN</span><span class="result-emoji" id="food-result-emoji"><i data-fa="utensils"></i></span><b class="result-text" id="food-result-text">-</b><small class="result-sub" id="food-result-sub"></small><i class="result-spark r1" data-fa="sparkles"></i><i class="result-spark r2" data-fa="sparkles"></i></div>
+</section>
+<aside class="game-side-panel">
+<div class="game-custom-section"><div class="game-side-title"><span><i data-fa="plus"></i></span><div><b>Pilihan kalian</b><small>Tambahkan menu sendiri</small></div></div><div class="game-custom-input-row"><input autocomplete="off" id="custom-food-input" maxlength="28" placeholder="Contoh: Sate Madura" type="text"/><button id="add-custom-food-btn" type="button"><i data-fa="plus"></i><span>Tambah</span></button></div><div class="custom-tags" id="food-custom-tags"></div></div>
+<div class="game-history-section"><div class="game-side-title"><span><i data-fa="timeline"></i></span><div><b>Riwayat putaran</b><small>8 hasil terakhir</small></div></div><ul class="game-history" id="food-history"></ul></div>
+</aside>
+</div>
+</div>
+<div class="game-panel hidden" data-kind="place" id="game-place">
+<div class="game-arena-grid">
+<section class="game-wheel-stage place-stage">
+<div class="game-stage-label"><span>DATE DESTINATION</span><small>12+ tujuan</small></div>
+<div class="roulette-wrapper">
+<div class="roulette-machine">
+<div class="roulette-shine"></div><div class="roulette-arrow"><i data-fa="chevron-down"></i></div>
+<div class="roulette-wheel"><div class="roulette-inner" id="place-roulette-inner"></div></div>
+<span class="roulette-focus-line top"></span><span class="roulette-focus-line bottom"></span>
+</div>
+<button class="spin-btn" id="spin-place-btn" type="button"><span class="spin-icon"><i data-fa="rotate"></i></span><span><b>Putar roulette</b><small>Tap untuk menentukan tujuan</small></span></button>
+</div>
+<div class="roulette-result hidden" id="place-result"><span class="result-label">TUJUAN KALIAN</span><span class="result-emoji" id="place-result-emoji"><i data-fa="location-dot"></i></span><b class="result-text" id="place-result-text">-</b><small class="result-sub" id="place-result-sub"></small><i class="result-spark r1" data-fa="sparkles"></i><i class="result-spark r2" data-fa="sparkles"></i></div>
+</section>
+<aside class="game-side-panel">
+<div class="game-custom-section"><div class="game-side-title"><span><i data-fa="plus"></i></span><div><b>Pilihan kalian</b><small>Tambahkan tujuan sendiri</small></div></div><div class="game-custom-input-row"><input autocomplete="off" id="custom-place-input" maxlength="28" placeholder="Contoh: Alun-alun kota" type="text"/><button id="add-custom-place-btn" type="button"><i data-fa="plus"></i><span>Tambah</span></button></div><div class="custom-tags" id="place-custom-tags"></div></div>
+<div class="game-history-section"><div class="game-side-title"><span><i data-fa="timeline"></i></span><div><b>Riwayat putaran</b><small>8 hasil terakhir</small></div></div><ul class="game-history" id="place-history"></ul></div>
+</aside>
+</div>
+</div>
+<section aria-label="Our Little World 3D" class="game-panel ow-world hidden" id="game-our-world">
+<div class="ow-stage" id="ow-stage"><button class="ow-mobile-back" id="ow-mobile-back" type="button"><i data-fa="arrow-left"></i><span>Kembali</span></button><audio id="ow-music" loop="" playsinline="" preload="auto" src="/assets/couple-song.mp3"></audio><button class="ow-love-stage" id="ow-love-stage" type="button"><span><i data-fa="heart"></i></span><div><small id="ow-love-chapter">BAB 1 · AWAL CERITA</small><b id="ow-love-stage-name">Memulai Perjalanan</b><i><em id="ow-love-progress" style="width:8%"></em></i></div><i data-fa="chevron-up"></i></button><aside aria-label="Perjalanan cinta" class="ow-journey-panel hidden" id="ow-journey-panel" role="dialog"><header><div><small>OUR LOVE JOURNEY</small><h3>Kisah yang tumbuh seumur hidup</h3><p>Setiap tahap mengubah rumah, taman, cahaya, kenangan, dan misi dunia kalian.</p></div><button aria-label="Tutup perjalanan" id="ow-journey-close" type="button"><i data-fa="xmark"></i></button></header><div class="ow-journey-list" id="ow-journey-list"></div><footer><span><i data-fa="wand-magic-sparkles"></i> Tahap otomatis mengikuti usia hubungan</span><button id="ow-journey-auto" type="button">Gunakan tahap otomatis</button></footer></aside><canvas aria-label="Dunia 3D pasangan interaktif" id="ow-canvas"></canvas><div class="ow-loading" id="ow-loading"><span class="ow-loader"></span><b>Membangun dunia kalian…</b><small>Menyiapkan cahaya, taman, rumah, dan Matus</small></div><div class="ow-vignette"></div>
+<header class="ow-hud"><div class="ow-brand"><span><i data-fa="globe"></i></span><div><b>OUR LITTLE WORLD</b><small id="ow-time-label">Cinematic Couple Universe</small></div></div><div class="ow-presence"><i></i><div><b id="ow-partner-name">Dunia privat kalian</b><small id="ow-partner-state">Menyambungkan realtime…</small></div></div><button aria-label="Layar penuh" id="ow-fullscreen" type="button"><i data-fa="expand"></i></button></header>
+<div class="ow-story"><span>OUR HOME · DAY <b id="ow-day">1</b></span><h2 id="ow-story-title">Dunia kecil yang tumbuh bersama kalian.</h2><p id="ow-story-copy">Aktivitas, tugas, mood, kenangan, dan target kalian mengubah dunia ini secara otomatis.</p></div><div class="ow-mission" id="ow-mission"><span><i data-fa="wand-magic-sparkles"></i></span><div><small>TUGAS DUNIA HARI INI</small><b id="ow-mission-title">Menyiapkan tugas dari Matus…</b><i id="ow-mission-progress">Sinkron otomatis</i></div></div>
+<div aria-live="polite" aria-atomic="true" class="ow-toast hidden" id="ow-toast"><img alt="Matus" src="/assets/matus-character.webp"/><div><b>Matus</b><span id="ow-toast-text">Selamat datang kembali.</span></div></div><div class="ow-character-roster"><article class="ow-character-card you"><img alt="Karakter kamu" src="/assets/characters/user-avatar.webp"/><div><small>WORLD EXPLORER</small><b id="ow-user-character-name">Kamu</b><span><i style="width:92%"></i></span></div></article><div class="ow-bond"><i data-fa="heart"></i><b id="ow-bond-value">30%</b><small>LOVE ENERGY</small><span><i id="ow-bond-bar"></i></span></div><article class="ow-character-card partner"><img alt="Karakter pasangan" src="/assets/characters/partner-avatar.webp"/><div><small>SOUL PARTNER</small><b id="ow-partner-character-name">Pasangan</b><span><i style="width:87%"></i></span></div></article></div>
+<nav aria-label="Lokasi dunia" class="ow-locations"><button class="active" data-ow-focus="home"><i data-fa="house"></i><span>Rumah</span></button><button data-ow-focus="garden"><i data-fa="seedling"></i><span>Taman</span></button><button data-ow-focus="memory"><i data-fa="image"></i><span>Portal</span></button><button data-ow-focus="future"><i data-fa="star"></i><span>Masa Depan</span></button></nav>
+<div class="ow-game-stats"><span>LV <b id="ow-game-level">1</b></span><span><i data-fa="sparkles"></i><b id="ow-game-xp">0</b> XP</span><span><i data-fa="coins"></i><b id="ow-game-coins">0</b></span><i><em id="ow-game-progress"></em></i></div><div class="ow-actions"><button aria-expanded="false" class="ow-matus-action" id="ow-matus-assistant" type="button"><i data-fa="sparkles"></i><span>Matus</span></button><button aria-expanded="false" id="ow-play" type="button"><i data-fa="gamepad"></i><span>Mainkan</span></button><button class="ow-hug" id="ow-hug" type="button"><i data-fa="heart"></i><span>Kirim pelukan</span></button><button id="ow-photo" type="button"><i data-fa="camera"></i><span>Photo Mode</span></button></div><button class="ow-task-fab" id="ow-task-fab" type="button"><span><i data-fa="clipboard-check"></i><b id="ow-task-badge">0</b></span><div><small>MISI OTOMATIS</small><strong>Tugas Dunia</strong></div><i data-fa="chevron-up"></i></button><aside aria-label="Tugas dunia" class="ow-task-panel hidden" id="ow-task-panel" role="dialog"><header><div><small>LIVING WORLD MISSIONS</small><h3>Misi harian dunia kalian</h3><p>Selesaikan tiap aktivitas sekali sehari. Status dan hadiah tersinkron ke pasangan.</p></div><button aria-label="Tutup tugas" id="ow-task-close" type="button"><i data-fa="xmark"></i></button></header><div class="ow-task-list" id="ow-task-list"></div><footer><span id="ow-auto-environment"><i data-fa="cloud-sun"></i> Menyesuaikan waktu dan cuaca…</span><small>Semua perubahan berjalan otomatis</small></footer></aside><div class="ow-now-playing" id="ow-now-playing"><i data-fa="music"></i><div><small>NOW PLAYING</small><b>Our Couple Song</b></div><span><i></i><i></i><i></i></span><button aria-label="Jeda musik dunia" aria-pressed="true" id="ow-audio-toggle" type="button">Ⅱ</button></div>
+<aside aria-label="Matus Game Assistant" class="ow-matus-panel hidden" id="ow-matus-panel" role="dialog"><header><img alt="Matus" src="/assets/matus-character.webp"/><div><small>MATUS GAME ASSISTANT</small><h3>Matus siap memandu dunia</h3><p id="ow-matus-status">Memeriksa misi dan kondisi dunia kalian…</p></div><button aria-label="Tutup Matus" id="ow-matus-close" type="button"><i data-fa="xmark"></i></button></header><div class="ow-matus-message" id="ow-matus-message"><b>Matus</b><p>Tekan “Misi berikutnya” atau tulis perintah seperti makan, dansa, tanam, bintang, masak, portal, taman, dan rumah.</p></div><div class="ow-matus-quick"><button data-matus-game="next" type="button"><i data-fa="play"></i><span><b>Misi berikutnya</b><small>Pandu lalu jalankan aktivitas</small></span></button><button data-matus-game="briefing" type="button"><i data-fa="clipboard-check"></i><span><b>Cek dunia</b><small>Ringkasan XP, misi, dan pasangan</small></span></button><button data-matus-game="memory" type="button"><i data-fa="image"></i><span><b>Lihat kenangan</b><small>Antar ke Portal Kenangan</small></span></button><button data-matus-game="future" type="button"><i data-fa="star"></i><span><b>Masa depan</b><small>Antar ke kristal target bersama</small></span></button></div><form class="ow-matus-command" id="ow-matus-command"><input aria-label="Perintah untuk Matus" autocomplete="off" id="ow-matus-input" maxlength="80" placeholder="Contoh: Matus, ajak kami menanam"/><button aria-label="Kirim perintah" type="submit"><i data-fa="paper-plane"></i></button></form><footer><i></i><span>Perintah game berjalan langsung dan tersinkron dengan pasangan.</span></footer></aside><aside aria-label="Pusat gameplay" class="ow-gameplay-panel hidden" id="ow-gameplay-panel" role="dialog"><header><div><small>WORLD PLAY CENTER</small><h3>Aktivitas yang mengubah dunia</h3><p>Setiap aksi memberi efek visual dan hadiah XP satu kali per hari.</p></div><button aria-label="Tutup pusat gameplay" id="ow-gameplay-close" type="button"><i data-fa="xmark"></i></button></header><div class="ow-season-event" id="ow-season-event"></div><div class="ow-gameplay-body" id="ow-gameplay-body"></div></aside><div aria-hidden="true" class="ow-world-modal hidden" id="ow-world-modal" role="dialog"><section><header><div><small>INTERAKSI DUNIA</small><h3 id="ow-modal-title">Portal</h3></div><button aria-label="Tutup" id="ow-modal-close" type="button"><i data-fa="xmark"></i></button></header><div class="ow-modal-body" id="ow-modal-body"></div></section></div><div class="ow-fallback-world hidden" id="ow-fallback-world"><div class="ow-fallback-sky"><i></i><i></i><i></i></div><button class="ow-fallback-house" data-fallback-kind="home" type="button" aria-label="Masuk rumah"><i></i><span></span></button><button class="ow-fallback-tree" data-fallback-kind="tree" type="button" aria-label="Menanam di taman"><i></i><span></span></button><button class="ow-fallback-portal" data-fallback-kind="memory" type="button" aria-label="Buka Portal Kenangan"></button><button class="ow-fallback-crystal" data-fallback-kind="future" type="button" aria-label="Buka Masa Depan"></button><p>Mode Dunia Ringan · tetap bisa dimainkan offline</p></div><div class="ow-quality"><i></i><span>ULTRA · WEBGL</span><small>Geser untuk memutar · cubit untuk zoom</small></div>
+</div>
+</section></div>
+</div>
+</section>
+<section class="cv-feature-screen hidden" data-feature-panel="rewards" id="couple-rewards-feature"><div class="rw9-shell">
+<header class="rw9-topbar">
+<div class="rw9-brand">
+<button aria-label="Kembali ke Couple Space" class="rw9-back" id="rw9-back" type="button"><i data-fa="arrow-left"></i></button>
+<span class="rw9-mark"><i data-fa="gift"></i></span>
+<div><small>LOVE REWARDS</small><h2>Hadiah Cinta</h2></div>
+</div>
+<div class="rw9-top-status"><span><i></i> Sinkron langsung</span><p>Apresiasi kecil, hubungan makin hangat.</p></div>
+</header>
+<nav aria-label="Menu Hadiah" class="rw9-mobile-tabs" role="tablist">
+<button aria-selected="true" class="active" data-reward-mobile-tab="overview" role="tab" type="button"><i data-fa="gem"></i><span>Ringkasan</span></button>
+<button aria-selected="false" data-reward-mobile-tab="missions" role="tab" type="button"><i data-fa="sparkles"></i><span>Misi</span></button>
+<button aria-selected="false" data-reward-mobile-tab="catalog" role="tab" type="button"><i data-fa="gift"></i><span>Katalog</span></button>
+</nav>
+<main class="rw9-workspace">
+<section aria-label="Ringkasan poin" class="rw9-panel rw9-overview active" data-reward-mobile-panel="overview">
+<div class="rw9-panel-heading"><span>RINGKASAN</span><h3>Poin cinta kalian</h3><p>Satu saldo bersama untuk hadiah yang bermakna.</p></div>
+<div class="rw9-overview-content"><div class="reward-pro-hero">
+<div class="reward-pro-glow"></div>
+<div class="reward-pro-head">
+<div class="reward-pro-icon"><i data-fa="gift"></i></div>
+<div>
+<span class="reward-pro-kicker">Reward Couple Pro</span>
+<h3>Hadiah Cinta</h3>
+<p>Tukar poin, buat hadiah custom, dan pantau reward yang sudah kalian klaim.</p>
+</div>
+</div>
+<div class="reward-pro-points">
+<div class="reward-pro-total">
+<small>Poin Kamu (Bisa Ditukar)</small>
+<strong><span id="total-redeemable-points">0</span> <i data-fa="gem"></i></strong>
+</div>
+<div class="reward-pro-duo">
+<span><i id="cv-reward-me-label">Kamu</i> <b id="reward-user-points">0</b></span>
+<span><i id="cv-reward-partner-label">Partner</i> <b id="reward-partner-points">0</b></span>
+</div>
+</div>
+</div><div class="reward-pro-stats">
+<div class="reward-pro-stat"><span class="stat-ic"><i data-fa="check"></i></span><span><b id="claimed-rewards-count">0</b><small>Diklaim</small></span></div>
+<div class="reward-pro-stat"><span class="stat-ic"><i data-fa="fire"></i></span><span><b id="love-streak-days">0</b><small>Love Streak</small></span></div>
+<div class="reward-pro-stat"><span class="stat-ic"><i data-fa="lock"></i></span><span><b id="available-rewards-count">0</b><small>Bisa Ditukar</small></span></div>
+</div></div>
+</section>
+<section aria-label="Misi harian" class="rw9-panel rw9-missions" data-reward-mobile-panel="missions">
+<div class="rw9-panel-heading"><span>MISI HARIAN</span><h3>Tumbuh lewat kebiasaan kecil</h3><p>Selesaikan aksi sederhana bersama setiap hari.</p></div>
+<div class="rw9-missions-content"><section aria-labelledby="reward-quest-title" class="reward-daily-quest">
+<div class="reward-quest-head"><div><span><i data-fa="sparkles"></i> DAILY LOVE QUEST</span><h3 id="reward-quest-title">Kumpulkan poin sambil hadir untuk pasangan</h3><p>Setiap misi hanya memberi poin satu kali per hari dan akun harus online.</p></div><div class="reward-quest-ring"><b id="reward-daily-progress">0/5</b><small>selesai</small></div></div>
+<div class="reward-quest-grid">
+<article data-reward-mission="online"><span><i data-fa="hand"></i></span><div><b>Buka aplikasi</b><small>Hadir online hari ini</small></div><strong>+5</strong><i data-fa="check"></i></article>
+<article data-reward-mission="expense"><span><i data-fa="clipboard-list"></i></span><div><b>Catat pengeluaran</b><small>Minimal satu transaksi</small></div><strong>+15</strong><i data-fa="check"></i></article>
+<article data-reward-mission="chat"><span><i data-fa="comment"></i></span><div><b>Chat pasangan</b><small>Kirim pesan penuh perhatian</small></div><strong>+10</strong><i data-fa="check"></i></article>
+<article data-reward-mission="location"><span><i data-fa="map"></i></span><div><b>Berbagi peta</b><small>Bagikan lokasi sementara</small></div><strong>+15</strong><i data-fa="check"></i></article>
+<article data-reward-mission="savings"><span><i data-fa="piggy-bank"></i></span><div><b>Isi Celengan</b><small>Poin hanya 1× sehari</small></div><strong>+25</strong><i data-fa="check"></i></article>
+</div>
+<div class="reward-partner-progress"><span><i data-fa="hearts"></i></span><p><b id="reward-partner-mission-count">0/5 misi pasangan selesai</b><small>Poin kalian terkumpul realtime di ruang yang sama.</small></p></div>
+</section></div>
+</section>
+<section aria-label="Katalog hadiah" class="rw9-panel rw9-catalog" data-reward-mobile-panel="catalog">
+<div class="rw9-panel-heading rw9-catalog-heading"><div><span>KATALOG</span><h3>Pilih hadiah berikutnya</h3><p>Filter koleksi atau buat hadiah versi kalian sendiri.</p></div></div>
+<div class="rw9-catalog-content"><div class="reward-range-note"><span><i data-fa="gem"></i></span><div><b>Katalog hadiah premium</b><br/>Semua hadiah dapat ditukar dengan 1.000–4.000 koin cinta.</div></div><div class="reward-pro-toolbar">
+<div aria-label="Filter hadiah" class="reward-filter-tabs" id="reward-filter-tabs"></div>
+<button class="reward-custom-toggle" id="reward-custom-toggle" type="button"><i data-fa="plus"></i> Hadiah Custom</button>
+</div><form class="reward-custom-form hidden" id="reward-custom-form">
+<input id="reward-custom-title" maxlength="60" placeholder="Nama hadiah, contoh: Es krim date" required="" type="text"/>
+<input id="reward-custom-cost" max="4000" min="1000" placeholder="1.000–4.000 koin" required="" step="100" type="number"/>
+<input id="reward-custom-icon" maxlength="4" placeholder="Pilih ikon hadiah" type="text"/>
+<textarea id="reward-custom-desc" placeholder="Deskripsi hadiah custom"></textarea>
+<button type="submit"><i data-fa="check"></i> Simpan Hadiah</button>
+</form><div class="reward-pro-grid" id="rewards-list"></div><div class="reward-chat-note" id="reward-chat-note">🎁 Setiap hadiah yang ditukar otomatis dikirim ke chat pasangan.</div></div>
+</section>
+</main>
+</div></section>
+<section class="cv-feature-screen hidden trip-feature" data-feature-panel="trip" id="couple-trip-feature">
+<div class="trip-shell">
+<header class="trip-topbar"><div class="trip-brand"><span aria-hidden="true" class="trip-logo-mark"><img alt="" src="/assets/branding/jalan-berdua-logo.webp"/></span><div><small>JALAN BERDUA · COUPLE TRAVEL</small><h2>Jalan Berdua</h2></div></div><div aria-live="polite" class="trip-sync-status" id="trip-sync-status"><i></i><div><b id="trip-sync-label">Siap disimpan</b><small id="trip-sync-detail">Perubahan hanya di perangkat ini</small></div></div><div class="trip-top-actions"><button aria-label="Simpan rencana" class="trip-save-btn" id="trip-save" type="button"><i data-fa="floppy-disk"></i><span>Simpan rencana</span></button><button aria-label="Simpan sebagai Excel" class="trip-export-btn" id="trip-export-excel" type="button"><i data-fa="file-excel"></i><span>Simpan Excel</span></button></div></header>
+<nav aria-label="Bagian Jalan Berdua" class="trip-mobile-tabs" id="trip-mobile-tabs" role="tablist"><button aria-selected="true" class="active" data-trip-tab="basics" role="tab" type="button"><i data-fa="route"></i><span>Rencana</span></button><button aria-selected="false" data-trip-tab="budget" role="tab" type="button"><i data-fa="wallet"></i><span>Budget</span></button><button aria-selected="false" data-trip-tab="result" role="tab" type="button"><i data-fa="chart-pie"></i><span>Dashboard</span></button><button aria-selected="false" data-trip-tab="expenses" role="tab" type="button"><i data-fa="receipt"></i><span>Pengeluaran</span></button><button aria-selected="false" data-trip-tab="daily" role="tab" type="button"><i data-fa="calendar-day"></i><span>Itinerary</span></button><button aria-selected="false" data-trip-tab="checklist" role="tab" type="button"><i data-fa="list-check"></i><span>Checklist</span></button><button aria-selected="false" data-trip-tab="savings" role="tab" type="button"><i data-fa="piggy-bank"></i><span>Tabungan</span></button><button aria-selected="false" data-trip-tab="matus" role="tab" type="button"><i data-fa="sparkles"></i><span>Matus</span></button><button aria-selected="false" data-trip-tab="links" role="tab" type="button"><i data-fa="link"></i><span>Terhubung</span></button></nav>
+<main class="trip-body">
+<section class="trip-hero" data-trip-panel="basics"><div><span class="trip-kicker"><i data-fa="sparkles"></i> RENCANA LIBURAN BERDUA</span><h1>Jangan cuma bilang “kapan-kapan”.<br/><em>Hitung dulu, baru berangkat.</em></h1><p>Masukkan tujuan dan gaya perjalanan. Matus bantu membagi budget untuk transportasi, penginapan, makan, wisata, dan dana cadangan.</p></div><div class="trip-hero-orbit"><span></span><span></span><b><i data-fa="heart"></i></b></div></section>
+<div class="trip-layout">
+<section class="trip-form-card" data-trip-panel="basics"><div class="trip-card-head"><div><span>01 · DASAR PERJALANAN</span><h3>Rencananya ke mana?</h3></div><span class="trip-live-dot"><i></i> Berdua</span></div>
+<div class="trip-form-grid"><label>Dari mana<input id="trip-origin" maxlength="80" placeholder="Contoh: Jakarta" type="text"/></label><label>Ke mana<input id="trip-destination" maxlength="80" placeholder="Contoh: Yogyakarta" required type="text"/></label><label>Berapa hari<input id="trip-days" min="1" max="30" value="3" type="number"/></label><label>Berapa malam<input id="trip-nights" min="0" max="29" value="2" type="number"/></label><label>Jumlah orang<input id="trip-travelers" min="1" max="12" value="2" type="number"/></label><label>Berangkat<input id="trip-start-date" type="date"/></label></div>
+<div class="trip-style-row"><span>Gaya perjalanan</span><button class="active" data-trip-style="balanced" type="button">Seimbang</button><button data-trip-style="budget" type="button">Hemat</button><button data-trip-style="comfort" type="button">Nyaman</button></div>
+</section>
+<section class="trip-form-card" data-trip-panel="budget"><div class="trip-card-head"><div><span>02 · ASUMSI BIAYA</span><h3>Budget kalian</h3></div><span class="trip-edit-note">Bisa diubah</span></div>
+<div class="trip-form-grid trip-cost-grid"><label>Budget maksimal<input id="trip-budget" min="0" value="5000000" type="number"/></label><label>Dana tersedia<input id="trip-saved" min="0" value="0" type="number"/></label><label>Total aktual otomatis<input id="trip-actual" min="0" readonly value="0" type="number"/><small>Dihitung dari Pengeluaran Aktual</small></label><label>Transport pergi-pulang<input id="trip-transport" min="0" value="1200000" type="number"/></label><label>Hotel / malam<input id="trip-lodging" min="0" value="450000" type="number"/></label><label>Makan / orang / hari<input id="trip-meal" min="0" value="60000" type="number"/></label><label>Transport lokal / hari<input id="trip-local-transport" min="0" value="120000" type="number"/></label><label>Wisata &amp; aktivitas<input id="trip-activities" min="0" value="300000" type="number"/></label><label>Dana cadangan<input id="trip-buffer" min="0" max="30" value="12" type="number"/></label><label>Inflasi tahunan<input id="trip-inflation" min="0" max="50" step="0.01" value="3.19" type="number"/></label></div><div class="trip-inflation-note" id="trip-inflation-note">Asumsi BPS Agustus 2026 · otomatis menyesuaikan jarak waktu keberangkatan.</div>
+<div class="trip-preset-row"><button data-trip-preset="budget" type="button">Atur hemat</button><button data-trip-preset="balanced" type="button">Atur seimbang</button><button data-trip-preset="comfort" type="button">Atur nyaman</button></div>
+</section>
+<section class="trip-result-card" data-trip-panel="result" aria-live="polite"><div class="trip-result-top"><div><span class="trip-kicker">ESTIMASI TOTAL</span><strong id="trip-total">Rp0</strong><p id="trip-status-copy">Isi tujuan dan budget untuk mulai menghitung.</p></div><div class="trip-status-badge" id="trip-status-badge">Belum dihitung</div></div><div class="trip-breakdown" id="trip-breakdown"></div><div class="trip-compare"><div><span>Rencana</span><b id="trip-plan-compare">Rp0</b></div><i>vs</i><div><span>Aktual</span><b id="trip-actual-compare">Rp0</b></div><small id="trip-actual-copy">Catat pengeluaran perjalanan di Keuangan, lalu masukkan total aktual di atas.</small></div><div class="trip-progress"><div><span>Budget maksimal</span><b id="trip-budget-label">Rp0</b></div><div class="trip-track"><i id="trip-budget-fill"></i></div><small id="trip-gap">—</small></div></section>
+<section class="trip-dashboard-sheet" data-trip-panel="result"><header class="trip-sheet-head"><div><span>DASHBOARD JALAN BERDUA</span><h3>Ringkasan yang sama dengan Excel</h3></div><span class="trip-sheet-sync"><i></i> Data sinkron</span></header><div class="trip-dashboard-route"><div><span>Rute</span><b id="trip-dash-route">—</b></div><div><span>Tanggal</span><b id="trip-dash-date">—</b></div><div><span>Durasi</span><b id="trip-dash-duration">—</b></div><div><span>Orang</span><b id="trip-dash-travelers">—</b></div></div><div class="trip-dashboard-money"><div><span class="trip-metric-icon"><i data-fa="wallet"></i></span><span>Budget maksimal</span><b id="trip-dash-budget">Rp0</b></div><div><span class="trip-metric-icon"><i data-fa="calculator"></i></span><span>Estimasi total</span><b id="trip-dash-estimate">Rp0</b></div><div><span class="trip-metric-icon"><i data-fa="receipt"></i></span><span>Aktual keluar</span><b id="trip-dash-actual">Rp0</b></div><div><span class="trip-metric-icon"><i data-fa="shield"></i></span><span>Sisa budget</span><b id="trip-dash-remaining">Rp0</b></div></div><div class="trip-dashboard-quick"><div><span class="trip-metric-icon"><i data-fa="bullseye"></i></span><span>Target perjalanan</span><b id="trip-dash-saving-target">Rp0</b></div><div><span class="trip-metric-icon"><i data-fa="piggy-bank"></i></span><span>Dana terkumpul</span><b id="trip-dash-saved">Rp0</b></div><div><span class="trip-metric-icon"><i data-fa="calendar-day"></i></span><span>Agenda tersimpan</span><b id="trip-dash-agendas">0 agenda</b></div><div><span class="trip-metric-icon"><i data-fa="list-check"></i></span><span>Checklist selesai</span><b id="trip-dash-checklist">0 selesai</b></div></div></section><section class="trip-budget-sheet" data-trip-panel="result"><header class="trip-sheet-head"><div><span>RENCANA BUDGET JALAN BERDUA</span><h3>Estimasi dan realisasi per kategori</h3></div><span class="trip-sheet-status" id="trip-budget-sheet-status">Isi budget</span></header><div class="trip-budget-table-wrap"><table class="trip-budget-table"><thead><tr><th>Kategori</th><th>Estimasi</th><th>Realisasi</th><th>Sisa</th><th>Status</th></tr></thead><tbody id="trip-budget-alignment-body"></tbody><tfoot><tr><th>Total</th><th id="trip-budget-alignment-estimate">Rp0</th><th id="trip-budget-alignment-actual">Rp0</th><th id="trip-budget-alignment-remaining">Rp0</th><th></th></tr></tfoot></table></div></section>
+<section class="trip-expense-card" data-trip-panel="expenses"><div class="trip-card-head"><div><span>03 · PENGELUARAN AKTUAL</span><h3>Catat biaya yang benar-benar keluar</h3></div><small id="trip-expense-sync-note">Tersimpan bersama</small></div><form class="trip-expense-form" id="trip-expense-form"><label>Tanggal<input id="trip-expense-date" required type="date"/></label><label>Nominal<input id="trip-expense-amount" min="1000" placeholder="Contoh: 150000" required type="number"/></label><label>Kategori<select id="trip-expense-category"><option>Transportasi</option><option>Transport lokal</option><option>Penginapan</option><option>Makan</option><option>Wisata</option><option>Belanja</option><option>Cadangan</option><option>Lainnya</option></select></label><label>Metode<select id="trip-expense-method"><option>Transfer</option><option>Tunai</option><option>E-wallet</option><option>Kartu</option><option>Lainnya</option></select></label><label>Dibayar oleh<select id="trip-expense-payer"><option value="me">Saya</option><option value="partner">Pasangan</option><option value="shared">Bersama</option></select></label><label>Catatan<input id="trip-expense-note" maxlength="80" placeholder="Contoh: makan malam" type="text"/></label><button class="trip-expense-add" type="submit"><i data-fa="plus"></i> Tambah</button></form><div class="trip-expense-summary"><div><span>Total aktual</span><b id="trip-expense-total">Rp0</b></div><div><span>Saya bayar</span><b id="trip-expense-mine">Rp0</b></div><div><span>Pasangan bayar</span><b id="trip-expense-partner">Rp0</b></div><div><span>Bersama</span><b id="trip-expense-shared">Rp0</b></div></div><div class="trip-expense-list" id="trip-expense-list"></div></section>
+<section class="trip-lower-grid"><section class="trip-day-card" data-trip-panel="daily"><div class="trip-card-head"><div><span>04 · ANGGARAN &amp; ITINERARY</span><h3>Hari kalian lebih jelas</h3></div><button class="trip-inline-action" data-trip-action="maps" type="button"><i data-fa="map"></i> Buka Maps</button></div><div class="trip-day-list" id="trip-day-list"></div><div class="trip-itinerary-toolbar"><div class="trip-itinerary-day-picker"><span>PILIH HARI</span><div aria-label="Pilih hari itinerary" class="trip-itinerary-day-tabs" id="trip-itinerary-day-tabs" role="tablist"></div></div><div class="trip-itinerary-toolbar-actions"><button class="trip-itinerary-analyze" id="trip-itinerary-analyze" type="button"><i data-fa="sparkles"></i><span>Analisis Matus</span></button><button aria-expanded="false" class="trip-itinerary-add-open" id="trip-itinerary-add-open" type="button"><i data-fa="plus"></i><span>Tambah agenda</span></button></div></div><section class="trip-itinerary-editor hidden" id="trip-itinerary-editor"><div class="trip-itinerary-editor-head"><div><span>ISI AGENDA</span><b id="trip-itinerary-editor-title">Tambah agenda baru</b><small>Isi waktu, tempat, lalu detail biaya. Semua dapat diedit kembali.</small></div><div class="trip-editor-head-actions"><span class="trip-editor-step">Mudah · 3 langkah</span><button aria-label="Tutup editor agenda" id="trip-itinerary-editor-close" type="button"><i data-fa="xmark"></i></button></div></div><div class="trip-itinerary-editing hidden" id="trip-itinerary-editing"><i data-fa="pen"></i><span>Sedang mengedit <b id="trip-itinerary-editing-name">agenda</b></span></div><form class="trip-itinerary-form" id="trip-itinerary-form"><input id="trip-itinerary-edit-id" type="hidden"/><div class="trip-itinerary-group trip-itinerary-when"><div class="trip-itinerary-group-title"><span>1</span><b>Waktu</b></div><div class="trip-itinerary-fields"><label>Hari<select id="trip-itinerary-day"></select></label><label>Jam mulai<input id="trip-itinerary-time" type="time" value="09:00"/></label><label>Durasi<input id="trip-itinerary-duration" maxlength="30" placeholder="Contoh: 2 jam" type="text"/></label></div></div><div class="trip-itinerary-group trip-itinerary-where"><div class="trip-itinerary-group-title"><span>2</span><b>Agenda &amp; tempat</b></div><div class="trip-itinerary-fields"><label class="trip-field-wide">Nama agenda<input id="trip-itinerary-title" maxlength="80" placeholder="Contoh: Sarapan dan jalan pagi" required type="text"/></label><label class="trip-field-wide">Nama lokasi<input id="trip-itinerary-place" maxlength="100" placeholder="Contoh: Malioboro, Yogyakarta" required type="text"/><small>Link Google Maps dibuat otomatis.</small></label></div></div><div class="trip-itinerary-group trip-itinerary-detail"><div class="trip-itinerary-group-title"><span>3</span><b>Detail</b></div><div class="trip-itinerary-fields"><label>Estimasi biaya<input id="trip-itinerary-cost" min="0" placeholder="0" value="0" type="number"/></label><label>Transport<input id="trip-itinerary-transport" maxlength="40" placeholder="Contoh: Jalan kaki" type="text"/></label><label>Status<select id="trip-itinerary-status"><option>Rencana</option><option>Dipesan</option><option>Selesai</option><option>Dibatalkan</option></select></label></div></div><div class="trip-itinerary-form-actions"><button class="trip-itinerary-submit" id="trip-itinerary-submit" type="submit"><i data-fa="plus"></i><span id="trip-itinerary-submit-label">Tambah agenda</span></button><button class="trip-itinerary-cancel hidden" id="trip-itinerary-cancel" type="button"><i data-fa="xmark"></i> Batalkan edit</button></div></form></section><div class="trip-itinerary-total"><span>Total estimasi biaya agenda</span><b id="trip-itinerary-cost-total">Rp0</b></div><section aria-live="polite" class="trip-route-analysis" id="trip-route-analysis"><div class="trip-route-analysis-empty"><span><i data-fa="route"></i></span><div><b>Rute Hari 1 belum dianalisis</b><small>Matus akan membaca jarak, waktu tempuh, dan traffic tanpa menambah isian form.</small></div></div></section><div class="trip-itinerary-list" id="trip-itinerary-list"></div></section><section class="trip-matus-card" data-trip-panel="matus"><div class="trip-matus-head"><span><i data-fa="sparkles"></i></span><div><span>MATUS</span><h3>Gua bantu cek</h3></div></div><p id="trip-matus-output">Isi detail perjalanan dulu. Nanti gua bilang terus terang: cukup, mepet, atau belum masuk akal.</p><div class="trip-matus-actions"><button data-trip-matus-action="check" type="button"><i data-fa="calculator"></i> Cek budget</button><button data-trip-matus-action="split" type="button"><i data-fa="user-group"></i> Bagi biaya</button><button data-trip-matus-action="itinerary" type="button"><i data-fa="route"></i> Susun itinerary</button><button data-trip-matus-action="summary" type="button"><i data-fa="clipboard-list"></i> Buat rekap</button></div><button id="trip-ask-matus" type="button"><i data-fa="comments"></i> Tanya Matus</button></section></section>
+<section class="trip-savings-card" data-trip-panel="savings"><div><span class="trip-kicker"><i data-fa="piggy-bank"></i> TARGET CELENGAN CINTA</span><h3 id="trip-saving-title">Kekurangan dana</h3><p id="trip-saving-copy">Belum ada rencana yang dihitung.</p></div><div class="trip-saving-number" id="trip-saving-number">Rp0</div><button id="trip-create-saving" type="button"><i data-fa="piggy-bank"></i> Jadikan target tabungan</button></section>
+<section class="trip-checklist-card" data-trip-panel="checklist"><div class="trip-card-head"><div><span>05 · KESIAPAN</span><h3>Checklist Perjalanan</h3></div><small id="trip-checklist-count">0/10 siap</small></div><p class="trip-checklist-note">Tugas, pemilik, deadline, status, dan catatan sama persis dengan Excel.</p><div class="trip-checklist-list" id="trip-checklist-list"></div></section>
+<section class="trip-integrations-card" data-trip-panel="links"><div class="trip-card-head"><div><span>TERHUBUNG KE RUANG KALIAN</span><h3>Satu rencana, enam tempat kerja</h3></div><small>Semua tetap di bawah kendali kalian</small></div><div class="trip-integrations-grid"><button data-trip-link="room" type="button"><span><i data-fa="comments"></i></span><b>Couple Room</b><small>Diskusikan bareng</small></button><button data-trip-link="matus" type="button"><span><i data-fa="sparkles"></i></span><b>Matus AI</b><small>Hitung &amp; kasih saran</small></button><button data-trip-link="savings" type="button"><span><i data-fa="piggy-bank"></i></span><b>Celengan Cinta</b><small>Kejar target dana</small></button><button data-trip-link="map" type="button"><span><i data-fa="map"></i></span><b>Maps</b><small>Lihat tujuan &amp; rute</small></button><button data-trip-link="memories" type="button"><span><i data-fa="image"></i></span><b>Kenangan</b><small>Simpan foto perjalanan</small></button><button data-trip-link="finance" type="button"><span><i data-fa="wallet"></i></span><b>Keuangan</b><small>Bandingkan aktual</small></button></div></section>
+</main>
+</div>
+</section>
+<section class="cv-feature-screen sv2-feature hidden" data-feature-panel="savings" id="couple-savings-feature">
+<div class="savings-fullscreen-wrapper sv2-shell">
+<header class="sv2-topbar">
+<div class="sv2-brand">
+<span class="sv2-brand-icon"><i data-fa="piggy-bank"></i></span>
+<div><p><i></i> TABUNGAN PASANGAN · REALTIME</p><h2>Celengan Cinta</h2><small>Rencana kecil hari ini, mimpi besar berdua.</small></div>
+</div>
+<div class="sv2-top-actions">
+<span class="sb-connected-pill not-connected" id="sb-connected-pill"><span class="sb-cpill-dot"></span><span id="sb-connected-pill-text">Belum terhubung</span></span>
+<button class="sv2-target-action" id="sb-target-btn" type="button"><i data-fa="bullseye"></i><span id="sb-target-btn-label">Atur target</span></button>
+</div>
+</header>
+<nav aria-label="Menu tabungan mobile" class="sv2-mobile-tabs" id="sv2-mobile-tabs" role="tablist">
+<button aria-selected="true" class="active" data-savings-mobile-tab="summary" role="tab" type="button"><i data-fa="chart-pie"></i><span>Ringkasan</span></button>
+<button aria-selected="false" data-savings-mobile-tab="deposit" role="tab" type="button"><i data-fa="plus"></i><span>Setor</span></button>
+<button aria-selected="false" data-savings-mobile-tab="progress" role="tab" type="button"><i data-fa="arrow-trend-up"></i><span>Progress</span></button>
+<button aria-selected="false" data-savings-mobile-tab="history" role="tab" type="button"><i data-fa="clock-rotate-left"></i><span>Riwayat</span></button>
+</nav>
+<div aria-hidden="true" class="sv2-celebration" id="sv2-celebration"></div>
+<section aria-label="Ringkasan tabungan" class="sv2-hero-grid">
+<article class="sv2-goal-card" data-savings-pane="summary">
+<div class="sv2-goal-glow"></div>
+<div class="sv2-goal-head">
+<div><span class="sb-hero-badge" id="sb-hero-badge">Dana Kencan Impian</span><h3>Mimpi kalian makin dekat.</h3></div>
+<span class="sv2-private"><i data-fa="lock"></i> Privat berdua</span>
+</div>
+<div class="sv2-total-label">TOTAL TERKUMPUL</div>
+<div class="sv2-total-amount" id="sv2-total-amount">Rp0</div>
+<div class="sv2-total-target">dari <strong id="sv2-total-target">Rp0</strong></div>
+<div class="sv2-total-track"><i id="sv2-total-progress" style="width:0%"></i></div>
+<div class="sv2-total-meta"><strong id="sv2-total-progress-label">0% tercapai</strong><span id="sv2-total-remaining">Target belum diatur</span></div>
+<div aria-label="Milestone target" class="sv2-milestones">
+<span data-sv2-milestone="25"><i></i>25%</span><span data-sv2-milestone="50"><i></i>50%</span><span data-sv2-milestone="75"><i></i>75%</span><span data-sv2-milestone="100"><i></i>100%</span>
+</div>
+<div class="sv2-goal-foot">
+<div><span>Perkiraan tercapai</span><strong id="sv2-forecast-date">Atur target</strong></div>
+<div><span>Kecepatan saat ini</span><strong id="sv2-saving-pace">Rp0 / minggu</strong></div>
+</div>
+</article>
+<article class="sv2-deposit-card sv2-mobile-hidden" data-savings-pane="deposit">
+<div class="sv2-card-head"><div><span class="sv2-kicker">SETORAN BARU</span><h3>Tambah tabungan</h3><p>Langsung tersinkron ke pasanganmu.</p></div><span class="sv2-secure-mark"><i data-fa="shield"></i></span></div>
+<div class="sb-confirm-area">
+<div class="sb-quick-amounts" id="sb-quick-amounts">
+<button class="sb-quick-chip" data-amt="25000" type="button">Rp25rb</button>
+<button class="sb-quick-chip" data-amt="50000" type="button">Rp50rb</button>
+<button class="sb-quick-chip" data-amt="100000" type="button">Rp100rb</button>
+<button class="sb-quick-chip" data-amt="250000" type="button">Rp250rb</button>
+</div>
+<label class="sv2-field"><span>Nominal setoran</span><div class="sb-nominal-row"><b class="sb-nominal-prefix">Rp</b><input class="sb-nominal-input" id="sb-nominal-input" inputmode="numeric" max="1000000000" min="1000" placeholder="0" type="number"/></div></label>
+<label class="sv2-field"><span>Catatan <em>opsional</em></span><input class="sv2-note-input" id="sb-note-input" maxlength="100" placeholder="Contoh: hemat makan siang"/></label>
+<div class="sv2-deposit-preview"><span>Setelah setoran</span><strong id="sv2-deposit-preview">Rp0</strong><small id="sv2-points-preview">+0 Love Points</small></div>
+<div class="sb-account-row">
+<div class="sb-account-info"><span class="sb-account-label">Rekening tujuan bersama</span><span class="sb-account-number" id="sb-account-number">901427834591</span></div>
+<div class="sb-account-actions"><button class="sb-edit-account-btn" id="sb-edit-account-btn" type="button"><i data-fa="pen"></i><span>Ubah</span></button><button class="sb-copy-btn" id="sb-copy-btn" type="button"><i data-fa="copy"></i><span>Salin</span></button></div>
+</div>
+<button class="sb-confirm-btn" id="sb-confirm-btn" type="button"><i data-fa="check"></i><span id="sb-confirm-label">Simpan setoran</span></button>
+</div>
+</article>
+</section>
+<div class="sb-warning-bar hidden" id="sb-warning-bar"><i data-fa="bolt"></i><span id="sb-warning-text">Target minggu ini belum lengkap.</span></div>
+<div class="sb-celebrate-bar hidden" id="sb-celebrate-bar"><span><i data-fa="check"></i></span><b>Target minggu ini tercapai.</b><small>Kalian menjaga ritme dengan baik.</small></div>
+<section class="sv2-progress-grid sv2-mobile-hidden" data-savings-pane="progress">
+<article class="savings-balance-card sv2-week-card">
+<div class="sv2-card-head"><div><span class="sv2-kicker">RITME MINGGU INI</span><h3>Progress mingguan</h3></div><button class="sv2-text-action" data-sv2-open-target="" type="button">Ubah target</button></div>
+<div class="sv2-week-amount-row"><div><span>Terkumpul minggu ini</span><strong class="sb-balance-amount" id="sb-balance-amount">Rp0</strong></div><div class="sv2-week-badge" id="sb-progress-pct">0%</div></div>
+<div class="sb-balance-target" id="sb-balance-target">Target: Rp0 / minggu</div>
+<div class="sb-progress-track"><div class="sb-progress-fill" id="sb-progress-fill" style="width:0%"></div></div>
+<div class="sb-progress-label"><span id="sv2-weekly-remaining">Atur target mingguan</span><span id="sb-days-left">– hari tersisa</span></div>
+<div class="sv2-week-recommend"><span class="sv2-mini-icon"><i data-fa="sparkles"></i></span><div><small>Saran setoran berikutnya</small><strong id="sv2-next-deposit">Atur target dahulu</strong></div></div>
+<div class="sv2-week-chart-wrap"><div class="sv2-chart-head"><span>8 minggu terakhir</span><strong id="sv2-chart-average">Rata-rata Rp0</strong></div><div aria-label="Grafik setoran delapan minggu" class="sv2-chart" id="sv2-chart"></div></div>
+</article>
+<article class="sv2-couple-card">
+<div class="sb-couple-header">
+<div class="sb-couple-left"><div class="sb-couple-avatars"><div class="sb-couple-av-placeholder" id="sb-couple-av-user"><span id="sb-couple-av-user-initial">?</span></div><div class="sb-couple-av-placeholder" id="sb-couple-av-partner"><span id="sb-couple-av-partner-initial">?</span></div></div><div><div class="sb-couple-names" id="sb-couple-names">— &amp; —</div><div class="sb-couple-sub">Kontribusi seumur target</div></div></div>
+</div>
+<div class="sv2-ring-row">
+<div class="sv2-ring" id="sv2-contribution-ring" style="--sv2-mine:50"><div><strong id="sv2-mine-pct">50%</strong><small>kontribusimu</small></div></div>
+<div class="sv2-contribution-list">
+<div><i class="mine"></i><span id="sv2-mine-name">Kamu</span><strong id="sv2-mine-total">Rp0</strong></div>
+<div><i class="partner"></i><span id="sv2-partner-name">Pasangan</span><strong id="sv2-partner-total">Rp0</strong></div>
+</div>
+</div>
+<div class="sb-status-row">
+<div class="sb-status-chip"><span class="sb-dot" id="sb-dot-user1"></span><span class="sb-chip-name" id="sb-name-user1">—</span><span class="sb-chip-state" id="sb-state-user1">Belum setor minggu ini</span></div>
+<div class="sb-status-divider"><i data-fa="heart"></i></div>
+<div class="sb-status-chip"><span class="sb-dot" id="sb-dot-user2"></span><span class="sb-chip-name" id="sb-name-user2">—</span><span class="sb-chip-state" id="sb-state-user2">Belum setor minggu ini</span></div>
+</div>
+<div class="sv2-fairness"><span id="sv2-fairness-title">Komitmen berdua</span><p id="sv2-fairness-text">Setiap kontribusi berarti, berapa pun nominalnya.</p></div>
+</article>
+</section>
+<div class="sb-motivasi sv2-mobile-hidden" data-savings-pane="progress" id="sb-motivasi"><span class="sv2-mini-icon"><i data-fa="heart"></i></span><div><b>Langkah kecil minggu ini</b><span id="sb-motivasi-text">Sedikit demi sedikit, demi mimpi kalian.</span></div></div>
+<section class="sb-stats-section sv2-stats-section" data-savings-pane="summary">
+<div class="sb-stats-grid">
+<div class="sb-stat-card"><span class="sb-stat-icon">Rp</span><div class="sb-stat-info"><span class="sb-stat-val" id="sb-stat-total">Rp0</span><span class="sb-stat-lbl">Total terkumpul</span></div></div>
+<div class="sb-stat-card"><span class="sb-stat-icon">↗</span><div class="sb-stat-info"><span class="sb-stat-val" id="sv2-monthly-average">Rp0</span><span class="sb-stat-lbl">Rata-rata per bulan</span></div></div>
+<div class="sb-stat-card"><span class="sb-stat-icon"><i data-fa="fire"></i></span><div class="sb-stat-info"><span class="sb-stat-val" id="sb-stat-streak">0 minggu</span><span class="sb-stat-lbl">Streak menabung</span></div></div>
+<div class="sb-stat-card"><span class="sb-stat-icon">K</span><div class="sb-stat-info"><span class="sb-stat-val" id="sb-stat-mine">Rp0</span><span class="sb-stat-lbl">Kontribusi kamu</span></div></div>
+<div class="sb-stat-card"><span class="sb-stat-icon">P</span><div class="sb-stat-info"><span class="sb-stat-val" id="sb-stat-partner">Rp0</span><span class="sb-stat-lbl">Kontribusi pasangan</span></div></div>
+</div>
+</section>
+<section class="sv2-insight-card" data-savings-pane="summary">
+<span class="sv2-insight-icon"><i data-fa="arrow-trend-up"></i></span><div><span class="sv2-kicker">INSIGHT OTOMATIS</span><h3 id="sv2-insight-title">Menganalisis ritme kalian…</h3><p id="sv2-insight-text">Ringkasan akan menyesuaikan setiap ada setoran baru.</p></div><button data-couple-goto="ai" type="button"><i data-fa="comments"></i> Buka Matus</button>
+</section>
+<section class="sb-history-section sv2-history-section sv2-mobile-hidden" data-savings-pane="history">
+<div class="sb-history-header">
+<div class="sb-history-header-left"><span class="sv2-history-icon"><i data-fa="clipboard-list"></i></span><div><span class="sv2-kicker">AKTIVITAS BERSAMA</span><h3>Riwayat setoran <span class="sb-history-count" id="sb-history-count">0</span></h3></div></div>
+<div class="sv2-history-tools"><label><i data-fa="search"></i><input id="sv2-history-search" placeholder="Cari catatan…" type="search"/></label><button id="sv2-export" type="button"><span>CSV</span> Ekspor</button></div>
+</div>
+<div class="cv-filter-row compact sv2-history-filters"><button class="active" data-deposit-filter="all" type="button">Semua</button><button data-deposit-filter="week" type="button">Minggu ini</button><button data-deposit-filter="mine" type="button">Setoranku</button><button data-deposit-filter="partner" type="button">Pasangan</button></div>
+<div class="sb-history-list" id="deposit-history"></div>
+</section>
+</div>
+<div aria-labelledby="sv2-target-title" aria-modal="true" class="sv2-modal hidden" id="sv2-target-modal" role="dialog">
+<form class="sv2-modal-card" id="sv2-target-form">
+<div class="sv2-modal-head"><span><i data-fa="bullseye"></i></span><div><span class="sv2-kicker">TARGET BERSAMA</span><h3 id="sv2-target-title">Atur mimpi kalian</h3><p>Nama dan nominal akan langsung tersinkron.</p></div><button aria-label="Tutup" id="sv2-target-close" type="button">×</button></div>
+<div class="sv2-modal-body">
+<label class="sv2-field"><span>Nama tujuan</span><input id="sv2-target-name" maxlength="60" placeholder="Contoh: Liburan ke Jepang" required=""/></label>
+<div class="sv2-form-row"><label class="sv2-field"><span>Target total</span><div class="sv2-money-field"><b>Rp</b><input id="sv2-target-total" max="10000000000" min="1000" required="" type="number"/></div></label><label class="sv2-field"><span>Target per minggu</span><div class="sv2-money-field"><b>Rp</b><input id="sv2-target-weekly" max="1000000000" min="1000" required="" type="number"/></div></label></div>
+<div class="sv2-target-presets"><span>Saran cepat</span><button data-sv2-weekly="100000" type="button">100rb</button><button data-sv2-weekly="250000" type="button">250rb</button><button data-sv2-weekly="500000" type="button">500rb</button><button data-sv2-weekly="1000000" type="button">1jt</button></div>
+<div class="sv2-target-preview"><span>Estimasi durasi</span><strong id="sv2-target-duration">Isi target untuk melihat estimasi</strong></div>
+</div>
+<div class="sv2-modal-actions"><button id="sv2-target-cancel" type="button">Batal</button><button id="sv2-target-save" type="submit"><i data-fa="check"></i> Simpan &amp; sinkronkan</button></div>
+</form>
+</div>
+<div aria-labelledby="sv2-account-title" aria-modal="true" class="sv2-modal hidden" id="sv2-account-modal" role="dialog">
+<form class="sv2-modal-card sv2-account-modal-card" id="sv2-account-form">
+<div class="sv2-modal-head"><span><i data-fa="credit-card"></i></span><div><span class="sv2-kicker">REKENING BERSAMA</span><h3 id="sv2-account-title">Ubah nomor rekening</h3><p>Nomor baru akan langsung tersinkron ke pasangan.</p></div><button aria-label="Tutup" id="sv2-account-close" type="button">×</button></div>
+<div class="sv2-modal-body"><label class="sv2-field"><span>Nomor rekening tujuan</span><input autocomplete="off" id="sv2-account-input" inputmode="numeric" maxlength="30" placeholder="Contoh: 901427834591" required=""/></label><div class="sv2-account-hint"><i data-fa="shield"></i><span>Pastikan nomor sudah benar sebelum menyimpan atau melakukan transfer.</span></div></div>
+<div class="sv2-modal-actions"><button id="sv2-account-cancel" type="button">Batal</button><button id="sv2-account-save" type="submit"><i data-fa="check"></i> Simpan &amp; sinkronkan</button></div>
+</form>
+</div>
+</section>
+<section class="cv-feature-screen hidden ai3-feature" data-feature-panel="ai" id="couple-ai-feature">
+<div class="ai3-top">
+<div><span>OTAK AI COUPLE</span><h2>Pengaturan AI privat</h2><p>Hubungkan dan kelola provider AI yang digunakan Matus di perangkat ini.</p></div>
+<div class="ai-status-badge" id="ai-status-badge"><span class="ai-status-dot"></span><span id="ai-status-label">Memuat…</span></div>
+</div>
+<div class="ai-pane active" data-ai-pane="brain">
+<div class="ai-brain-card ai3-settings" id="ai-brain-card">
+<div class="ai-brain-header"><div class="ai-brain-icon-wrap"><i data-fa="sliders"></i></div><div class="ai-brain-title-wrap"><h4 class="ai-brain-title">Pengaturan AI Lokal</h4><p class="ai-brain-subtitle">Rekomendasi: gunakan AI server. Key pribadi hanya disimpan selama sesi tab ini.</p></div></div>
+<div class="ai-provider-row"><p class="ai-section-label">Pilih penyedia <span class="ai-prov-count" id="ai-prov-count"></span></p><div class="ai-provider-grid" id="ai-provider-chips"></div></div>
+<div class="ai-key-input-group"><p class="ai-section-label">API Key</p><div class="ai-key-field-wrap"><input autocomplete="off" class="ai-key-input" id="ai-key-input" placeholder="Masukkan API key provider" spellcheck="false" type="password"/><button aria-label="Tampilkan kunci" class="ai-key-eye-btn" id="ai-key-eye-btn" type="button"><i data-fa="circle-dot"></i></button></div><p class="ai-key-hint" id="ai-key-hint">Kunci tersimpan di perangkat ini saja.</p></div>
+<details class="ai3-advanced"><summary>Pengaturan lanjutan</summary><div class="ai-base-group hidden" id="ai-base-group"><p class="ai-section-label">Base URL</p><input class="ai-key-input" id="ai-base-input" placeholder="https://api.contoh.ai/v1" type="text"/></div><div class="ai-model-group"><p class="ai-section-label">Model opsional</p><input class="ai-key-input" id="ai-model-input" placeholder="Gunakan model default" type="text"/></div></details>
+<div class="ai-test-result hidden" id="ai-test-result"></div><div class="ai-action-row"><button class="ai-btn-set" id="ai-btn-test" type="button"><i data-fa="check"></i> Tes &amp; Simpan</button><button class="ai-btn-clear" id="ai-btn-clear" type="button"><i data-fa="trash"></i> Hapus key</button></div>
+</div>
+<section class="ai-backup-card" id="ai-backup-center" aria-labelledby="ai-backup-title">
+<header class="ai-backup-head"><span><i data-fa="database"></i></span><div><small>PERLINDUNGAN DATA</small><h3 id="ai-backup-title">Backup &amp; Pemulihan AppCouple</h3><p>Cadangkan semua data perangkat dalam satu file. Data akun cloud akan tersinkron kembali setelah login.</p></div><em id="ai-backup-health">Siap</em></header>
+<div class="ai-backup-stats"><article><span>Backup terakhir</span><b id="ai-backup-last">Belum pernah</b></article><article><span>Bagian data</span><b id="ai-backup-count">0</b></article><article><span>Ukuran data</span><b id="ai-backup-size">—</b></article></div>
+<div class="ai-backup-note"><i data-fa="shield"></i><p><b>Aman untuk dipindahkan.</b> Password, sesi login, token, API key, dan rahasia Supabase tidak dimasukkan. Foto/video cloud tetap berada di Google Drive atau penyimpanan server.</p></div>
+<div class="ai-backup-actions"><button class="primary" id="ai-backup-download" type="button"><i data-fa="download"></i><span><b>Buat &amp; unduh backup</b><small>ZIP dengan checksum integritas</small></span></button><button id="ai-backup-upload" type="button"><i data-fa="arrow-up"></i><span><b>Upload backup</b><small>Periksa sebelum dipulihkan</small></span></button><input accept=".zip,.json,application/zip,application/json" hidden id="ai-backup-file" type="file"/></div>
+<section class="ai-backup-preview hidden" id="ai-backup-preview"><div><span><i data-fa="file"></i></span><div><b id="ai-backup-file-name">backup.zip</b><small id="ai-backup-file-meta">Menunggu file</small></div></div><label>Cara pemulihan<select id="ai-backup-mode"><option value="missing">Pulihkan hanya data yang hilang</option><option value="merge">Gabungkan dan perbarui data lokal</option><option value="replace">Ganti seluruh data lokal</option></select></label><button disabled id="ai-backup-restore" type="button"><i data-fa="rotate"></i> Pulihkan sekarang</button></section>
+<footer class="ai-backup-foot"><p aria-live="polite" id="ai-backup-status">Backup harian lokal dibuat otomatis tanpa menyimpan kredensial.</p><button class="hidden" id="ai-backup-rollback" type="button"><i data-fa="clock-rotate-left"></i> Batalkan pemulihan terakhir</button></footer>
+</section>
+</div>
+</section>
+<section class="cv-feature-screen hidden" data-feature-panel="sydas" id="sydas-sector-feature">
+<div class="ss-shell">
+<header class="ss-hero">
+<div class="ss-channel-mark"><img src="/assets/sydas/channel-profile.webp" alt="Foto profil channel Sydas Sector"/></div>
+<div class="ss-channel-copy"><span>SYDAS SECTOR</span><h2>Sydas Sector</h2><p>Sejarah, geopolitik, misteri, dan arsip dunia dalam format visual.</p><div class="ss-channel-meta"><b id="ss-video-count">Memuat video…</b><i></i><span id="ss-sync-status">Terhubung ke YouTube</span></div></div>
+<div class="ss-hero-actions"><a class="ss-subscribe" href="https://www.youtube.com/@SydasSector?sub_confirmation=1" target="_blank" rel="noopener noreferrer"><i data-fa="play"></i> Subscribe</a><button id="ss-refresh" type="button"><i data-fa="rotate"></i><span>Perbarui</span></button></div>
+</header>
+<nav class="ss-tabs" aria-label="Filter video Sydas Sector"><button class="active" data-ss-filter="all" type="button">Semua <b id="ss-count-all">0</b></button><button data-ss-filter="long" type="button">Video >3 menit <b id="ss-count-long">0</b></button><button data-ss-filter="short" type="button">Shorts / ≤3 menit <b id="ss-count-short">0</b></button><a href="https://www.youtube.com/@SydasSector/playlists" target="_blank" rel="noopener noreferrer">Playlist</a></nav>
+<section class="ss-featured">
+<div class="ss-player-wrap"><iframe id="ss-player" title="Pemutar video Sydas Sector" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+<aside><span>KATALOG CHANNEL</span><h3>Pilih video dan putar di sini</h3><p>Gunakan tombol daftar putar di pemutar untuk menjelajahi seluruh video. Video baru otomatis masuk setelah dipublikasikan di channel.</p><div class="ss-auto"><i></i><div><b>Pemeriksaan berkala</b><small>Saat halaman aktif • cache sumber dapat lebih lama</small></div></div><a href="https://www.youtube.com/@SydasSector/videos" target="_blank" rel="noopener noreferrer">Buka channel lengkap <i data-fa="arrow-right"></i></a></aside>
+</section>
+<section class="ss-library"><div class="ss-library-head"><div><span>VIDEO PANJANG &amp; SHORTS</span><h3>Putar langsung dari AppCouple</h3></div><label><i data-fa="magnifying-glass"></i><input id="ss-search" type="search" placeholder="Cari video…" autocomplete="off"></label></div><div class="ss-video-grid" id="ss-video-grid"><div class="ss-loading"><i></i><i></i><i></i><p>Menyinkronkan video panjang dan Shorts…</p></div></div><div class="ss-library-foot"><small id="ss-last-sync">Menunggu sinkronisasi</small><a href="https://www.youtube.com/@SydasSector/videos" target="_blank" rel="noopener noreferrer">Lihat semua di YouTube</a></div></section>
+</div>
+</section>
+</main>
+</section>
+<section aria-labelledby="fr-title" aria-modal="true" class="financial-report-page hidden" id="financial-report-page" role="dialog">
+<header class="fr-head"><button aria-label="Kembali ke keuangan" class="fr-back" id="fr-close" type="button"><i data-fa="arrow-left"></i></button><div class="fr-title"><small>FINANCIAL OVERVIEW</small><h1 id="fr-title">Laporan Keuangan</h1></div><div class="fr-head-actions"><span class="fr-live">Data pembukuan</span><button class="fr-icon-btn" id="fr-print" type="button" aria-label="Cetak laporan"><i data-fa="arrow-up"></i></button><button class="fr-export" id="fr-export" type="button"><i data-fa="arrow-down"></i><span>Ekspor Excel</span></button></div></header>
+<div class="fr-body"><section class="f20-report-tools"><label>Dari<input id="f20-from" type="date" /></label><label>Sampai<input id="f20-to" type="date" /></label><button id="f20-range-apply" type="button">Terapkan rentang</button><label>Cakupan Excel<select id="f20-export-scope"><option value="filtered">Sesuai periode &amp; filter</option><option value="all">Semua data dimuat</option></select></label></section>
+<div class="fr-toolbar"><div aria-label="Periode laporan" class="fr-period-tabs" role="tablist"><button data-fr-period="daily" type="button">14 hari</button><button data-fr-period="weekly" type="button">Minggu ini</button><button class="active" data-fr-period="monthly" type="button">12 bulan</button><button data-fr-period="yearly" type="button">Tahunan</button></div><div class="fr-period-meta"><span>Periode aktif</span><b id="fr-period-label">Tahun berjalan</b><small id="fr-compare-label">Dibanding periode sebelumnya</small></div></div>
+<section class="fr-health"><div class="fr-health-copy"><small>INDIKATOR ARUS KAS</small><h2 id="fr-health-title">Menghitung kondisi arus kas…</h2><p id="fr-health-copy">Analisis otomatis dari pemasukan, pengeluaran, dan ritme transaksi.</p><div class="fr-health-track"><i id="fr-health-fill"></i></div></div><div class="fr-score"><strong id="fr-health-score">0</strong><span>/100</span></div></section>
+<div class="fr-metrics"><article class="fr-metric income"><span class="fr-metric-icon"><i data-fa="arrow-trend-up"></i></span><div><span>Total pemasukan</span><strong id="fr-income">Rp0</strong><small id="fr-income-count">0 transaksi</small><em id="fr-income-change">—</em></div></article><article class="fr-metric expense"><span class="fr-metric-icon"><i data-fa="arrow-trend-down"></i></span><div><span>Total pengeluaran</span><strong id="fr-expense">Rp0</strong><small id="fr-expense-count">0 transaksi</small><em id="fr-expense-change">—</em></div></article><article class="fr-metric net"><span class="fr-metric-icon"><i data-fa="wallet"></i></span><div><span>Arus kas bersih</span><strong id="fr-net">Rp0</strong><small id="fr-net-status">Netral</small><em id="fr-net-change">—</em></div></article><article class="fr-metric rate"><span class="fr-metric-icon"><i data-fa="piggy-bank"></i></span><div><span>Rasio tabungan</span><strong id="fr-saving-rate">0%</strong><small>Pemasukan yang tersisa</small><em id="fr-rate-change">—</em></div></article></div>
+<section class="fr-insights" aria-label="Ringkasan cepat"><article><span><i data-fa="calendar-day"></i></span><div><small>Rata-rata keluar/hari</small><strong id="fr-daily-average">Rp0</strong><p id="fr-daily-average-note">Pada periode aktif</p></div></article><article><span><i data-fa="tags"></i></span><div><small>Kategori terbesar</small><strong id="fr-top-category">—</strong><p id="fr-top-category-note">Belum ada pengeluaran</p></div></article><article><span><i data-fa="gauge-high"></i></span><div><small>Rasio pengeluaran</small><strong id="fr-spend-ratio">0%</strong><p id="fr-spend-ratio-note">Dari total pemasukan</p></div></article><article><span><i data-fa="receipt"></i></span><div><small>Rata-rata transaksi</small><strong id="fr-average-transaction">Rp0</strong><p id="fr-average-transaction-note">Semua jenis transaksi</p></div></article></section>
+<div class="fr-grid">
+<article class="fr-card fr-chart-card"><div class="fr-card-head"><div><span class="fr-kicker">ARUS KAS</span><h2>Tren pemasukan &amp; pengeluaran</h2><p>Lihat pergerakan uang masuk dan keluar pada setiap periode.</p></div><div class="fr-legend"><span><i></i>Masuk</span><span><i></i>Keluar</span></div></div><svg aria-label="Grafik arus kas" class="fr-chart" id="fr-cashflow-chart" role="img" viewbox="0 0 900 290"></svg></article>
+<article class="fr-card"><div class="fr-card-head"><div><span class="fr-kicker">PENGELUARAN</span><h2>Komposisi kategori</h2><p>Prioritas biaya terbesar pada periode aktif.</p></div></div><div class="fr-categories" id="fr-expense-categories"></div></article>
+<article class="fr-card fr-chart-card"><div class="fr-card-head"><div><span class="fr-kicker">SALDO KUMULATIF</span><h2>Pergerakan saldo</h2><p>Saldo awal periode ditambah arus kas selama periode. Berdasarkan transaksi yang dicatat.</p></div><div class="fr-legend balance"><span><i></i>Saldo</span><b id="fr-ending-balance">Rp0</b></div></div><svg aria-label="Grafik saldo kumulatif" class="fr-chart" id="fr-candle-chart" role="img" viewbox="0 0 900 290"></svg></article>
+<article class="fr-card"><div class="fr-card-head"><div><span class="fr-kicker">PEMASUKAN</span><h2>Sumber pemasukan</h2><p>Kontribusi setiap sumber dana.</p></div></div><div class="fr-categories fr-income-categories" id="fr-income-categories"></div></article>
+<article class="fr-card fr-wide fr-transactions-card"><div class="fr-card-head"><div><span class="fr-kicker">DETAIL</span><h2>Rincian transaksi</h2><p>Cari dan filter transaksi tanpa meninggalkan laporan.</p></div><span class="fr-count" id="fr-transaction-count">0 transaksi</span></div><div class="fr-table-tools"><label class="fr-search"><i data-fa="magnifying-glass"></i><input id="fr-search" type="search" placeholder="Cari deskripsi atau kategori…" autocomplete="off"></label><select id="fr-type-filter" aria-label="Filter jenis transaksi"><option value="all">Semua jenis</option><option value="income">Pemasukan</option><option value="expense">Pengeluaran</option></select><select id="fr-sort" aria-label="Urutkan transaksi"><option value="newest">Terbaru</option><option value="oldest">Terlama</option><option value="highest">Nominal terbesar</option><option value="lowest">Nominal terkecil</option></select></div><div class="fr-table-wrap"><table class="fr-table"><thead><tr><th>Tanggal</th><th>Jenis</th><th>Deskripsi</th><th>Kategori</th><th>Nominal</th></tr></thead><tbody id="fr-transactions"></tbody></table><button type="button" class="f20-more" id="f20-report-more" hidden>Muat 150 berikutnya</button></div></article>
+</div>
+</div>
+</section>
+<nav aria-label="Navigasi seluler" class="bottom-nav"><button class="active" data-view="home"><i data-fa="house"></i><span>Beranda</span></button><button data-view="finance"><i data-fa="table-list"></i><span>Keuangan</span></button><button data-view="couple"><i data-fa="heart-o"></i><span>Couple</span></button><button data-view="memories"><i data-fa="bullseye"></i><span>Kenangan</span></button><button data-view="ai"><i data-fa="sparkles"></i><span>Matus</span></button></nav>
+<div aria-labelledby="settings-title" aria-modal="true" class="modal-backdrop hidden" id="privacy-modal" role="dialog">
+<div class="modal privacy-modal settings-modal">
+<button aria-label="Tutup pengaturan" class="modal-close" id="privacy-close" type="button"><i data-fa="xmark"></i></button>
+<span class="eyebrow dark">PENGATURAN</span>
+<h2 id="settings-title">Pengaturan</h2>
+<p class="privacy-intro">Kelola akun, tampilan, notifikasi, dan izin AI dari satu tempat.</p>
+<section class="settings-account-card">
+<label class="settings-avatar-wrap" for="settings-photo-input" title="Ubah foto profil">
+<span class="settings-profile-avatar" id="settings-profile-avatar">U</span>
+<span class="settings-camera"><i data-fa="camera"></i></span>
+<input accept="image/jpeg,image/png,image/webp" hidden="" id="settings-photo-input" type="file"/>
+</label>
+<div class="settings-account-copy"><b id="settings-profile-name">Pengguna</b><small id="settings-profile-email">Akun Google</small><label for="settings-photo-input" id="settings-photo-label">Ubah foto profil</label></div>
+<div aria-label="Mode tampilan" class="settings-theme" role="group"><button data-settings-theme="light" type="button"><i data-fa="sun"></i> Terang</button><button data-settings-theme="dark" type="button"><i data-fa="moon"></i> Gelap</button></div>
+<button class="settings-logout" id="settings-logout" type="button"><i data-fa="right-from-bracket"></i><span>Keluar akun Google</span></button>
+</section>
+<div class="settings-compact-grid">
+<details class="settings-compact-card">
+<summary><span class="privacy-section-icon"><i data-fa="bell"></i></span><span><b>Notifikasi perangkat</b><small id="notification-permission">Belum diaktifkan</small></span><i data-fa="chevron-down"></i></summary>
+<div class="settings-card-content"><button class="settings-inline-action" id="enable-notifications" type="button">Aktifkan notifikasi</button><div class="preference-list compact"><label><span><b>Pesan pasangan</b><small>Chat masuk secara realtime</small></span><input checked="" data-pref="chat" type="checkbox"/></label><label><span><b>Analisis arus kas</b><small>Pengeluaran tinggi atau defisit</small></span><input checked="" data-pref="finance" type="checkbox"/></label><label><span><b>Rencana pengeluaran</b><small>Batas harian dan jadwal gajian</small></span><input checked="" data-pref="plans" type="checkbox"/></label><label><span><b>Celengan Cinta</b><small>Progres target mingguan</small></span><input checked="" data-pref="savings" type="checkbox"/></label><label><span><b>Tugas Matus</b><small>Jatuh tempo dan tugas terlambat</small></span><input checked="" data-pref="matus" type="checkbox"/></label><label><span><b>Wajib online harian</b><small>Peringatan jika check-in terlewat</small></span><input checked="" data-pref="daily" type="checkbox"/></label><label><span><b>Pemasukan bulanan</b><small>Wajib dicatat setiap bulan</small></span><input checked="" data-pref="income" type="checkbox"/></label><label><span><b>Kenangan</b></span><input checked="" data-pref="memories" type="checkbox"/></label></div></div>
+</details>
+<details class="settings-compact-card">
+<summary><span class="privacy-section-icon"><i data-fa="sparkles"></i></span><span><b>Izin Couple AI</b><small>Atur data yang boleh dibaca</small></span><i data-fa="chevron-down"></i></summary>
+<div class="settings-card-content"><div class="preference-list compact"><label><span><b>Ringkasan keuangan</b></span><input checked="" data-pref="aiFinance" type="checkbox"/></label><label><span><b>Isi percakapan</b></span><input data-pref="aiChat" type="checkbox"/></label><label><span><b>Lokasi</b></span><input data-pref="aiLocation" type="checkbox"/></label></div></div>
+</details>
+</div>
+<section class="settings-data-row"><div><b>Data perangkat</b><small>Ekspor preferensi atau bersihkan data lokal.</small></div><div><button id="export-data" type="button"><i data-fa="download"></i> Ekspor</button><button class="danger-button" id="clear-local-data" type="button"><i data-fa="trash"></i> Bersihkan</button></div></section>
+<div class="privacy-footer"><i data-fa="lock"></i> Preferensi akun disinkronkan dengan Supabase. Foto maksimal 5 MB.</div>
+</div>
+</div>
+<div aria-labelledby="budget-plan-title" aria-modal="true" class="modal-backdrop hidden" id="budget-plan-modal" role="dialog"><div class="modal fin3-input-modal"><button aria-label="Tutup" class="modal-close" type="button"><i data-fa="xmark"></i></button><span class="eyebrow dark">RENCANA SAMPAI GAJIAN</span><h2 id="budget-plan-title">Atur waktu menuju gajian</h2><p class="fin3-modal-copy">Saldo belanja dihitung dari saldo tersedia dikurangi dana cadangan. Pengeluaran sebelum rencana dibuat tidak dihitung ulang.</p><form id="budget-plan-form"><div aria-label="Tanggal gajian cepat" class="fp35-quick-payday"><button data-payday-day="25" type="button">Gajian 25</button><button data-payday-day="28" type="button">Gajian 28</button><button data-payday-day="1" type="button">Gajian tanggal 1</button></div><div class="form-row"><label>Tanggal mulai<input id="plan-start-date" required="" type="date"/></label><label>Tanggal gajian berikutnya<input id="plan-reset-date" required="" type="date"/></label></div><label>Dana cadangan yang tidak boleh dipakai<input id="plan-reserve-amount" inputmode="numeric" min="0" placeholder="Contoh: 1000000" step="1000" type="number"/></label><div class="fin3-balance-preview fp35-preview"><span><small>Saldo tersedia</small><b id="plan-modal-current">Rp0</b></span><i>−</i><span><small>Dana cadangan</small><b id="plan-modal-reserve">Rp0</b></span><i>=</i><span><small>Saldo untuk rencana</small><strong id="plan-modal-balance">Rp0</strong></span></div><p class="fp35-modal-guidance" id="plan-modal-guidance">Batas harian akan dihitung setelah tanggal dipilih.</p><div class="modal-actions"><button class="btn btn-secondary modal-cancel" type="button"><i data-fa="xmark"></i> Batal</button><button class="btn btn-primary" id="save-budget-plan" type="submit"><i data-fa="floppy-disk"></i> Simpan rencana</button></div></form></div></div>
+<div aria-labelledby="receivable-title" aria-modal="true" class="modal-backdrop hidden" id="receivable-modal" role="dialog"><div class="modal fin3-input-modal"><button aria-label="Tutup" class="modal-close" type="button"><i data-fa="xmark"></i></button><span class="eyebrow dark" id="receivable-modal-eyebrow">PIUTANG BARU</span><h2 id="receivable-title">Catat uang yang dipinjam</h2><p class="rv85-modal-copy">Data langsung muncul di daftar dan tetap tersimpan jika koneksi sedang tidak stabil.</p><form id="receivable-form"><input name="id" type="hidden"/><label>Nama peminjam<input maxlength="80" name="person" placeholder="Contoh: Budi" required=""/></label><label>Nominal piutang<input min="1" name="amount" placeholder="500000" required="" type="number"/></label><div class="form-row"><label>Tanggal pinjam<input name="date" required="" type="date"/></label><label>Jatuh tempo<input name="dueDate" required="" type="date"/></label></div><label>Catatan opsional<input maxlength="200" name="note" placeholder="Keperluan atau kesepakatan"/></label><div class="modal-actions"><button class="btn btn-secondary modal-cancel" type="button"><i data-fa="xmark"></i> Batal</button><button class="btn btn-primary" id="save-receivable" type="submit"><i data-fa="floppy-disk"></i><span>Simpan piutang</span></button></div></form></div></div>
+<div aria-labelledby="receivable-payment-title" aria-modal="true" class="modal-backdrop hidden" id="receivable-payment-modal" role="dialog"><div class="modal fin3-input-modal rv85-payment-modal"><button aria-label="Tutup" class="modal-close" type="button"><i data-fa="xmark"></i></button><span class="eyebrow dark">PEMBAYARAN SEBAGIAN</span><h2 id="receivable-payment-title">Catat cicilan piutang</h2><p class="rv85-modal-copy" id="receivable-payment-summary">Masukkan nominal yang baru dibayar.</p><form id="receivable-payment-form"><input name="id" type="hidden"/><label>Nominal yang dibayar<input min="1" name="paymentAmount" placeholder="Contoh: 250000" required type="number"/></label><label>Tanggal pembayaran<input name="paymentDate" required type="date"/></label><label>Catatan opsional<input maxlength="120" name="paymentNote" placeholder="Contoh: Transfer tahap pertama"/></label><div class="rv85-payment-preview"><span>Sisa setelah pembayaran</span><strong id="receivable-payment-remaining">Rp0</strong></div><div class="rv85-payment-history" id="receivable-payment-history"></div><div class="modal-actions"><button class="btn btn-secondary modal-cancel" type="button"><i data-fa="xmark"></i> Batal</button><button class="btn btn-primary" id="save-receivable-payment" type="submit"><i data-fa="floppy-disk"></i><span>Simpan pembayaran</span></button></div></form></div></div>
+<div aria-modal="true" class="modal-backdrop hidden" id="transaction-modal" role="dialog"><div class="modal"><button aria-label="Tutup" class="modal-close" type="button"><i data-fa="xmark"></i></button><span class="eyebrow dark">TRANSAKSI BARU</span><h2 id="transaction-title">Tambah transaksi</h2><form id="transaction-form"><input id="transaction-type" name="type" type="hidden" value="expense"/><label>Deskripsi<input maxlength="120" name="description" placeholder="Contoh: Belanja mingguan" required=""/></label><div class="form-row"><label>Nominal<input min="1" name="amount" placeholder="150000" required="" type="number"/></label><label>Tanggal<input name="date" required="" type="date"/></label></div><label>Kategori<select name="category"><option>Kebutuhan</option><option>Kencan</option><option>Transportasi</option><option>Tabungan</option><option>Transfer masuk</option><option>Transfer keluar</option><option>Gaji</option><option>Bonus</option><option>Lainnya</option></select></label><label>Catatan opsional<textarea maxlength="300" name="note" placeholder="Tambahkan keterangan singkat"></textarea></label><div class="receipt-scan tx86-reader"><div class="receipt-head"><span><b><i data-fa="image"></i> Pembaca Transfer &amp; Struk</b><small>Pilih screenshot transfer, bukti pembayaran, atau struk belanja. AI akan mengisi jenis transaksi, nominal, tanggal, dan keterangannya.</small></span></div><div class="tx86-source-actions"><label class="btn btn-secondary"><i data-fa="images"></i> Galeri<input accept="image/*" hidden="" id="receipt-photo" type="file"/></label><label class="btn btn-secondary"><i data-fa="camera"></i> Kamera<input accept="image/*" capture="environment" hidden="" id="receipt-camera" type="file"/></label></div><div class="receipt-preview-wrap hidden" id="receipt-preview-wrap"><img alt="Pratinjau bukti transaksi" id="receipt-preview"/><div><button class="btn btn-primary" id="scan-receipt" type="button"><i data-fa="sparkles"></i> Baca bukti transaksi</button><small id="receipt-status">Belum dianalisis</small><div class="tx86-scan-progress hidden" id="tx86-scan-progress"><i></i></div></div></div></div><div class="modal-actions"><button class="btn btn-secondary modal-cancel" type="button"><i data-fa="xmark"></i> Batal</button><button class="btn btn-primary"><i data-fa="floppy-disk"></i> Simpan dengan aman</button></div></form></div></div>
+<script src="/src/notification-engine.js?v=894" type="module"></script>
+<script src="/src/matus-ui.js?v=31000" type="module"></script>
+<script src="/src/our-world.js?v=990" type="module"></script>
+<script src="/src/sydas-sector-ui.js?v=1300" type="module"></script>
+
+<script src="/src/vendor-jszip.min.js?v=1600"></script>
+<script src="/src/login-spatial-v17.js?v=1700"></script>
+
+
+<script src="/src/sydas-v15.js?v=1500" type="module"></script>
+<script src="/src/app.js?v=30244" type="module"></script>
+<dialog id="f20-edit-dialog"><form id="f20-edit-form"><h2>Edit transaksi</h2><p>Perubahan akan menghitung ulang saldo dan laporan.</p><label>Jenis<select name="type"><option value="income">Pemasukan</option><option value="expense">Pengeluaran</option></select></label><label>Deskripsi<input name="description" required maxlength="120" /></label><label>Nominal (Rp)<input name="amount" type="number" min="1" max="1000000000" step="1" required /></label><label>Tanggal<input name="date" type="date" required /></label><label>Kategori<input name="category" required maxlength="40" /></label><label>Catatan<textarea name="note" maxlength="300"></textarea></label><div><button id="f20-edit-cancel" type="button"><i data-fa="xmark"></i> Batal</button><button type="submit"><i data-fa="floppy-disk"></i> Simpan perubahan</button></div></form></dialog><dialog id="p22-pay-dialog" class="p22-dialog"><form method="dialog" id="p22-pay-form"><header><div><small>CATAT PEMBAYARAN</small><h2 id="p22-pay-title">Bayar tagihan</h2></div><button type="button" id="p22-pay-close" aria-label="Tutup"><i data-fa="xmark"></i></button></header><p>Pembayaran ini menyelesaikan SATU periode saja, bukan semua tunggakan. Masukkan nominal aktual (termasuk diskon/denda) yang melunasi periode tersebut. Bukan cicilan parsial atau transfer bank.</p><input name="billId" type="hidden" /><label>Nominal aktual (Rp)<input name="amount" type="number" min="1" max="1000000000" step="1" required /></label><label>Tanggal pembayaran<input name="date" type="date" required /></label><footer><button type="button" id="p22-pay-cancel"><i data-fa="xmark"></i> Batal</button><button type="submit"><i data-fa="check"></i> Catat pembayaran</button></footer></form></dialog></body>
+</html>

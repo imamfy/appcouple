@@ -1,0 +1,5 @@
+/api/matus/chat /.netlify/functions/matus-chat 200
+/api/matus/search /.netlify/functions/matus-search 200
+/api/push /.netlify/functions/push 200
+/api/* /.netlify/functions/api/:splat 200
+/* /index.html 200

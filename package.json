@@ -1,0 +1,11 @@
+{
+  "name": "appcouple-next-ai",
+  "version": "10.3.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}
